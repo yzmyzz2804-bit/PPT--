@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "name": "wine-red",
+    "label": "酒红庄重",
+    "description": "酒红主色 + 暖灰中性，适合强调权威/决策/战略叙事的高端汇报场景。",
+    "version": "1.0"
+  },
+
+  "colors": {
+    "brand": {
+      "primary": "#5C1A2B",
+      "secondary": "#7A2438",
+      "accent": "#A8394F",
+      "accent_bright": "#C5576B",
+      "accent_light": "#D6808F",
+      "accent_lighter": "#E5A8B2",
+      "accent_lightest": "#F2D5DA"
+    },
+    "neutral": {
+      "black": "#1A0608",
+      "text_secondary": "#7A6A6E",
+      "divider": "#D5C5C8",
+      "card_border": "#E5D5D8",
+      "bg_card": "#F5EBED",
+      "bg_page": "#FAF4F5",
+      "white": "#FFFFFF"
+    },
+    "semantic": {
+      "success": "#3F7A5A",
+      "warning": "#9C2A1A"
+    }
+  },
+
+  "typography": {
+    "font_cn": "Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif",
+    "font_en": "Arial, Helvetica, Inter, sans-serif",
+    "font_num": "Arial, Helvetica, Inter, sans-serif",
+    "scale": {
+      "mega_title": "84px",
+      "hero_title": "56px",
+      "page_title": "34px",
+      "card_title": "22px",
+      "body": "17px",
+      "caption": "13px",
+      "en_label": "13px"
+    },
+    "weight": { "cn_title": 700, "cn_body": 400, "en_label": 600, "number": 600 },
+    "letter_spacing_en": "2px"
+  },
+
+  "layout": {
+    "canvas_w": "1920px",
+    "canvas_h": "1080px",
+    "safe_margin": "80px",
+    "brand_mark_pos": { "top": "50px", "left": "60px" }
+  },
+
+  "components": {
+    "card": {
+      "radius": "6px",
+      "padding": "24px",
+      "border": "1px solid #E5D5D8",
+      "accent_bar": { "top": "3px", "color": "#A8394F" }
+    },
+    "divider": {
+      "color": "#D5C5C8",
+      "thickness": "1px",
+      "decorative_short": "36px"
+    }
+  },
+
+  "principles": [
+    "克制用色：主色只用酒红系，每页强调色≤2处",
+    "大留白：边距 80-100px",
+    "中英双标题",
+    "数据放大：关键数据用大字号突出",
+    "装饰极简：只用方块+横线的品牌标识",
+    "左对齐为主，数字卡片可居中",
+    "图文分栏明确：图占主视觉区（>50%宽度）",
+    "信息层级清晰：每页不超过3级标题层级"
+  ]
+}

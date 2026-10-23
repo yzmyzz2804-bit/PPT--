@@ -1,0 +1,308 @@
+{
+  "version": "layout-protocol-v1.1",
+  "project": {
+    "name": "安岳运动中心建筑概念方案",
+    "name_en": "Anyue Sports Center Architectural Concept Design",
+    "type": "sports_complex",
+    "theme": "light-health",
+    "palette": {
+      "bg": "#F0F4F8",
+      "ink": "#1A1A2E",
+      "accent": "#F5C842",
+      "green": "#3E8F7D",
+      "note": "浅色底 + 柠黄强调 + 健康绿，呼应「健康主线」"
+    },
+    "date": "2026.10",
+    "location": "四川·安岳·滴水湖"
+  },
+  "assets_base_path": "03_assets/",
+  "total_pages": 12,
+  "chapters": [
+    {"num": "01", "title": "命题与必要性", "pages": "P1 - P2", "concept": "Proposition & Necessity"},
+    {"num": "02", "title": "文化 · 自然 · 概念", "pages": "P3 - P4", "concept": "Culture · Nature · Concept"},
+    {"num": "03", "title": "概念分析 · 案例", "pages": "P5 - P6", "concept": "How & Proof"},
+    {"num": "04", "title": "生命周期打造", "pages": "P7 - P8", "concept": "Self-sustaining Lifecycle"},
+    {"num": "05", "title": "总图 · 功能 · 落盘", "pages": "P9 - P11", "concept": "Masterplan · Program · Landing"},
+    {"num": "06", "title": "结尾", "pages": "P12", "concept": "Closing"}
+  ],
+  "concept_theme": "石隐 · 水跃 · 云栖 —— 藏在山水里的体育石窟",
+  "core_proposition": "一座会自己造血的健康目的地",
+  "core_logic": "健康（用 · 唯一主线）→ 文化（形）+ 自然（境）两条副线 → 核心落盘在全生命周期·自我造血（功能转换 × 业态复合 × 运营模式）",
+  "slides_structure": [
+    {
+      "page": 1,
+      "type": "cover",
+      "title": "安岳运动中心",
+      "subtitle": "一座会自己造血的健康目的地",
+      "meta": {
+        "location": "四川·安岳·滴水湖",
+        "tagline": "石刻之乡 · 中国柠檬之都 · 四川人口第一大县"
+      },
+      "asset": {
+        "bg_image": "bg/cover.jpg"
+      }
+    },
+    {
+      "page": 2,
+      "type": "data-profile",
+      "title": "健康消费在升温，安岳还没有标准馆",
+      "title_en": "Rising Health Spending vs. Zero Standard Hall",
+      "key_metrics": [
+        {
+          "label": "网球人口",
+          "value": "2500 万",
+          "note": "私教上门 · 24 小时运动馆成刚需"
+        },
+        {
+          "label": "人口大县",
+          "value": "150 万",
+          "note": "0 座标准综合体育馆"
+        }
+      ],
+      "conclusion": "供给的缺口，撞上消费的升级——这就是这座馆必须建、且必须建得「能活」的理由。"
+    },
+    {
+      "page": 3,
+      "type": "image-text-split",
+      "title": "一条文化根，一面湖山水",
+      "title_en": "A Cultural Root, A Lakeside Landscape",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "50%"
+      },
+      "content": {
+        "callout": "文化定形，自然定境——两条副线，一条主线（健康）贯穿",
+        "sections": [
+          {
+            "label": "文化 · 定形",
+            "items": [
+              "安岳石刻——石的质感、窟的光影、线的流动，是建筑定「形」的母题"
+            ]
+          },
+          {
+            "label": "自然 · 定境",
+            "items": [
+              "滴水湖——三面隐、一面开，是建筑定「境」的母题"
+            ]
+          }
+        ]
+      },
+      "asset": {
+        "main_image": "images/culture/grotto_bg.jpg",
+        "second_image": "images/site/site_aerial.jpg"
+      }
+    },
+    {
+      "page": 4,
+      "type": "three-cards",
+      "title": "石隐 · 水跃 · 云栖",
+      "title_en": "Stone Hidden · Water Leap · Cloud Dwelling",
+      "cards": [
+        {
+          "title": "石隐",
+          "title_en": "Stone Hidden",
+          "role": "文化 · 形",
+          "desc": "石刻为魂，建筑隐于山水。空间策略：压低体量 / 表皮拟石 / 入口成窟",
+          "icon": "icons/stone.svg"
+        },
+        {
+          "title": "水跃",
+          "title_en": "Water Leap",
+          "role": "自然 · 境 + 运动",
+          "desc": "湖水为境，跃动为用。空间策略：长边沿湖 / 挑台望湖 / 线条如水",
+          "icon": "icons/water.svg"
+        },
+        {
+          "title": "云栖",
+          "title_en": "Cloud Dwelling",
+          "role": "健康 · 用",
+          "desc": "人在此栖居，健康在此沉淀。空间策略：架空灰空间 / 环廊慢道 / 让人停留",
+          "icon": "icons/cloud.svg"
+        }
+      ],
+      "bottom_statement": "以石定形 · 以水定境 · 以云定用"
+    },
+    {
+      "page": 5,
+      "type": "three-cards",
+      "title": "不喊口号，每个词各有一条实现路径",
+      "title_en": "Each Concept Has a Path",
+      "cards": [
+        {
+          "title": "石隐",
+          "path": "形 · 藏",
+          "desc": "压低体量 / 表皮拟石 / 入口成窟"
+        },
+        {
+          "title": "水跃",
+          "path": "境 · 开",
+          "desc": "长边沿湖 / 挑台望湖 / 线条如水"
+        },
+        {
+          "title": "云栖",
+          "path": "用 · 留",
+          "desc": "架空灰空间 / 环廊慢道 / 让人停留"
+        }
+      ],
+      "bottom_statement": "形、境、用是建筑的一半；另一半，是它建成之后怎么一直活下去。"
+    },
+    {
+      "page": 6,
+      "type": "comparison-table",
+      "title": "证明「造血」这条路走得通",
+      "title_en": "Proof that Self-sustaining Works",
+      "table": {
+        "headers": [
+          "维度",
+          "嘉兴时尚体育中心",
+          "山东第一医科大学文体中心"
+        ],
+        "rows": [
+          [
+            "定位",
+            "运动活力 MALL + 一专多能",
+            "扁长双体量 + 二层平台"
+          ],
+          [
+            "设计方",
+            "浙江大学建筑设计研究院",
+            "顾志宏工作室"
+          ],
+          [
+            "核心引证",
+            "明确以「运维过程中的自我造血」为目标",
+            "县域扁长场馆的成熟做法"
+          ],
+          [
+            "对安岳启示",
+            "全生命周期运营是落盘的起点",
+            "扁长体量 + 平台是可靠原型"
+          ]
+        ]
+      },
+      "verdict": {
+        "label": "落点",
+        "text": "概念不止于形态，更要落到「如何持续运转」。"
+      },
+      "asset": {
+        "left_image": "images/case/jiaxing_sports.jpg",
+        "right_image": "images/case/shandong_stadium.jpg"
+      }
+    },
+    {
+      "page": 7,
+      "type": "full-text",
+      "chapter_label": "06 · LIFECYCLE · 核心",
+      "formula": "造血 = 功能转换 × 业态复合 × 运营模式",
+      "content": {
+        "paragraphs": [
+          "不是建一座馆等人来，而是给一座百万人的县，造一个持续运转、不断自造血液的健康引擎。"
+        ]
+      }
+    },
+    {
+      "page": 8,
+      "type": "three-cards",
+      "title": "三个机制，让馆自己养自己",
+      "title_en": "Three Mechanisms of Self-sustaining",
+      "cards": [
+        {
+          "no": "机制 01",
+          "title": "功能转换",
+          "subtitle": "一专多能",
+          "desc": "赛时办赛 / 平时健身 / 节时会展——一个馆当三个馆用"
+        },
+        {
+          "no": "机制 02",
+          "title": "业态复合",
+          "subtitle": "健康消费链路",
+          "desc": "健康投资 + 形象投资 → 场馆预定 + 装备消费 + 低碳饮食，三重变现"
+        },
+        {
+          "no": "机制 03",
+          "title": "运营模式",
+          "subtitle": "公益打底 · 市场赋能",
+          "desc": "基础服务惠民，增值私教 / 培训 / 餐饮市场化"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "type": "image-text-split",
+      "title": "总平面图 · 三面隐一面开",
+      "title_en": "Master Plan",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "85%"
+      },
+      "content": {
+        "callout": "三面隐，一面开",
+        "bullets": [
+          "建筑 156m × 60.6m 扁长体量居中偏北，长边沿湖",
+          "临湖（南）打开：主入口广场 + 沿湖景观带",
+          "背湖（北/东/西）藏起来：绿化缓冲带柔化边界",
+          "主入口南向临湖，次入口北向后勤，东西两侧停车"
+        ]
+      },
+      "asset": {
+        "main_image": "images/site/masterplan_cad.png"
+      }
+    },
+    {
+      "page": 10,
+      "type": "comparison-table",
+      "title": "用 · 看 · 藏 · 渡",
+      "title_en": "Functional Anatomy",
+      "table": {
+        "headers": [
+          "功能",
+          "层级",
+          "内容",
+          "配比",
+          "面积"
+        ],
+        "rows": [
+          ["用", "地上一层", "比赛馆 + 训练馆 + 门厅 + 更衣后勤", "58%", "7,970㎡"],
+          ["看", "地上二层", "看台 + 环廊平台 + 贵宾媒体区", "37%", "5,100㎡"],
+          ["渡", "门廊钢结构", "入口雨棚 / 灰空间", "5%", "654㎡"],
+          ["藏", "地下一层", "设备用房（地面仅留风井）", "—", "1,300㎡"]
+        ]
+      },
+      "note": "赛训为骨、看台为肉、过渡为气。房间级定量预留深化位置。"
+    },
+    {
+      "page": 11,
+      "type": "full-text",
+      "title": "规划概念，落盘到建筑与运营",
+      "title_en": "Concepts Land on Architecture & Operation",
+      "content": {
+        "paragraphs": [
+          "【文化落建筑】石刻之形，凝练千年文化风貌，打造安岳赛事平台场馆",
+          "【自然落运营】滴水之境，蕴含全域运营，打造多维健康场馆、健康大消费"
+        ]
+      }
+    },
+    {
+      "page": 12,
+      "type": "closing",
+      "thanks_title": "只在此山中",
+      "thanks_subtitle": "云深不知处",
+      "concept_recap": "一座藏在山水里、却能自己造血的体育馆，就是安岳人的答案。",
+      "asset": {
+        "bg_image": "bg/closing.jpg"
+      }
+    }
+  ],
+  "version_notes": [
+    "v6.0：",
+    "1. 命题升维：从「藏在山水里的体育石窟」到「一座会自己造血的健康目的地」",
+    "2. 唯一主线：健康（用）；两条副线：文化（形）+ 自然（境）",
+    "3. 核心落盘：全生命周期·自我造血（功能转换 × 业态复合 × 运营模式）独立成章（P7-P8）",
+    "4. 案例精简为两个：嘉兴时尚体育中心（自我造血）+ 山东一医文体中心（扁长体量）",
+    "5. 收紧节奏：12 页，无目录、无章节分隔页，结尾简短",
+    "6. 新增「概念分析页」（P5，如何实现不喊口号）+「概念落盘页」（P11，规划概念→建筑与运营）",
+    "7. 功能本体做设计分析（P10，用·看·藏·渡 + 面积配比，房间级定量预留深化）",
+    "8. 浅色健康主题：#F0F4F8 底 + #F5C842 柠黄 + #3E8F7D 健康绿",
+    "9. 素材新增 images/case/jiaxing_sports.jpg（嘉兴案例）"
+  ]
+}

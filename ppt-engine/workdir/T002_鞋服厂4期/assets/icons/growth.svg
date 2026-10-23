@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- growth 生长：阶梯上升 + 箭头 -->
+  <rect x="8" y="40" width="14" height="14" rx="2" fill="#2B4C7E" opacity="0.25"/>
+  <rect x="8" y="40" width="14" height="14" rx="2" stroke="#2B4C7E" stroke-width="3"/>
+  <rect x="26" y="28" width="14" height="26" rx="2" fill="#2B4C7E" opacity="0.45"/>
+  <rect x="26" y="28" width="14" height="26" rx="2" stroke="#2B4C7E" stroke-width="3"/>
+  <rect x="44" y="14" width="14" height="40" rx="2" fill="#E87D2B" opacity="0.35"/>
+  <rect x="44" y="14" width="14" height="40" rx="2" stroke="#E87D2B" stroke-width="3"/>
+  <path d="M10 34 L26 22 L40 12" stroke="#3E8F7D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 10 H42 V20" stroke="#3E8F7D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

@@ -1,0 +1,94 @@
+<!--
+@template: intent-three-claim
+@source: 新增口号页
+@slot: ch4 (IP引擎/设计愿景)
+@description: 三段式主张 - 大标题+副标+行动号召,适合宣言/愿景陈述
+@required_fields: claim_title, claim_subtitle, claim_en, call_to_action, project_name_en
+@coze_inherit: false
+@trigger: project_type=real_estate 自动触发, 或 force_intent=true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ claim_title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.intent-three {
+    background: var(--c-bg-page);
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+  }
+  .slide.intent-three .three-block {
+    width: 100%;
+  }
+  .slide.intent-three .claim-en {
+    font-family: var(--font-en);
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: var(--brand-accent);
+    text-transform: uppercase;
+    font-weight: var(--fw-en);
+    margin-bottom: 20px;
+  }
+  .slide.intent-three .claim-title {
+    font-family: var(--font-cn);
+    font-size: 72px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.15;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+  }
+  .slide.intent-three .claim-deco {
+    width: 80px;
+    height: 4px;
+    background: var(--brand-accent);
+    margin-bottom: 24px;
+  }
+  .slide.intent-three .claim-sub {
+    font-family: var(--font-cn);
+    font-size: 22px;
+    color: var(--brand-primary);
+    opacity: 0.8;
+    line-height: 1.6;
+    max-width: 900px;
+    margin-bottom: 40px;
+  }
+  .slide.intent-three .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-cn);
+    font-size: 16px;
+    font-weight: var(--fw-title);
+    color: var(--brand-accent);
+    padding: 14px 0;
+    border-bottom: 2px solid var(--brand-accent);
+  }
+  .slide.intent-three .cta-arrow {
+    font-family: var(--font-en);
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+<div class="slide intent-three">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="three-block">
+    <div class="claim-en">{{ claim_en }}</div>
+    <h1 class="claim-title">{{ claim_title }}</h1>
+    <div class="claim-deco"></div>
+    <div class="claim-sub">{{ claim_subtitle }}</div>
+    <div class="cta">
+      {{ call_to_action }}
+      <span class="cta-arrow">→</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

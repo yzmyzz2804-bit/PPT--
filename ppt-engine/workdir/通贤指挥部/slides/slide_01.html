@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>安岳县化工园区项目指挥部</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: var(--brand-primary);
+}
+
+  .slide-cover { background: #C8C4BC; }
+  .slide-cover .bg-layer {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/bg/cover.jpg');
+    background-size: auto 113%;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  /* 半透明标题横带:右侧起,垂直居中偏下 */
+  .slide-cover .title-band {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    width: 58%;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(6px);
+    padding: 36px 80px 36px 48px;
+    z-index: 3;
+    text-align: left;
+  }
+  .slide-cover .cover-main {
+    font-family: var(--font-cn);
+    font-size: 48px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.25;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    white-space: normal;
+  }
+  .slide-cover .cover-sub {
+    font-family: var(--font-en);
+    font-size: 18px;
+    color: var(--brand-primary);
+    opacity: 0.85;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(14,42,91,0.25);
+    padding-top: 14px;
+  }
+  /* 底部居中项目信息 */
+  .slide-cover .footer-block {
+    position: absolute;
+    bottom: 36px;
+    left: 0; right: 0;
+    text-align: center;
+    z-index: 3;
+    color: var(--c-white);
+    text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+  }
+  .slide-cover .footer-project {
+    font-family: var(--font-cn);
+    font-size: 20px;
+    letter-spacing: 6px;
+    margin-bottom: 6px;
+  }
+  .slide-cover .footer-date {
+    font-family: var(--font-en);
+    font-size: 13px;
+    opacity: 0.85;
+    letter-spacing: 2px;
+  }
+  /* 无封面图(占位阶段)时,底部白字在浅灰底上不可读 → 改深色 */
+  .slide-cover:not(:has(.bg-layer)) .footer-block {
+    color: var(--c-text-secondary);
+    text-shadow: none;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-cover">
+  <div class="bg-layer"></div>
+  <div class="title-band">
+    <h1 class="cover-main">安岳县化工园区项目指挥部</h1>
+    <div class="cover-sub">建筑设计方案 · 专家评审版</div>
+  </div>
+  <div class="footer-block">
+    <div class="footer-project">安岳县化工园区项目指挥部建筑设计</div>
+    <div class="footer-date">2026.10</div>
+  </div>
+</div>
+</body>
+</html>

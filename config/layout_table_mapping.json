@@ -1,0 +1,793 @@
+{
+  "version": "7.2.0",
+  "table_revision": "v6.1 配置对照补充表，原表原样并入v6.2",
+  "workbook": "docs/双版式版式规范对照表_A3与汇报版.xlsx",
+  "worksheet": "双版式规范对照",
+  "header_row": 4,
+  "expected_rows": 36,
+  "expected_columns": 8,
+  "headers": [
+    "类别",
+    "规范字段",
+    "A3打印阅读版",
+    "现场汇报版",
+    "单位／口径",
+    "状态与适用性",
+    "配置字段／位置",
+    "执行说明与边界"
+  ],
+  "source_config": "config/layout_profiles.json",
+  "policy": "JSON为执行事实源；表格为只读视图。映射保存已审核文字及对应配置快照，任一变化必须人工复核并同步。不得为通过校验自动接受新值。",
+  "fields": [
+    {
+      "row": 5,
+      "field": "配置标识",
+      "cells": {
+        "A": "画布",
+        "B": "配置标识",
+        "C": "print_a3",
+        "D": "reporting",
+        "E": "标识",
+        "F": "已配置",
+        "G": "profiles.print_a3 / profiles.reporting",
+        "H": "两版共用事实账本，分别渲染。"
+      },
+      "config_bindings": [
+        {
+          "path": "selected",
+          "expected": [
+            "reporting",
+            "print_a3"
+          ]
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 6,
+      "field": "尺寸与方向",
+      "cells": {
+        "A": "画布",
+        "B": "尺寸与方向",
+        "C": "420 × 297，默认横向",
+        "D": "13.333 × 7.5，16:9横向",
+        "E": "毫米／英寸",
+        "F": "A3已确认；横向为默认",
+        "G": "canvas",
+        "H": "用户只确认A3，方向可在契约审批后调整。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.canvas",
+          "expected": {
+            "paper": "A3",
+            "width_mm": 420,
+            "height_mm": 297,
+            "orientation": "landscape"
+          }
+        },
+        {
+          "path": "profiles.reporting.canvas",
+          "expected": {
+            "ratio": "16:9",
+            "width_in": 13.333,
+            "height_in": 7.5
+          }
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 7,
+      "field": "页面标题",
+      "cells": {
+        "A": "字号",
+        "B": "页面标题",
+        "C": "28",
+        "D": "32",
+        "E": "磅",
+        "F": "已配置",
+        "G": "font_pt.title",
+        "H": "项目默认值，不是用户指定品牌规范。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.font_pt.title",
+          "expected": 28
+        },
+        {
+          "path": "profiles.reporting.font_pt.title",
+          "expected": 32
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 8,
+      "field": "正文",
+      "cells": {
+        "A": "字号",
+        "B": "正文",
+        "C": "14",
+        "D": "24",
+        "E": "磅",
+        "F": "已配置",
+        "G": "font_pt.body",
+        "H": "不得为容纳更多内容擅自缩字。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.font_pt.body",
+          "expected": 14
+        },
+        {
+          "path": "profiles.reporting.font_pt.body",
+          "expected": 24
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 9,
+      "field": "图表标签默认字号",
+      "cells": {
+        "A": "字号",
+        "B": "图表标签默认字号",
+        "C": "12",
+        "D": "20",
+        "E": "磅",
+        "F": "已配置",
+        "G": "font_pt.chart_label",
+        "H": "含坐标刻度、图例、数据标签；实际渲染逐项检查。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.font_pt.chart_label",
+          "expected": 12
+        },
+        {
+          "path": "profiles.reporting.font_pt.chart_label",
+          "expected": 20
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 10,
+      "field": "图表最小字号",
+      "cells": {
+        "A": "字号",
+        "B": "图表最小字号",
+        "C": "12",
+        "D": "18",
+        "E": "磅",
+        "F": "A3依全局下限；汇报为下限解释",
+        "G": "font_pt.minimum",
+        "H": "汇报图表默认20磅，18磅是全局最低边界，不是默认值。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.font_pt.minimum",
+          "expected": 12
+        },
+        {
+          "path": "profiles.reporting.font_pt.minimum",
+          "expected": 18
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 11,
+      "field": "来源说明／图注",
+      "cells": {
+        "A": "字号",
+        "B": "来源说明／图注",
+        "C": "12",
+        "D": "18",
+        "E": "磅",
+        "F": "已配置",
+        "G": "font_pt.caption",
+        "H": "完整URL与版本在来源清单，页面可用来源编号。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.font_pt.caption",
+          "expected": 12
+        },
+        {
+          "path": "profiles.reporting.font_pt.caption",
+          "expected": 18
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 12,
+      "field": "全页最小字号",
+      "cells": {
+        "A": "字号",
+        "B": "全页最小字号",
+        "C": "12",
+        "D": "18",
+        "E": "磅",
+        "F": "已配置",
+        "G": "font_pt.minimum",
+        "H": "不允许将小字、页脚等当成绕过下限的例外。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.font_pt.minimum",
+          "expected": 12
+        },
+        {
+          "path": "profiles.reporting.font_pt.minimum",
+          "expected": 18
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 13,
+      "field": "中文字体优先顺序",
+      "cells": {
+        "A": "字体",
+        "B": "中文字体优先顺序",
+        "C": "思源黑体 → Noto Sans CJK SC → 微软雅黑",
+        "D": "思源黑体 → Noto Sans CJK SC → 微软雅黑",
+        "E": "字体",
+        "F": "已配置",
+        "G": "fonts.preferred_cjk",
+        "H": "先检测安装情况；替换需记录，并复查换行和字形。"
+      },
+      "config_bindings": [
+        {
+          "path": "fonts.preferred_cjk",
+          "expected": [
+            "思源黑体",
+            "Noto Sans CJK SC",
+            "微软雅黑"
+          ]
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 14,
+      "field": "拉丁字体后备",
+      "cells": {
+        "A": "字体",
+        "B": "拉丁字体后备",
+        "C": "Arial / Calibri",
+        "D": "Arial / Calibri",
+        "E": "字体",
+        "F": "已配置",
+        "G": "fonts.latin_fallback",
+        "H": "后备字体不承担中文缺字补全保证。"
+      },
+      "config_bindings": [
+        {
+          "path": "fonts.latin_fallback",
+          "expected": [
+            "Arial",
+            "Calibri"
+          ]
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 15,
+      "field": "安全页边距",
+      "cells": {
+        "A": "边距",
+        "B": "安全页边距",
+        "C": "四边15毫米",
+        "D": "左右各画布宽5%；上下各画布高5%",
+        "E": "毫米／比例",
+        "F": "A3已配置；汇报为5%逐轴解释",
+        "G": "margin_mm / safe_margin_percent",
+        "H": "汇报5%是安全区，不等于纸面裁切或印刷出血。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.margin_mm",
+          "expected": 15
+        },
+        {
+          "path": "profiles.reporting.safe_margin_percent",
+          "expected": 5
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 16,
+      "field": "出血",
+      "cells": {
+        "A": "印前",
+        "B": "出血",
+        "C": "0",
+        "D": "不适用；若另作印刷须单独设定",
+        "E": "毫米",
+        "F": "A3已配置；汇报不适用",
+        "G": "print_control.bleed_mm",
+        "H": "当前为普通非满版打印；商业满版印刷另按印厂要求审批。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.print_control.bleed_mm",
+          "expected": 0
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 17,
+      "field": "裁切线",
+      "cells": {
+        "A": "印前",
+        "B": "裁切线",
+        "C": "关闭",
+        "D": "不适用",
+        "E": "开关",
+        "F": "A3已配置；汇报不适用",
+        "G": "print_control.crop_marks",
+        "H": "不默认增加裁切线或工程图框。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.print_control.crop_marks",
+          "expected": false
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 18,
+      "field": "无边距打印要求",
+      "cells": {
+        "A": "印前",
+        "B": "无边距打印要求",
+        "C": "不要求",
+        "D": "不适用",
+        "E": "要求",
+        "F": "A3已配置；汇报不适用",
+        "G": "print_control.borderless_required",
+        "H": "内容保持安全边距。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.print_control.borderless_required",
+          "expected": false
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 19,
+      "field": "栅格列数",
+      "cells": {
+        "A": "栅格",
+        "B": "栅格列数",
+        "C": "12",
+        "D": "建议12；现配置未定义",
+        "E": "列",
+        "F": "A3已配置；汇报为补充建议",
+        "G": "print_a3.grid.columns；reporting.grid待审批新增",
+        "H": "建议不自动写回已冻结配置；已有保护版式仍需批准。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.grid.columns",
+          "expected": 12
+        }
+      ],
+      "suggestion_only_absent_paths": [
+        "profiles.reporting.grid.columns"
+      ]
+    },
+    {
+      "row": 20,
+      "field": "列间距",
+      "cells": {
+        "A": "栅格",
+        "B": "列间距",
+        "C": "6",
+        "D": "建议8；现配置未定义",
+        "E": "毫米",
+        "F": "A3已配置；汇报为补充建议",
+        "G": "print_a3.grid.gutter_mm；reporting.grid待审批新增",
+        "H": "汇报新增建议按原生幻灯片尺寸计量，不按打印后尺寸。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.grid.gutter_mm",
+          "expected": 6
+        }
+      ],
+      "suggestion_only_absent_paths": [
+        "profiles.reporting.grid.gutter_mm"
+      ]
+    },
+    {
+      "row": 21,
+      "field": "主内容分区数",
+      "cells": {
+        "A": "栅格",
+        "B": "主内容分区数",
+        "C": "建议不超过3个主区",
+        "D": "一个核心信息任务；主区数未设上限",
+        "E": "个／语义",
+        "F": "A3软约束；汇报为已配置原则",
+        "G": "grid.max_main_panels_soft / rules.one_page",
+        "H": "列数是对齐网格，不代表必须出现12个内容栏。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.grid.max_main_panels_soft",
+          "expected": 3
+        },
+        {
+          "path": "rules.one_page",
+          "expected": "一个核心信息任务；封面/目录/结论不强制图表；相关辅助图可在页框架审批后并用"
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 22,
+      "field": "标题带高度",
+      "cells": {
+        "A": "栅格",
+        "B": "标题带高度",
+        "C": "22",
+        "D": "未定义；按母版预留",
+        "E": "毫米",
+        "F": "A3已配置；汇报待母版决定",
+        "G": "print_a3.grid.title_band_mm",
+        "H": "标题带位于内容区内，不替代四边15毫米页边距。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.grid.title_band_mm",
+          "expected": 22
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 23,
+      "field": "页脚带高度",
+      "cells": {
+        "A": "栅格",
+        "B": "页脚带高度",
+        "C": "12",
+        "D": "未定义；按母版预留",
+        "E": "毫米",
+        "F": "A3已配置；汇报待母版决定",
+        "G": "print_a3.grid.footer_band_mm",
+        "H": "保留页码、来源编号，文字仍受最小字号约束。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.grid.footer_band_mm",
+          "expected": 12
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 24,
+      "field": "正文行距",
+      "cells": {
+        "A": "结构",
+        "B": "正文行距",
+        "C": "1.35",
+        "D": "未配置；建议从1.15起预览调整",
+        "E": "倍",
+        "F": "A3已配置；汇报为补充建议",
+        "G": "line_height；reporting待审批新增",
+        "H": "行距按字体实际效果检查，不保证一套倍数适合所有母版。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.line_height",
+          "expected": 1.35
+        }
+      ],
+      "suggestion_only_absent_paths": [
+        "profiles.reporting.line_height"
+      ]
+    },
+    {
+      "row": 25,
+      "field": "每页正文汉字软上限",
+      "cells": {
+        "A": "结构",
+        "B": "每页正文汉字软上限",
+        "C": "650",
+        "D": "120",
+        "E": "字",
+        "F": "已配置，软约束",
+        "G": "max_body_hanzi_soft",
+        "H": "仅作密度预警；不能为了满足字数牺牲可读性。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.max_body_hanzi_soft",
+          "expected": 650
+        },
+        {
+          "path": "profiles.reporting.max_body_hanzi_soft",
+          "expected": 120
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 26,
+      "field": "正文要点软上限",
+      "cells": {
+        "A": "结构",
+        "B": "正文要点软上限",
+        "C": "未定义；按信息任务组织",
+        "D": "4",
+        "E": "条",
+        "F": "汇报已配置；A3未定义",
+        "G": "reporting.max_body_bullets_soft",
+        "H": "A3可增加方法和明细，不代表可以无限堆叠内容。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.reporting.max_body_bullets_soft",
+          "expected": 4
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 27,
+      "field": "图表与页面关系",
+      "cells": {
+        "A": "结构",
+        "B": "图表与页面关系",
+        "C": "每页一个核心信息任务，可相关证据分区",
+        "D": "每页一个核心信息任务，优先一个主图",
+        "E": "原则",
+        "F": "已配置",
+        "G": "rules.one_page",
+        "H": "封面、目录、结论可无图；不为一页一图而捏造图表。"
+      },
+      "config_bindings": [
+        {
+          "path": "rules.one_page",
+          "expected": "一个核心信息任务；封面/目录/结论不强制图表；相关辅助图可在页框架审批后并用"
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 28,
+      "field": "表格跨页表头",
+      "cells": {
+        "A": "结构",
+        "B": "表格跨页表头",
+        "C": "重复表头",
+        "D": "未配置；复杂明细优先附录",
+        "E": "要求",
+        "F": "A3已配置；汇报按内容策略",
+        "G": "table_header_repeat / reporting.content",
+        "H": "跨页不丢单位、字段名与口径。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.table_header_repeat",
+          "expected": true
+        },
+        {
+          "path": "profiles.reporting.content",
+          "expected": "一页一个核心信息任务；主证据可视化优先。复杂明细移附录。"
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 29,
+      "field": "图像清晰度预警",
+      "cells": {
+        "A": "视觉",
+        "B": "图像清晰度预警",
+        "C": "最终纸面有效分辨率低于150时预警",
+        "D": "未配置数值；以屏幕预览和实际投影检查",
+        "E": "dpi／检查",
+        "F": "A3已配置；汇报待实测",
+        "G": "print_control.source_raster_effective_dpi_warning_below",
+        "H": "150dpi是项目预警值，非印刷质量认证；矢量不套用dpi。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.print_control.source_raster_effective_dpi_warning_below",
+          "expected": 150
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 30,
+      "field": "对比与灰度",
+      "cells": {
+        "A": "视觉",
+        "B": "对比与灰度",
+        "C": "普通文本对比度目标4.5:1，另查灰度",
+        "D": "普通文本对比度目标4.5:1，另查投影效果",
+        "E": "目标",
+        "F": "已配置，项目建议",
+        "G": "rules.color",
+        "H": "不宣称纸面合规认证；信息不能只靠颜色区分。"
+      },
+      "config_bindings": [
+        {
+          "path": "rules.color",
+          "expected": "关键含义同时用文字/形状表达；打印检查灰度和线型；普通文本对比度项目目标4.5:1，作为项目建议非纸面合规认证"
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 31,
+      "field": "默认交付格式",
+      "cells": {
+        "A": "输出",
+        "B": "默认交付格式",
+        "C": "PDF，原生A3页面",
+        "D": "PPTX",
+        "E": "格式",
+        "F": "已配置",
+        "G": "export",
+        "H": "不能拿16:9原尺寸PDF冒充A3阅读版。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.export",
+          "expected": "pdf"
+        },
+        {
+          "path": "profiles.reporting.export",
+          "expected": "pptx"
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 32,
+      "field": "缩放与拼版",
+      "cells": {
+        "A": "输出",
+        "B": "缩放与拼版",
+        "C": "100%实际大小；一页一张；关闭适配纸张",
+        "D": "屏幕展示；不适用纸张缩放",
+        "E": "要求",
+        "F": "A3已配置；汇报不适用",
+        "G": "print_control.scale_percent / pages_per_sheet / fit_to_paper",
+        "H": "PDF图幅检查不能证明打印机驱动实际按100%输出。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.print_control.scale_percent",
+          "expected": 100
+        },
+        {
+          "path": "profiles.print_a3.print_control.pages_per_sheet",
+          "expected": 1
+        },
+        {
+          "path": "profiles.print_a3.print_control.fit_to_paper",
+          "expected": false
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 33,
+      "field": "自动旋转",
+      "cells": {
+        "A": "输出",
+        "B": "自动旋转",
+        "C": "关闭",
+        "D": "按16:9方向展示",
+        "E": "要求",
+        "F": "A3已配置",
+        "G": "print_control.auto_rotate",
+        "H": "改变方向须先修改契约和渲染配置，不依赖驱动自动转向。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.print_control.auto_rotate",
+          "expected": false
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 34,
+      "field": "PDF图幅容差",
+      "cells": {
+        "A": "验收",
+        "B": "PDF图幅容差",
+        "C": "MediaBox及CropBox符合420 × 297毫米，容差1毫米",
+        "D": "不适用；检查16:9与版面完整性",
+        "E": "毫米／要求",
+        "F": "A3已配置",
+        "G": "print_control.page_size_tolerance_mm",
+        "H": "使用scripts/check_print_pdf.py；方向调整后按批准方向校验。"
+      },
+      "config_bindings": [
+        {
+          "path": "profiles.print_a3.print_control.page_size_tolerance_mm",
+          "expected": 1
+        },
+        {
+          "path": "profiles.print_a3.canvas",
+          "expected": {
+            "paper": "A3",
+            "width_mm": 420,
+            "height_mm": 297,
+            "orientation": "landscape"
+          }
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 35,
+      "field": "内容与修改边界",
+      "cells": {
+        "A": "控制",
+        "B": "内容与修改边界",
+        "C": "与汇报共用claim_id；可补解释，不改事实口径",
+        "D": "与打印共用claim_id；突出结论和主证据",
+        "E": "原则",
+        "F": "已配置",
+        "G": "rules / 内容模型",
+        "H": "原件只读；结构、图片、已完成分析等保护变更先审批。"
+      },
+      "config_bindings": [
+        {
+          "path": "rules.locked_layout",
+          "expected": "已有PPT默认保留结构；若要套用全新双版式，先审批reflow范围，不能以配置为由直接重排。"
+        },
+        {
+          "path": "profiles.print_a3.content",
+          "expected": "可增加方法、口径、来源、解释和明细页；与汇报版共享claim_id；不得改变数值和结论。"
+        },
+        {
+          "path": "profiles.reporting.content",
+          "expected": "一页一个核心信息任务；主证据可视化优先。复杂明细移附录。"
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    },
+    {
+      "row": 36,
+      "field": "溢出处理",
+      "cells": {
+        "A": "控制",
+        "B": "溢出处理",
+        "C": "先精简或分页，不低于最小字号",
+        "D": "先精简或经批准拆页，不低于最小字号",
+        "E": "原则",
+        "F": "已配置",
+        "G": "rules.overflow",
+        "H": "涉及保护结构或图片的变更不能以排版优化为由自动执行。"
+      },
+      "config_bindings": [
+        {
+          "path": "rules.overflow",
+          "expected": "先压缩措辞或分页面，不把字号降到最低值以下；涉及结构/资产保护先审批"
+        }
+      ],
+      "suggestion_only_absent_paths": []
+    }
+  ]
+}

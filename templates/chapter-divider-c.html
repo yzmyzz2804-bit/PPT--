@@ -1,0 +1,135 @@
+<!--
+@template: chapter-divider-c
+@version: 3.0 分章色体系
+@slot: ch_*
+@description: 章节过渡·摘要型 - 左侧大数字/章节名,右侧本章要点预览 3-4 条(大章开篇预告)
+@required_fields: chapter_num, chapter_name, chapter_name_en, points (array of {num, title, desc})
+@image_rule: 无图纯排版
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ chapter_name }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-chapter-c {
+    background: var(--c-bg-page);
+    display: flex;
+  }
+  .slide-chapter-c .ch-left {
+    width: 42%;
+    padding: 200px 60px 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .slide-chapter-c .ch-bar {
+    width: 64px;
+    height: 6px;
+    background: var(--ch-accent, var(--brand-primary));
+    margin-bottom: 36px;
+  }
+  .slide-chapter-c .big-num {
+    font-family: var(--font-en);
+    font-size: 170px;
+    font-weight: 700;
+    color: var(--ch-accent, var(--brand-primary));
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-left: -8px;
+  }
+  .slide-chapter-c .ch-name {
+    font-family: var(--font-cn);
+    font-size: 40px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .slide-chapter-c .ch-en {
+    font-family: var(--font-en);
+    font-size: 14px;
+    font-weight: var(--fw-en);
+    letter-spacing: 4px;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.75;
+  }
+  /* 右侧要点预览 */
+  .slide-chapter-c .ch-right {
+    flex: 1;
+    padding: 140px 100px 120px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .slide-chapter-c .points-label {
+    font-family: var(--font-en);
+    font-size: 13px;
+    font-weight: var(--fw-en);
+    letter-spacing: 3px;
+    color: var(--c-text-secondary);
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--c-divider);
+  }
+  .slide-chapter-c .pt-item {
+    display: flex;
+    gap: 28px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--c-card-border);
+    align-items: flex-start;
+  }
+  .slide-chapter-c .pt-item:last-child { border-bottom: none; }
+  .slide-chapter-c .pt-num {
+    font-family: var(--font-en);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.55;
+    line-height: 1.1;
+    min-width: 56px;
+  }
+  .slide-chapter-c .pt-body { flex: 1; }
+  .slide-chapter-c .pt-title {
+    font-size: 21px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 6px;
+  }
+  .slide-chapter-c .pt-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--c-text-secondary);
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-chapter-c">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="ch-left">
+    <div class="ch-bar"></div>
+    <div class="big-num">{{ chapter_num }}</div>
+    <div class="ch-name">{{ chapter_name }}</div>
+    <div class="ch-en">{{ chapter_name_en }}</div>
+  </div>
+  <div class="ch-right">
+    <div class="points-label">CHAPTER HIGHLIGHTS · 本章要点</div>
+    {{#points}}
+    <div class="pt-item">
+      <div class="pt-num">{{ num }}</div>
+      <div class="pt-body">
+        <div class="pt-title">{{ title }}</div>
+        {{#desc}}<div class="pt-desc">{{ desc }}</div>{{/desc}}
+      </div>
+    </div>
+    {{/points}}
+  </div>
+</div>
+</body>
+</html>

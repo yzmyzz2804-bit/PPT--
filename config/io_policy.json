@@ -1,0 +1,65 @@
+{
+  "version": "7.2.0",
+  "input": {
+    "kind_by_extension": {
+      ".pptx": "ppt",
+      ".pdf": "reference",
+      ".md": "minutes",
+      ".txt": "minutes",
+      ".docx": "minutes",
+      ".xlsx": "data",
+      ".csv": "data",
+      ".png": "image",
+      ".jpg": "image",
+      ".jpeg": "image"
+    },
+    "allowed_extensions": [
+      ".pptx",
+      ".pdf",
+      ".md",
+      ".txt",
+      ".docx",
+      ".xlsx",
+      ".csv",
+      ".png",
+      ".jpg",
+      ".jpeg"
+    ],
+    "legacy_ppt": "先在授权副本转换，确认页数和内容；不直接当成pptx",
+    "archive": "不自动解压未知归档；先检查路径穿越与大小",
+    "max_file_mb": 100,
+    "max_pages_soft": 200,
+    "immutable_originals": true,
+    "unknown_business_fields": "null_and_issue",
+    "confidentiality_default": "internal",
+    "external_upload_default": false
+  },
+  "output": {
+    "structured": "JSON UTF-8，无注释，无尾逗号，按schemas验证",
+    "human_readable": "Markdown UTF-8，按templates模板",
+    "required_release": [
+      "meeting_or_source_map",
+      "claims_ledger",
+      "approved_deck_model",
+      "reporting_variant",
+      "print_variant",
+      "qa_report",
+      "release_manifest"
+    ],
+    "reporting_variant_default": "pptx，实际工具探测确认后才承诺",
+    "print_variant_default": "A3横向PDF，实际渲染确认后才承诺",
+    "never_silent_fallback": true
+  },
+  "path_policy": {
+    "relative_to": "run_root",
+    "deny": [
+      "绝对路径",
+      "..",
+      "符号链接逃逸",
+      "凭据路径"
+    ],
+    "write_rule": "只写当前运行目录；config/prompts/skills只走版本升级提案"
+  },
+  "provenance": "每条核心结论关联claim_id；每个来源有locator与checksum；网页保留访问日期和版本状态",
+  "publication": "critical待核项为零且审批与QA匹配；不能发布pending版本"
+}

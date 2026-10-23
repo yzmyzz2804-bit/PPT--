@@ -1,0 +1,102 @@
+<!--
+@template: chapter-divider-b
+@version: 3.0 分章色体系
+@slot: ch_*
+@description: 章节过渡·全屏数字型 - 超大章节数字作为画面主体(章节色),底部横带叠章节名/英文
+@required_fields: chapter_num, chapter_name, chapter_name_en
+@optional_fields: chapter_desc
+@image_rule: 无图纯排版
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ chapter_name }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-chapter-b {
+    background: var(--c-bg-page);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  /* 超大数字图形主体 */
+  .slide-chapter-b .mega-num {
+    position: absolute;
+    right: -60px;
+    top: 44%;
+    transform: translateY(-50%);
+    font-family: var(--font-en);
+    font-size: 760px;
+    font-weight: 700;
+    line-height: 0.85;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.92;
+    letter-spacing: -20px;
+    user-select: none;
+  }
+  /* 底部信息横带 */
+  .slide-chapter-b .info-band {
+    position: absolute;
+    left: 80px;
+    bottom: 150px;
+    z-index: 5;
+  }
+  .slide-chapter-b .ch-bar {
+    width: 72px;
+    height: 6px;
+    background: var(--ch-accent, var(--brand-primary));
+    margin-bottom: 32px;
+  }
+  .slide-chapter-b .ch-name {
+    font-family: var(--font-cn);
+    font-size: 56px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+  .slide-chapter-b .ch-desc {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--c-text-secondary);
+    max-width: 600px;
+    margin-bottom: 22px;
+  }
+  .slide-chapter-b .ch-en {
+    font-family: var(--font-en);
+    font-size: 16px;
+    font-weight: var(--fw-en);
+    letter-spacing: 5px;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.75;
+  }
+  /* 右侧细竖装饰线,平衡大数字重量 */
+  .slide-chapter-b .side-rule {
+    position: absolute;
+    right: 80px;
+    top: 120px;
+    bottom: 120px;
+    width: 1px;
+    background: var(--ch-accent, var(--brand-primary));
+    opacity: 0.25;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-chapter-b">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="mega-num">{{ chapter_num }}</div>
+  <div class="side-rule"></div>
+  <div class="info-band">
+    <div class="ch-bar"></div>
+    <div class="ch-name">{{ chapter_name }}</div>
+    {{#chapter_desc}}<div class="ch-desc">{{ chapter_desc }}</div>{{/chapter_desc}}
+    <div class="ch-en">{{ chapter_name_en }}</div>
+  </div>
+</div>
+</body>
+</html>

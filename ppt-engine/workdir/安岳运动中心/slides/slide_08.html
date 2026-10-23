@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>三个机制，让馆自己养自己</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #1A1A2E;
+    --brand-secondary: #1A1A2E;
+    --brand-accent: #3E8F7D;
+    --brand-accent_bright: #4EA893;
+    --brand-accent_light: #7FC3B3;
+    --brand-accent_lighter: #A8D8CC;
+    --brand-accent_lightest: #D2EBE4;
+    --brand-accent_warm: #F5C842;
+    --brand-accent_warm_light: #F8DA7A;
+    --c-black: #1A1A2E;
+    --c-text_secondary: #6B7280;
+    --c-divider: #D5DEE8;
+    --c-card_border: #E1E8F0;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F0F4F8;
+    --c-bg_page_deep: #E8EEF4;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #3E8F7D;
+    --c-semantic_warning: #F5C842;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #E0A800;
+}
+
+  .slide.multi-card { position: relative; }
+  .slide.multi-card .page-bg {
+    position: absolute; inset: 0; background-size: cover;
+    background-position: center; z-index: 0;
+  }
+  .slide.multi-card .page-bg-overlay {
+    position: absolute; inset: 0; background: rgba(14, 27, 59, 0.65);
+    z-index: 1;
+  }
+  .slide.multi-card .brand-mark,
+  .slide.multi-card .page-header,
+  .slide.multi-card .slide-content,
+  .slide.multi-card .page-number { z-index: 3; }
+  .slide.multi-card .slide-content {
+    display: flex; flex-direction: column; gap: 24px;
+  }
+  .slide.multi-card .row-data,
+  .slide.multi-card .row-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; flex: 1;
+  }
+  .slide.multi-card .row-photos:empty,
+  .slide.multi-card .row-data:empty { display: none; }
+  /* 纯文字/大词卡: 内容垂直居中,避免长卡片底部空洞 */
+  .slide.multi-card .data-number:empty,
+  .slide.multi-card .data-unit:empty { display: none; }
+  .slide.multi-card .data-card {
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .slide.multi-card .photo-card {
+    display: flex; flex-direction: column;
+  }
+  .slide.multi-card .photo-card img {
+    width: 100%; flex: 1; min-height: 240px;
+    object-fit: cover;
+  }
+  .slide.multi-card .photo-card .ph-frame {
+    flex: 1; min-height: 240px; border: none;
+  }
+  /* 可选脚注条: 承接结论 / 底部主张 */
+  .slide.multi-card .footnote {
+    flex-shrink: 0;
+    margin-top: 4px;
+    padding: 16px 26px;
+    background: var(--c-bg-card);
+    border-left: 5px solid var(--ch-accent, var(--brand-accent));
+    box-shadow: var(--shadow-card);
+    font-size: 18px;
+    font-weight: var(--fw-title);
+    line-height: 1.6;
+    color: var(--brand-primary);
+  }
+</style>
+</head>
+<body>
+<div class="slide multi-card">
+  
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">Anyue Sports Center Architectural Concept Design</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">SELF-SUSTAINING LIFECYCLE</div>
+    <div class="page-title">三个机制，让馆自己养自己</div>
+    <div class="page-subtitle">Three Mechanisms of Self-sustaining</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="row-data">
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number">功能转换</div>
+        <div class="data-unit">机制 01</div>
+        <div class="data-label">一专多能</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">赛时办赛 / 平时健身 / 节时会展——一个馆当三个馆用</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number">业态复合</div>
+        <div class="data-unit">机制 02</div>
+        <div class="data-label">健康消费链路</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">健康投资 + 形象投资 → 场馆预定 + 装备消费 + 低碳饮食，三重变现</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number">运营模式</div>
+        <div class="data-unit">机制 03</div>
+        <div class="data-label">公益打底 · 市场赋能</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">基础服务惠民，增值私教 / 培训 / 餐饮市场化</span>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="row-photos">
+      
+    </div>
+    
+  </div>
+  <div class="page-number"><span class="current">8</span>/12</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!--
+@template: toc
+@source: COZE 8版式之一
+@slot: opening
+@description: 目录页 - 极简风格,3章节列表,左侧细竖线装饰
+@required_fields: project_name_en, chapters (array of {num, name, name_en, pages})
+@coze_inherit: true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>目录</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-toc {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slide-toc .toc-title {
+    font-family: var(--font-en);
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: var(--c-text-secondary);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+  }
+  .slide-toc .toc-list { list-style: none; }
+  .slide-toc .toc-item {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--c-card-border);
+    position: relative;
+  }
+  .slide-toc .toc-item::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--brand-accent);
+    opacity: 0.6;
+  }
+  .slide-toc .toc-num {
+    font-family: var(--font-en);
+    font-size: 36px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    width: 80px;
+    opacity: 0.8;
+  }
+  .slide-toc .toc-info { flex: 1; padding-left: 20px; }
+  .slide-toc .toc-name {
+    font-size: 24px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 4px;
+  }
+  .slide-toc .toc-en {
+    font-family: var(--font-en);
+    font-size: 13px;
+    color: var(--c-text-secondary);
+    letter-spacing: 1px;
+  }
+  .slide-toc .toc-pages {
+    font-family: var(--font-en);
+    font-size: 14px;
+    color: var(--c-text-secondary);
+  }
+  /* 空页码列自动隐藏（2026-10-16 规则：目录不再标注页码范围） */
+  .slide-toc .toc-pages:empty { display: none; }
+
+</style>
+</head>
+<body>
+<div class="slide slide-toc">
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="toc-title">CONTENTS</div>
+  <ul class="toc-list">
+    {{#chapters}}
+    <li class="toc-item">
+      <div class="toc-num">{{num}}</div>
+      <div class="toc-info">
+        <div class="toc-name">{{name}}</div>
+        <div class="toc-en">{{name_en}}</div>
+      </div>
+      <div class="toc-pages">{{pages}}</div>
+    </li>
+    {{/chapters}}
+  </ul>
+</div>
+</body>
+</html>

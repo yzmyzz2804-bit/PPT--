@@ -1,0 +1,77 @@
+{
+  "version": "7.2.0",
+  "status": "unbound",
+  "bindings": [
+    {
+      "capability": "file_read",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "ppt_extract",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "ocr",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "web_search",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "web_read",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "ppt_edit",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "pdf_render",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "visual_inspection",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "fonts",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    },
+    {
+      "capability": "human_approval",
+      "actual_tool": null,
+      "tested_command_or_action": null,
+      "observed_evidence": null,
+      "status": "unknown"
+    }
+  ],
+  "policy": "只填用户端真实探测结果，不猜测工具名，不写密钥；权限隔离需宿主实施。"
+}

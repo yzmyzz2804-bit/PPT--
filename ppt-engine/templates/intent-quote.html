@@ -1,0 +1,90 @@
+<!--
+@template: intent-quote
+@source: 新增口号页
+@slot: after_ch3 (案例后) / ch4 (设计愿景)
+@description: 引用式 - 大引号+居中文字+署名,克制叙事
+@required_fields: quote, quote_en, author, project_name_en
+@coze_inherit: false
+@trigger: project_type=real_estate 自动触发, 或 force_intent=true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ quote }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.intent-quote {
+    background: var(--c-bg-page);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px;
+  }
+  .slide.intent-quote .quote-block {
+    position: relative;
+    text-align: center;
+    max-width: 1200px;
+  }
+  .slide.intent-quote .quote-mark {
+    font-family: var(--font-en);
+    font-size: 160px;
+    font-weight: var(--fw-title);
+    color: var(--brand-accent);
+    opacity: 0.15;
+    line-height: 0.8;
+    margin-bottom: -40px;
+  }
+  .slide.intent-quote .quote-text {
+    font-family: var(--font-cn);
+    font-size: 48px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.4;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+  }
+  .slide.intent-quote .quote-en {
+    font-family: var(--font-en);
+    font-size: 16px;
+    color: var(--c-text-secondary);
+    letter-spacing: 2px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  .slide.intent-quote .quote-author {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-en);
+    font-size: 13px;
+    color: var(--c-text-secondary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .slide.intent-quote .author-line {
+    width: 36px;
+    height: 1px;
+    background: var(--c-divider);
+  }
+</style>
+</head>
+<body>
+<div class="slide intent-quote">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="quote-block">
+    <div class="quote-mark">"</div>
+    <div class="quote-text">{{ quote }}</div>
+    <div class="quote-en">{{ quote_en }}</div>
+    <div class="quote-author">
+      <span class="author-line"></span>
+      {{ author }}
+      <span class="author-line"></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

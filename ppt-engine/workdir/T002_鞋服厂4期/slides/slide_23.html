@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>与企业共同生长</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #1E2A38;
+    --brand-secondary: #2B4C7E;
+    --brand-accent: #E87D2B;
+    --brand-accent_bright: #F0975A;
+    --brand-accent_light: #F5B586;
+    --brand-accent_lighter: #FAD3B5;
+    --brand-accent_lightest: #FDEAE0;
+    --brand-accent_warm: #E87D2B;
+    --brand-accent_warm_light: #F5B586;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #76808C;
+    --c-divider: #D5D8D2;
+    --c-card_border: #E3E6E0;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F4F5F3;
+    --c-bg_page_deep: #EDEFEA;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #2D5F5D;
+    --c-semantic_warning: #E87D2B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #2B4C7E;
+}
+
+  .slide-closing {
+    background: var(--c-bg-page);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .slide-closing .closing-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/bg/closing.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+  }
+  .slide-closing .closing-text,
+  .slide-closing .closing-sub,
+  .slide-closing .footer { position: relative; z-index: 1; }
+  .slide-closing .closing-text {
+    font-family: var(--font-cn);
+    font-size: 52px;
+    font-weight: var(--fw-title);
+    color: var(--c-black);
+    letter-spacing: 3px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .slide-closing .closing-sub {
+    font-family: var(--font-cn);
+    font-size: 18px;
+    color: #555;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .slide-closing .footer {
+    position: absolute;
+    bottom: 40px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: var(--font-cn);
+    font-size: 13px;
+    color: var(--c-text-secondary);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-closing">
+  <div class="closing-bg"></div>
+  <div class="closing-text">与企业共同生长</div>
+  <div class="closing-sub">独立成园 · 共享配套<br>让每家鞋企都有自己的园区、过得了验厂，也让大园区的配套与水电被充分利用。</div>
+  <div class="footer">安岳鞋服产业园四期建筑概念方案 · 概念方案汇报</div>
+</div>
+</body>
+</html>

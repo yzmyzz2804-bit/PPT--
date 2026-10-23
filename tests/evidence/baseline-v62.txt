@@ -1,0 +1,19 @@
+B1 real_pdf_sha256=0485aece047cb0d30fe35c083a4d1374604ed0b515797625309b5b8799e3ba22
+B1 direct_pdf_kind=rejected: task契约错误 ['input_files', 0, 'kind']: 'pdf' is not one of ['ppt', 'minutes', 'data', 'image', 'reference']
+B1 reference_mapping=True
+B2 command=block exit=2 stderr=usage: workbench.py [-h]
+                    {init,validate,status,check-transition,transition} ...
+workbench.py: error: argument command: invalid choice: 'block' (choose from 'init', 'validate', 'status', 'check-transition', 'transition')
+B2 command=resume exit=2 stderr=usage: workbench.py [-h]
+                    {init,validate,status,check-transition,transition} ...
+workbench.py: error: argument command: invalid choice: 'resume' (choose from 'init', 'validate', 'status', 'check-transition', 'transition')
+B2 command=rollback exit=2 stderr=usage: workbench.py [-h]
+                    {init,validate,status,check-transition,transition} ...
+workbench.py: error: argument command: invalid choice: 'rollback' (choose from 'init', 'validate', 'status', 'check-transition', 'transition')
+B2 command=pipeline exit=2 stderr=usage: workbench.py [-h]
+                    {init,validate,status,check-transition,transition} ...
+workbench.py: error: argument command: invalid choice: 'pipeline' (choose from 'init', 'validate', 'status', 'check-transition', 'transition')
+B3 verified_self_cycle=ACCEPTED
+B4 text_as_render=True
+B4 qa_for_text_render=True
+B5 partial_lock_and_old_version=ACCEPTED

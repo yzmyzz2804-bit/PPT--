@@ -1,0 +1,156 @@
+{
+  "version": "7.2.0",
+  "status": "可调整的项目默认，不是行业强制标准或已获用户批准的母版",
+  "selected": [
+    "reporting",
+    "print_a3"
+  ],
+  "profiles": {
+    "reporting": {
+      "label": "现场汇报版",
+      "canvas": {
+        "ratio": "16:9",
+        "width_in": 13.333,
+        "height_in": 7.5
+      },
+      "font_pt": {
+        "title": 32,
+        "body": 24,
+        "chart_label": 20,
+        "caption": 18,
+        "minimum": 18
+      },
+      "safe_margin_percent": 5,
+      "max_body_bullets_soft": 4,
+      "max_body_hanzi_soft": 120,
+      "content": "一页一个核心信息任务；主证据可视化优先。复杂明细移附录。",
+      "palette": {
+        "background": "#FFFFFF",
+        "text": "#17253B",
+        "accent": "#176B87",
+        "warning": "#A33A22"
+      },
+      "export": "pptx"
+    },
+    "print_a3": {
+      "label": "A3横向打印阅读版",
+      "canvas": {
+        "paper": "A3",
+        "width_mm": 420,
+        "height_mm": 297,
+        "orientation": "landscape"
+      },
+      "font_pt": {
+        "title": 28,
+        "body": 14,
+        "chart_label": 12,
+        "caption": 12,
+        "minimum": 12
+      },
+      "margin_mm": 15,
+      "line_height": 1.35,
+      "max_body_hanzi_soft": 650,
+      "table_header_repeat": true,
+      "content": "可增加方法、口径、来源、解释和明细页；与汇报版共享claim_id；不得改变数值和结论。",
+      "palette": {
+        "background": "#FFFFFF",
+        "text": "#111111",
+        "accent": "#174A62",
+        "warning": "#7A2929"
+      },
+      "export": "pdf",
+      "print_control": {
+        "scale_percent": 100,
+        "pages_per_sheet": 1,
+        "fit_to_paper": false,
+        "auto_rotate": false,
+        "borderless_required": false,
+        "crop_marks": false,
+        "bleed_mm": 0,
+        "duplex": "not_requested",
+        "page_size_tolerance_mm": 1,
+        "final_pdf_page_size_required": true,
+        "source_raster_effective_dpi_warning_below": 150,
+        "dpi_note": "项目预警阈值，不对矢量图施加DPI，不自动插值伪造精度。"
+      },
+      "grid": {
+        "columns": 12,
+        "gutter_mm": 6,
+        "max_main_panels_soft": 3,
+        "reading_order": "先上后下、先左后右，跨栏顺序明确",
+        "title_band_mm": 22,
+        "footer_band_mm": 12
+      }
+    },
+    "print_same_slides": {
+      "label": "原幻灯片逐页打印",
+      "canvas": {
+        "ratio": "16:9",
+        "width_in": 13.333,
+        "height_in": 7.5
+      },
+      "font_pt": {
+        "title": 32,
+        "body": 24,
+        "chart_label": 20,
+        "caption": 18,
+        "minimum": 18
+      },
+      "inherit": "reporting",
+      "content": "保留汇报版版面导出；在真实纸张上的字号=幻灯片字号×纸上内容宽/幻灯片宽。须检查最终缩放，不冒充A3重排阅读版。",
+      "export": "pdf"
+    }
+  },
+  "fonts": {
+    "preferred_cjk": [
+      "思源黑体",
+      "Noto Sans CJK SC",
+      "微软雅黑"
+    ],
+    "latin_fallback": [
+      "Arial",
+      "Calibri"
+    ],
+    "must_detect_installed": true,
+    "missing": "暂停或记录经批准替代字体；输出检查换行和字形。"
+  },
+  "rules": {
+    "one_page": "一个核心信息任务；封面/目录/结论不强制图表；相关辅助图可在页框架审批后并用",
+    "alignment": "左对齐为主；统一网格；不拉伸图片；保护图片的裁切/重绘需审批",
+    "overflow": "先压缩措辞或分页面，不把字号降到最低值以下；涉及结构/资产保护先审批",
+    "color": "关键含义同时用文字/形状表达；打印检查灰度和线型；普通文本对比度项目目标4.5:1，作为项目建议非纸面合规认证",
+    "sources": "每页显示来源编号和适用时间；完整URL/版本在证据清单。",
+    "layout_types": [
+      "cover",
+      "section",
+      "conclusion_evidence",
+      "comparison",
+      "trend",
+      "process",
+      "table_appendix",
+      "summary_actions"
+    ],
+    "locked_layout": "已有PPT默认保留结构；若要套用全新双版式，先审批reflow范围，不能以配置为由直接重排。"
+  },
+  "qa": [
+    "逐页溢出",
+    "中文字体和特殊字符",
+    "图文表对应",
+    "数据与单位",
+    "页码与引用",
+    "屏幕阅读距离",
+    "A3实际缩放",
+    "打印灰度",
+    "跨版claim_id一致性"
+  ],
+  "sources": [
+    "S-MS-PRESENT",
+    "S-ONS-TEXT"
+  ],
+  "user_confirmed": {
+    "paper": "A3",
+    "orientation": "尚未指定，默认横向；可在任务契约中改为竖向297×420mm",
+    "fonts": "项目建议，非用户指定字号",
+    "print_product": "A3原生画布重排，不是A4放大，也不是将16:9缩放打印冒充A3图幅"
+  }
+}

@@ -1,0 +1,631 @@
+{
+  "version": "layout-protocol-v1.1",
+  "project": {
+    "name": "安岳鞋服产业园四期建筑概念方案",
+    "name_en": "Anyue Footwear & Apparel Industrial Park Phase IV",
+    "type": "industrial_park",
+    "theme": "denim-stitch",
+    "palette": {
+      "bg": "#F4F5F3",
+      "ink": "#1E2A38",
+      "accent": "#E87D2B",
+      "blue": "#2B4C7E",
+      "note": "牛仔蓝 + 缝线橙：鞋服产业联想，浅灰底保持规划文本的清爽"
+    },
+    "date": "2026.10",
+    "location": "四川·安岳·产业集聚核心区"
+  },
+  "assets_base_path": "assets/",
+  "total_pages": 16,
+  "chapters": [
+    {
+      "num": "01",
+      "title": "场地研判",
+      "pages": "P3",
+      "concept": "Site Analysis"
+    },
+    {
+      "num": "02",
+      "title": "产业洞察",
+      "pages": "P4 - P6",
+      "concept": "Industry Insight"
+    },
+    {
+      "num": "03",
+      "title": "概念主旨",
+      "pages": "P7",
+      "concept": "Concept"
+    },
+    {
+      "num": "04",
+      "title": "案例佐证",
+      "pages": "P8",
+      "concept": "Case Proof"
+    },
+    {
+      "num": "05",
+      "title": "设计愿景",
+      "pages": "P9 - P10",
+      "concept": "Vision & Landing"
+    },
+    {
+      "num": "06",
+      "title": "方案呈现",
+      "pages": "P11 - P12",
+      "concept": "Schemes"
+    },
+    {
+      "num": "07",
+      "title": "指标与技术分析",
+      "pages": "P13 - P14",
+      "concept": "Metrics & Technique"
+    },
+    {
+      "num": "08",
+      "title": "结尾",
+      "pages": "P15 - P16",
+      "concept": "Closing"
+    }
+  ],
+  "concept_theme": "独立成园 · 共享配套 —— 让每家鞋企有自己的园区，让大园区共享同一套配套",
+  "core_proposition": "让每家鞋企都有一座能过验厂的独立园区，共用大园区的配套资源",
+  "core_logic": "独立成园（独立入口昭示 + 验厂达标）→ 共享配套（中央公共进入空间 + 宿舍与生活服务 + 统一水电管理）→ 梯度生长（可分可合 + 弹性加建 + 分期入园）",
+  "slides_structure": [
+    {
+      "page": 1,
+      "type": "cover",
+      "title": "安岳鞋服产业园四期",
+      "subtitle": "独立成园 · 共享配套",
+      "meta": {
+        "location": "四川·安岳·产业集聚核心区",
+        "tagline": "86.55 亩 · 智能吊挂产线 · 独立园区 · 共享配套"
+      },
+      "asset": {
+        "bg_image": "bg/cover.jpg"
+      }
+    },
+    {
+      "page": 2,
+      "type": "toc",
+      "title": "目录",
+      "chapters": [
+        {
+          "num": "01",
+          "title": "场地研判",
+          "pages": "P3"
+        },
+        {
+          "num": "02",
+          "title": "产业洞察",
+          "pages": "P4 - P6"
+        },
+        {
+          "num": "03",
+          "title": "概念主旨",
+          "pages": "P7"
+        },
+        {
+          "num": "04",
+          "title": "案例佐证",
+          "pages": "P8"
+        },
+        {
+          "num": "05",
+          "title": "设计愿景",
+          "pages": "P9 - P10"
+        },
+        {
+          "num": "06",
+          "title": "方案呈现",
+          "pages": "P11 - P12"
+        },
+        {
+          "num": "07",
+          "title": "指标与技术分析",
+          "pages": "P13 - P14"
+        },
+        {
+          "num": "08",
+          "title": "结尾",
+          "pages": "P15 - P16"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "type": "image-text-split",
+      "chapter_label": "01 · SITE · 场地研判",
+      "title": "产业集聚核心区的一块平整工业用地",
+      "title_en": "A Flat Industrial Plot in the Core Cluster",
+      "layout": {
+        "image_position": "left",
+        "image_ratio": "50%"
+      },
+      "content": {
+        "callout": "读懂场地，是设计的起点",
+        "sections": [
+          {
+            "label": "区位条件",
+            "items": [
+              "安岳县产业集聚核心区，周边配套成熟",
+              "紧邻城市主干道，距高速出入口约 3 公里"
+            ]
+          },
+          {
+            "label": "用地特征",
+            "items": [
+              "不规则多边形，地形相对平整",
+              "57,699㎡（86.55 亩），工业用地"
+            ]
+          },
+          {
+            "label": "交通连接",
+            "items": [
+              "北临主干道，西临规划次干道",
+              "东侧及南侧规划支路，环形交通，货运人流分流"
+            ]
+          }
+        ]
+      },
+      "asset": {
+        "main_image": "images/site/site_aerial.jpg",
+        "second_image": "images/site/redline.png"
+      }
+    },
+    {
+      "page": 4,
+      "type": "data-profile",
+      "chapter_label": "02 · INDUSTRY · 产业洞察",
+      "title": "115 户鞋服企业，以中小微为主体",
+      "title_en": "115 Enterprises, Mostly Small & Micro",
+      "key_metrics": [
+        {
+          "label": "小型鞋企",
+          "value": "<50 人",
+          "note": "2-4 条产线 · 2,000-4,000㎡ · 日产 500-1,500 双"
+        },
+        {
+          "label": "中型鞋企",
+          "value": "50-150 人",
+          "note": "5-12 条产线 · 5,000-15,000㎡ · 日产 2,000-6,000 双"
+        },
+        {
+          "label": "大型鞋企",
+          "value": "500+ 人",
+          "note": "15 条产线以上 · 20,000㎡+ · 日产 8,000 双+"
+        }
+      ],
+      "conclusion": "基本盘是中小微——园区产品必须覆盖全规模，但招商门槛低、可生长是第一要义。"
+    },
+    {
+      "page": 5,
+      "type": "comparison-table",
+      "chapter_label": "02 · INDUSTRY · 产业洞察",
+      "title": "验厂是入驻硬门槛，宿舍是高频雷区",
+      "title_en": "Audit Compliance: Dormitory Is the Top Risk",
+      "table": {
+        "headers": [
+          "风险级别",
+          "触发条件",
+          "后果"
+        ],
+        "rows": [
+          [
+            "致命",
+            "三合一混建、彩钢板危房、无消防",
+            "品牌红牌终止 + 12 个月禁入，政府查封追责"
+          ],
+          [
+            "严重",
+            "人均 <3㎡、男女混住、安全出口不足",
+            "黄牌停单整改——占验厂失败原因 28-30%（BSCI）"
+          ],
+          [
+            "一般",
+            "通风差、洗浴卫生间不足、无储物柜",
+            "记录不符合项，纳入年度改进"
+          ],
+          [
+            "可忽略",
+            "灯泡损坏、轻微污渍",
+            "不影响审核结果"
+          ]
+        ]
+      },
+      "verdict": {
+        "label": "结论",
+        "text": "三合一 = 死罪，别碰；合规级宿舍（人均≥3㎡、每间≤8 人、双安全出口）= 入园通行证。"
+      }
+    },
+    {
+      "page": 6,
+      "type": "comparison-table",
+      "chapter_label": "02 · INDUSTRY · 产业洞察",
+      "title": "智能吊挂产线，重新定义厂房尺度",
+      "title_en": "Smart Hanging Lines Define Factory Dimensions",
+      "table": {
+        "headers": [
+          "维度",
+          "一字智能线",
+          "U 型智能线"
+        ],
+        "rows": [
+          [
+            "推荐厂房",
+            "24m × 86m",
+            "42m × 54m"
+          ],
+          [
+            "产线数量",
+            "2-3 条/栋",
+            "6-8 条/栋"
+          ],
+          [
+            "单层面积",
+            "约 2,064㎡",
+            "约 2,268㎡"
+          ],
+          [
+            "工位数",
+            "80-120 个",
+            "180-240 个"
+          ],
+          [
+            "日产能",
+            "1,500-3,000 双",
+            "3,000-5,000 双"
+          ],
+          [
+            "适用企业",
+            "小微鞋企",
+            "中型鞋企"
+          ],
+          [
+            "层高",
+            "首层 5.4m / 标准 4.5m",
+            "首层 5.4m / 标准 4.5m"
+          ]
+        ]
+      },
+      "verdict": {
+        "label": "落点",
+        "text": "产线模块 → 厂房单元，空间尺度由工艺锁定——这是规划语言的第一块积木。"
+      }
+    },
+    {
+      "page": 7,
+      "type": "three-cards",
+      "chapter_label": "03 · CONCEPT · 概念主旨",
+      "title": "独立成园 · 共享配套",
+      "title_en": "Independent Parks · Shared Amenities",
+      "cards": [
+        {
+          "title": "独立成园",
+          "title_en": "Independent Park",
+          "role": "形 · 定园",
+          "desc": "为每家鞋企划出独立园区：独立入口与昭示界面、独立产权与管理；厂房按验厂标准排布，验收达线",
+          "icon": "icons/cell.svg"
+        },
+        {
+          "title": "共享配套",
+          "title_en": "Shared Amenities",
+          "role": "场 · 定场",
+          "desc": "场地中央留出公共进入空间，南北脊线串联各园入口；大园区统一配套宿舍、生活服务与水电管理",
+          "icon": "icons/symbiosis.svg"
+        },
+        {
+          "title": "梯度生长",
+          "title_en": "Growth",
+          "role": "向 · 定向",
+          "desc": "厂房单元可分可合、3F→4F 弹性加建；企业分期入园、滚动招商，与园区共同长大",
+          "icon": "icons/growth.svg"
+        }
+      ],
+      "bottom_statement": "独立成园定形 · 共享配套定场 · 梯度生长定向"
+    },
+    {
+      "page": 8,
+      "type": "comparison-table",
+      "chapter_label": "04 · CASE · 案例佐证",
+      "title": "同体量产业园的成熟做法",
+      "title_en": "Precedents of Comparable Scale",
+      "table": {
+        "headers": [
+          "维度",
+          "南京天印智造谷",
+          "东莞迪桑娜皮具工业园"
+        ],
+        "rows": [
+          [
+            "来源 / 设计方",
+            "gooood · 城镇设计",
+            "gooood · DS+R"
+          ],
+          [
+            "类型定位",
+            "智能制造产业园，工业上楼",
+            "皮具工作-生活复合园区（鞋服近邻行业）"
+          ],
+          [
+            "核心引证",
+            "模数化通用厂房，标准单元灵活组合适配多产业",
+            "约 4,000 工人住宿，宿舍单元 4 人/间，公共-半公共-私人梯度"
+          ],
+          [
+            "组织方式",
+            "厂房+宿舍+研发配套环绕中央绿轴，生产-研发-生活联动",
+            "制造与住宿复合组织，开放式厂房环绕布局"
+          ],
+          [
+            "对本案启示",
+            "单元定形的成熟原型",
+            "共享配套的合规范式"
+          ]
+        ]
+      },
+      "verdict": {
+        "label": "落点",
+        "text": "模数单元与产住共生均有成熟先例——案例只是佐证，从讲概念转向讲实现。"
+      },
+      "asset": {
+        "left_image": "images/cases/case_a2.jpg",
+        "right_image": "images/cases/case_b2.jpg"
+      }
+    },
+    {
+      "page": 9,
+      "type": "image-text-split",
+      "chapter_label": "05 · VISION · 设计愿景",
+      "title": "设计愿景：独立成园 · 共享配套",
+      "title_en": "Vision: Independent Parks, Shared Amenities",
+      "layout": {
+        "image_position": "right",
+        "image_ratio": "50%"
+      },
+      "content": {
+        "callout": "独立成园保验厂 · 共享配套提效率 · 中央脊线定秩序",
+        "sections": [
+          {
+            "label": "独立成园 → 入口昭示",
+            "items": [
+              "每个园区设独立入口与昭示界面，产权、产线、管理各自独立",
+              "厂房按验厂标准排布：消防通道、防火间距，杜绝三合一"
+            ]
+          },
+          {
+            "label": "共享配套 → 中央脊",
+            "items": [
+              "场地中央留公共进入空间，南北脊线串联各园入口",
+              "大园区统一配套：宿舍与生活服务、雨污分流与水电管理"
+            ]
+          },
+          {
+            "label": "梯度生长 → 弹性",
+            "items": [
+              "一字单元预留 3F→4F 加建，厂房可分可合",
+              "分期入园、滚动招商，与企业共同成长"
+            ]
+          }
+        ]
+      },
+      "asset": {
+        "main_image": "images/vision/vision_diagram.png"
+      }
+    },
+    {
+      "page": 10,
+      "type": "three-cards",
+      "chapter_label": "05 · VISION · 设计愿景",
+      "title": "独立成园 · 共享配套 · 梯度生长",
+      "title_en": "Independent · Shared · Growth Landed",
+      "cards": [
+        {
+          "title": "独立成园",
+          "path": "形 · 定园",
+          "desc": "每家园独立划定用地与入口昭示，厂房按验厂标准排布，消防通道、防火间距一次到位；产权、产线、管理各自独立"
+        },
+        {
+          "title": "共享配套",
+          "path": "场 · 定场",
+          "desc": "场地中央留公共进入空间，南北脊线串联各园入口；宿舍与生活服务、雨污分流与水电统一管理，由大园区统筹"
+        },
+        {
+          "title": "梯度生长",
+          "path": "向 · 弹性",
+          "desc": "一字单元预留 3F→4F 加建，厂房可分可合；企业分期入园、滚动招商，与园区共同成长"
+        }
+      ],
+      "bottom_statement": "每园独立入口昭示定形 · 中央脊线统一配套定场 · 3F→4F 弹性加建定生长"
+    },
+    {
+      "page": 11,
+      "type": "image-text-split",
+      "chapter_label": "06 · SCHEME · 方案呈现",
+      "title": "方案 A · 不配宿舍 · 全一字——小微集聚，快启快租",
+      "title_en": "Scheme A: All Straight-line, No Dormitory",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "70%"
+      },
+      "content": {
+        "callout": "容积率 1.747，用地效率最大化，宿舍依托园区与县城资源",
+        "bullets": [
+          "8 栋 4F 一字厂房，单栋基底 87.5m × 36m",
+          "总建筑面积 102,100㎡（地上 100,800 + 地下 1,300）",
+          "建筑密度 43.67%，南北向行列式，间距≥13m",
+          "不配宿舍：依托园区前期已建宿舍与县城居住资源，腾出用地全部投入厂房",
+          "中央脊线设公共进入空间，各园分区独立入口昭示"
+        ]
+      },
+      "asset": {
+        "main_image": "images/scheme/scheme_a_plan.png"
+      }
+    },
+    {
+      "page": 12,
+      "type": "image-text-split",
+      "chapter_label": "06 · SCHEME · 方案呈现",
+      "title": "方案 B · 园区集中配宿舍 · U + 一字——全规模社区",
+      "title_en": "Scheme B: Hybrid + Shared Dormitory",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "70%"
+      },
+      "content": {
+        "callout": "龙头带动 + 园区集中宿舍，产业生态完整，配套统一管理",
+        "bullets": [
+          "U 型 3 栋（3F）+ 一字 3 栋（4F）+ 园区集中 5F 宿舍 1 栋",
+          "总建筑面积 90,072㎡，其中厂房 82,350㎡、宿舍 6,422㎡",
+          "建筑密度 42.98%，U 型围合庭院提供独立管理界面",
+          "生活服务用地占比 2.23%（≤7%）、建面占比 7.13%（≤15%），双合规",
+          "宿舍由大园区统一配置与水电管理，与厂房严格分离，满足验厂要求"
+        ]
+      },
+      "asset": {
+        "main_image": "images/scheme/scheme_b_plan.png"
+      }
+    },
+    {
+      "page": 13,
+      "type": "comparison-table",
+      "chapter_label": "07 · METRICS · 指标对比",
+      "title": "配宿舍 / 不配宿舍：两种方向的账本",
+      "title_en": "Scheme Comparison",
+      "table": {
+        "headers": [
+          "指标",
+          "方案 A · 不配宿舍 · 全一字",
+          "方案 B · 集中配宿舍 · 混合"
+        ],
+        "rows": [
+          [
+            "总建筑面积",
+            "102,100㎡",
+            "90,072㎡"
+          ],
+          [
+            "容积率",
+            "1.747",
+            "1.539"
+          ],
+          [
+            "建筑密度",
+            "43.67%",
+            "42.98%"
+          ],
+          [
+            "厂房栋数",
+            "8 栋（4F）",
+            "6 栋（3F/4F）"
+          ],
+          [
+            "宿舍",
+            "—",
+            "6,422㎡（园区集中 5F）"
+          ],
+          [
+            "生活服务占比",
+            "—",
+            "用地 2.23% · 建面 7.13%（双合规）"
+          ],
+          [
+            "地面车位",
+            "13",
+            "13"
+          ],
+          [
+            "定位",
+            "不配宿舍 · 快启快租",
+            "集中配宿舍 · 全规模运营"
+          ]
+        ]
+      },
+      "verdict": {
+        "label": "判定",
+        "text": "合规底线双双满足（容积率≥1.2、密度≥40%）；差异不在对错，在宿舍取舍——不配宿舍方向依托园区前期已建宿舍与县城居住资源，把用地效率做到最大。"
+      }
+    },
+    {
+      "page": 14,
+      "type": "image-text-split",
+      "chapter_label": "07 · TECHNIQUE · 技术分析",
+      "title": "技术分析 · 间距 · 退界 · 流线",
+      "title_en": "Technical Analysis",
+      "layout": {
+        "image_position": "right",
+        "image_ratio": "50%"
+      },
+      "content": {
+        "callout": "合规是排出来的，不是说出来的",
+        "bullets": [
+          "多层厂房之间：防火间距且 ≥13m",
+          "长边退红线 0.5H 且 ≥8m，山墙退 ≥6m",
+          "厂房与宿舍防火间距 ≥10m（耐火等级一二级）",
+          "环形消防车道，转弯半径 ≥9m",
+          "雨污分流，与主体工程三同时"
+        ]
+      },
+      "asset": {
+        "main_image": "images/scheme/tech_analysis.png"
+      }
+    },
+    {
+      "page": 15,
+      "type": "full-text",
+      "chapter_label": "08 · CLOSING · 落盘收束",
+      "title": "概念落盘：从词到园",
+      "title_en": "From Words to Park",
+      "content": {
+        "paragraphs": [
+          "【独立成园】入口昭示与验厂达标，让每家鞋企拥有自己的园区",
+          "【共享配套】中央公共进入空间与统一水电管理，让大园区资源被充分利用",
+          "【梯度生长】可分可合与弹性加建，让企业跟着园区一起长大"
+        ]
+      }
+    },
+    {
+      "page": 16,
+      "type": "closing",
+      "thanks_title": "与企业共同生长",
+      "thanks_subtitle": "独立成园 · 共享配套",
+      "concept_recap": "让每家鞋企都有自己的园区、过得了验厂，也让大园区的配套与水电被充分利用。",
+      "asset": {
+        "bg_image": "bg/closing.jpg"
+      }
+    }
+  ],
+  "version_notes": [
+    "v4.0（2026-10-16）：",
+    "1. 方案内容调整（用户拍板）：核心主张 →「独立成园 · 共享配套」——企业诉求=独立园区 + 厂房验厂达标；业主（平台公司 + 设计方）诉求=综合利用整个鞋服产业园区资源",
+    "2. 两方向重定义：方案 A = 不配宿舍（全一字），宿舍依托园区前期已建宿舍与县城居住资源，腾出用地全部投入厂房；方案 B = 园区内集中配宿舍（U + 一字），大园区统一配置与水电管理",
+    "3. 场地中央留公共进入空间：南北向脊线串联各园入口，保障每个园区独立入口昭示；大园区提供配套与统一水电管理",
+    "4. 指标口径沿用 0921 三方案：总建筑面积、容积率、密度、栋数、车位等 8 行数值零改动，仅表头与「宿舍/定位」行文字同步口径",
+    "5. 四章同步改写：概念主旨（P7 三词卡=独立成园/共享配套/梯度生长）、设计愿景（P9-P10）、方案呈现（P11-P12）、指标与技术分析（P13）",
+    "6. 同步微调以保术语一致：封面副标题与 tagline、结尾收束（P16）、概念落盘（P15）、案例页启示词（共生定场 → 共享配套）",
+    "7. vision_diagram 重绘为「中央公共进入空间 + 各园独立入口昭示 + 统一配套」示意（替换同名素材，双份落位）",
+    "8. 规则：结构定义正文禁止元话语；改动须另存新版本号，原版保留",
+    "",
+    "v3.0（2026-10-16）：",
+    "1. 用户拍板：删去元话语式表述（不喊口号/概念不止于词/各落一组动作），改为直接呈现实质落盘内容，全部取材既有论据（87.5m 模数单元、U 北一字南、3F→4F 弹性加建），未新增任何数据",
+    "2. P9 设计愿景 callout →「模数单元定总图 · 梯度分区定场所 · 弹性加建定生长」",
+    "3. P10 大字标题 →「单元定形 · 共生定场 · 生长定向」，脚注 →「87.5m 模数单元定总图 · U 北一字南梯度分区 · 3F→4F 弹性加建定生长」",
+    "4. 全部面积、指标、论据数据与 v2 完全一致，仅文案表述层调整（总图/单体/运营口径不变）",
+    "5. 规则沉淀：结构定义正文禁止元话语（标题、引言、大字、脚注均须扣题呈现实质内容）",
+    "",
+    "v2.0（2026-10-15）：",
+    "1. P8 案例佐证页由占位表格替换为实采案例：案例 A=南京高新天印智造谷（gooood · 城镇设计，模数化通用厂房→印证「单元定形」）；案例 B=东莞迪桑娜皮具工业园（gooood · DS+R，4,000 工人住宿、宿舍 4 人/间→印证「共生定场」）",
+    "2. 案例图已落位 assets/images/cases/：case_a2.jpg（天印主图）、case_b2.jpg（迪桑娜主图）",
+    "3. 注意：comparison-table 页带配图为扩展用法，渲染层不支持时降级为纯表格，不得丢内容",
+    "4. 全部面积、指标、论据数据与 v1 完全一致，未做任何改动",
+    "",
+    "v1.0（2026-10-15）核心记录：",
+    "1. 概念为 A+C 组合：单元共生 · 梯度生长（Cell Symbiosis · Gradient Growth），主线=生长（用），单元（形）、共生（场）为副线",
+    "2. 两方案呈现：方案 A=0921 方案二（全一字 1.747），方案 B=0921 方案三（U+一字+独立宿舍 1.539）；0921 方案一（全 U）不纳入",
+    "3. 用户决策已融入：宿舍按合规级设计（人均≥3㎡、每间≤8 人、双安全出口），不做标杆级",
+    "4. 设计愿景独立成章（P9-P10）：概念→规划落盘，位于案例之后、方案之前",
+    "5. 指标对比与技术分析合并成章（P13-P14），技术分析为基础排版页",
+    "6. 自定义主题 denim-stitch：牛仔蓝 #2B4C7E + 缝线橙 #E87D2B，渲染层按外挂 palette 落地",
+    "7. 待补素材：bg/cover.jpg、bg/closing.jpg、site_aerial、redline、vision_diagram、scheme_a_plan（0921-p2 导图）、scheme_b_plan（0921-p3 导图）、tech_analysis、icons×3"
+  ],
+  "asset_base_note": "素材路径不变；vision_diagram.png 已重绘为「中央公共进入空间 + 各园入口昭示 + 统一配套」示意（2026-10-16）"
+}

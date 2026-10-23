@@ -1,0 +1,91 @@
+<!--
+@template: analysis-tech-stack
+@source: 新增分析页
+@slot: ch5 (技术策略)
+@description: 技术栈分层图 - 竖向层级,每层名称+技术组件列表
+@required_fields: tag, title, subtitle, layers (array of {name, name_en, items[]})
+@coze_inherit: false
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.tech-stack .layers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .slide.tech-stack .layer {
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-left: 4px solid var(--brand-accent);
+    border-radius: var(--radius);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .slide.tech-stack .layer-name {
+    width: 180px;
+    flex-shrink: 0;
+  }
+  .slide.tech-stack .layer-cn {
+    font-size: 18px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+  }
+  .slide.tech-stack .layer-en {
+    font-family: var(--font-en);
+    font-size: 12px;
+    color: var(--c-text-secondary);
+    letter-spacing: 1px;
+  }
+  .slide.tech-stack .layer-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .slide.tech-stack .tech-pill {
+    background: var(--c-white);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 6px 14px;
+    font-size: 13px;
+    color: var(--brand-primary);
+  }
+</style>
+</head>
+<body>
+<div class="slide tech-stack">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="layers">
+      {{#layers}}
+      <div class="layer">
+        <div class="layer-name">
+          <div class="layer-cn">{{ name }}</div>
+          <div class="layer-en">{{ name_en }}</div>
+        </div>
+        <div class="layer-items">
+          {{#items}}<span class="tech-pill">{{ . }}</span>{{/items}}
+        </div>
+      </div>
+      {{/layers}}
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

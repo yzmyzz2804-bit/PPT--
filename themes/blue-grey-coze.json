@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "name": "blue-grey-coze",
+    "label": "蓝灰商务 (COZE 继承默认)",
+    "description": "高端商务极简风，蓝灰主色，大留白，卡片式信息组织。直接继承 COZE skill 默认配色。",
+    "source": "ppt-concept-engine/references/style-guide.md",
+    "version": "1.0",
+    "default": true
+  },
+
+  "colors": {
+    "brand": {
+      "primary": "#0E2A5B",
+      "secondary": "#1D3A8A",
+      "accent": "#2562EB",
+      "accent_bright": "#3B81F5",
+      "accent_light": "#60A5FA",
+      "accent_lighter": "#93C4FD",
+      "accent_lightest": "#BEDAFE"
+    },
+    "neutral": {
+      "black": "#000000",
+      "text_secondary": "#94A2B8",
+      "divider": "#CBD5E1",
+      "card_border": "#E2E7F0",
+      "bg_card": "#F1F5F9",
+      "bg_page": "#F7FAFB",
+      "white": "#FFFFFF"
+    },
+    "semantic": {
+      "success": "#049569",
+      "warning": "#DB2525"
+    }
+  },
+
+  "typography": {
+    "font_cn": "Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif",
+    "font_en": "Arial, Helvetica, Inter, sans-serif",
+    "font_num": "Arial, Helvetica, Inter, sans-serif",
+    "scale": {
+      "mega_title": "84px",
+      "hero_title": "56px",
+      "page_title": "34px",
+      "card_title": "22px",
+      "body": "17px",
+      "caption": "13px",
+      "en_label": "13px"
+    },
+    "weight": {
+      "cn_title": 700,
+      "cn_body": 400,
+      "en_label": 600,
+      "number": 600
+    },
+    "letter_spacing_en": "2px"
+  },
+
+  "layout": {
+    "canvas_w": "1920px",
+    "canvas_h": "1080px",
+    "safe_margin": "80px",
+    "brand_mark_pos": { "top": "50px", "left": "60px" }
+  },
+
+  "components": {
+    "card": {
+      "radius": "6px",
+      "padding": "24px",
+      "border": "1px solid #E2E7F0",
+      "accent_bar": { "top": "3px", "color": "#2562EB" }
+    },
+    "divider": {
+      "color": "#CBD5E1",
+      "thickness": "1px",
+      "decorative_short": "36px"
+    }
+  },
+
+  "principles": [
+    "克制用色：主色只用蓝色系，每页强调色≤2处",
+    "大留白：边距 80-100px，元素不拥挤",
+    "中英双标题：所有中文标题配英文小字副标题",
+    "数据放大：关键数据用大字号突出，不跟正文混",
+    "装饰极简：只用方块+横线的品牌标识",
+    "左对齐为主：标题、正文一律左对齐，数字卡片可居中",
+    "图文分栏明确：有图时图占主视觉区（>50%宽度）",
+    "信息层级清晰：每页不超过3级标题层级"
+  ]
+}

@@ -1,0 +1,84 @@
+<!--
+@template: quadrant-2x2
+@source: COZE 8版式之一
+@slot: ch_*
+@description: 四象限列表页 - 顶部引导文字+2x2要点卡片,每卡片标题+3圆点列表
+@required_fields: tag, title, subtitle, intro, quadrants (4 items: {title, points[]})
+@coze_inherit: true
+@note: COZE 原始四象限是分析页的雏形,后续可演化为 SWOT
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.quadrant .intro-block {
+    border-left: 3px solid var(--brand-accent);
+    padding-left: 20px;
+    margin-bottom: 28px;
+    font-size: 16px;
+    color: var(--brand-primary);
+    opacity: 0.85;
+    line-height: 1.7;
+  }
+  .slide.quadrant .grid-2x2 {
+    height: calc(100% - 80px);
+  }
+  .slide.quadrant .quadrant-card {
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 28px;
+    position: relative;
+  }
+  .slide.quadrant .quadrant-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 4px;
+    background: var(--brand-accent);
+    border-radius: var(--radius) 0 0 var(--radius);
+  }
+  .slide.quadrant .q-title {
+    font-size: 20px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 16px;
+    padding-left: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="slide quadrant">
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    {{#intro}}<div class="intro-block">{{ intro }}</div>{{/intro}}
+    <div class="grid-2x2">
+      {{#quadrants}}
+      <div class="quadrant-card">
+        <div class="q-title">{{ title }}</div>
+        <ul class="feature-list">
+          {{#points}}
+          <li>{{ . }}</li>
+          {{/points}}
+        </ul>
+      </div>
+      {{/quadrants}}
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

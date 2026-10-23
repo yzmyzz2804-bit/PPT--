@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- symbiosis 共生：U 型与一字相扣 -->
+  <path d="M10 14 H38 V50 H26 V26 H10 Z" fill="#3E8F7D" opacity="0.22" stroke="#3E8F7D" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="44" y="14" width="10" height="36" fill="#2B4C7E" opacity="0.18"/>
+  <rect x="44" y="14" width="10" height="36" stroke="#2B4C7E" stroke-width="3.5"/>
+  <circle cx="32" cy="57" r="3.2" fill="#E87D2B"/>
+  <circle cx="44" cy="57" r="3.2" fill="#E87D2B"/>
+</svg>

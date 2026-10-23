@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "format",
+    "execution",
+    "resident_rule_path",
+    "per_call_contract",
+    "variable_binding",
+    "messages"
+  ],
+  "properties": {
+    "version": {
+      "const": "7.2.0"
+    },
+    "format": {
+      "const": "application_prompt_bundle_v1"
+    },
+    "execution": {
+      "type": "string"
+    },
+    "resident_rule_path": {
+      "type": "string"
+    },
+    "per_call_contract": {
+      "type": "object"
+    },
+    "variable_binding": {
+      "type": "object"
+    },
+    "messages": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "role",
+          "source_path",
+          "source_sha256",
+          "content"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "system",
+              "task_instructions"
+            ]
+          },
+          "source_path": {
+            "type": "string"
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "content": {
+            "type": "string",
+            "minLength": 10
+          }
+        }
+      }
+    }
+  }
+}

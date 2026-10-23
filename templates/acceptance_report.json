@@ -1,0 +1,64 @@
+{
+  "package_version": "7.2.0",
+  "run_id": null,
+  "source_files_available": false,
+  "checks": [
+    {
+      "id": "A01",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    },
+    {
+      "id": "A02",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    },
+    {
+      "id": "A03",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    },
+    {
+      "id": "A04",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    },
+    {
+      "id": "A05",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    },
+    {
+      "id": "A06",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    },
+    {
+      "id": "A07",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    },
+    {
+      "id": "A08",
+      "status": "not_checked",
+      "evidence_path": null,
+      "notes": null
+    }
+  ],
+  "print_spec": {
+    "paper": "A3",
+    "width_mm": 420,
+    "height_mm": 297,
+    "orientation": "landscape",
+    "scale_percent": 100
+  },
+  "overall": "not_checked",
+  "trae_environment": null
+}

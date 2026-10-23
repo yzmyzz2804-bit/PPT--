@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checked_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capability": {
+            "type": "string",
+            "enum": [
+              "file_read",
+              "ppt_extract",
+              "ocr",
+              "web_search",
+              "web_read",
+              "ppt_edit",
+              "pdf_render",
+              "visual_inspection",
+              "fonts",
+              "human_approval"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "missing",
+              "unknown"
+            ]
+          },
+          "tool_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "capability",
+          "status",
+          "tool_name",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "checked_at",
+    "tools"
+  ],
+  "additionalProperties": false
+}

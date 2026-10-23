@@ -1,0 +1,24 @@
+{
+  "registered": {
+    "asset_id": "PDF1",
+    "kind": "reference",
+    "note": "仅登记文件与哈希；未提取内容或批准任务"
+  },
+  "pdf_sha256": "0485aece047cb0d30fe35c083a4d1374604ed0b515797625309b5b8799e3ba22",
+  "source_unchanged": true,
+  "content_extracted": false,
+  "approvals_created": 0,
+  "result": {
+    "status": "blocked",
+    "error": "缺少已实测能力: file_read",
+    "advanced": [],
+    "state": {
+      "run_id": "REAL-PDF-CONTROL-SMOKE",
+      "state": "BLOCKED",
+      "resume_state": "RECEIVED",
+      "sequence": 1,
+      "updated_at": "2026-10-23T06:28:40.648773+00:00",
+      "package_version": "6.3.0"
+    }
+  }
+}

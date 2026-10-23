@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "preserve_optimize",
+        "authorized_redesign"
+      ]
+    },
+    "audience": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "objective": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confidentiality": {
+      "type": "string",
+      "enum": [
+        "public",
+        "internal",
+        "confidential"
+      ]
+    },
+    "external_upload_allowed": {
+      "type": "boolean"
+    },
+    "requested_profiles": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "reporting",
+          "print_a3",
+          "print_same_slides"
+        ]
+      }
+    },
+    "input_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "ppt",
+              "minutes",
+              "data",
+              "image",
+              "reference"
+            ]
+          }
+        },
+        "required": [
+          "asset_id",
+          "path",
+          "sha256",
+          "kind"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "ready"
+      ]
+    }
+  },
+  "required": [
+    "run_id",
+    "title",
+    "mode",
+    "audience",
+    "objective",
+    "confidentiality",
+    "external_upload_allowed",
+    "requested_profiles",
+    "input_files",
+    "status"
+  ],
+  "additionalProperties": false
+}

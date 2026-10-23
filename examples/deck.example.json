@@ -1,0 +1,38 @@
+{
+  "run_id": "EXAMPLE-ONLY",
+  "version": "0-demo",
+  "claims_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "constraints_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "selection_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "pages": [
+    {
+      "page_id": "DEMO-R01",
+      "profile": "reporting",
+      "type": "cover",
+      "title": "演示占位：并非业务产物",
+      "core_message": "展示数据契约形状",
+      "claim_ids": [],
+      "asset_ids": [],
+      "source_page_ids": [],
+      "layout_id": "cover",
+      "speaker_notes": null,
+      "protected_change_ids": []
+    },
+    {
+      "page_id": "DEMO-P01",
+      "profile": "print_a3",
+      "type": "cover",
+      "title": "演示占位：打印版",
+      "core_message": "同一内容模型，独立排版",
+      "claim_ids": [],
+      "asset_ids": [],
+      "source_page_ids": [
+        "DEMO-R01"
+      ],
+      "layout_id": "cover",
+      "speaker_notes": null,
+      "protected_change_ids": []
+    }
+  ],
+  "protected_change_refs": []
+}

@@ -1,0 +1,156 @@
+<!--
+@template: compare-table
+@source: 新增,对齐参考版 0917 p19
+@slot: ch8 (经济技术对比)
+@description: 全宽指标对比表 - 深蓝表头+斑马纹行+推荐方案列高亮+底部双定位卡
+@required_fields: tag, title, subtitle, headers[3], rows[{indicator, a, b, b_better}],
+                 summary_cards[{name, items[{k, v}]}]
+@image_rule: 无图,表格满宽
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.cmp-table .cmp-table-el {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background: var(--c-white);
+    box-shadow: var(--shadow-card);
+  }
+  .slide.cmp-table .cmp-table-el th {
+    background: var(--brand-secondary);
+    color: var(--c-white);
+    font-weight: var(--fw-title);
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 15px;
+  }
+  .slide.cmp-table .cmp-table-el th.col-hot {
+    background: var(--brand-accent);
+  }
+  .slide.cmp-table .cmp-table-el td {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--c-card-border);
+    color: var(--brand-primary);
+  }
+  .slide.cmp-table .cmp-table-el tr:nth-child(even) td {
+    background: #F7F5F1;
+  }
+  .slide.cmp-table .cmp-table-el td.ind { color: var(--c-text-secondary); }
+  .slide.cmp-table .cmp-table-el td.hot { font-weight: var(--fw-num); }
+  .slide.cmp-table .cmp-table-el td.hot .better { color: var(--brand-accent); }
+  .slide.cmp-table .summary-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .slide.cmp-table .sum-card {
+    background: var(--c-white);
+    border-top: 3px solid var(--brand-primary);
+    box-shadow: var(--shadow-card);
+    padding: 20px 24px;
+  }
+  .slide.cmp-table .sum-card.hot { border-top-color: var(--brand-accent); }
+  .slide.cmp-table .sum-name {
+    font-size: 18px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 12px;
+  }
+  .slide.cmp-table .sum-item {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding: 4px 0;
+    color: var(--brand-primary);
+  }
+  .slide.cmp-table .sum-k {
+    color: var(--c-text-secondary);
+    flex-shrink: 0;
+  }
+  /* 可选案例实景图条 */
+  .slide.cmp-table .case-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .slide.cmp-table .case-images:empty { display: none; }
+  .slide.cmp-table .case-images figure {
+    position: relative;
+    height: 180px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--c-card-border);
+    background: var(--c-bg-card);
+  }
+  .slide.cmp-table .case-images img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .slide.cmp-table .case-images .cap {
+    position: absolute;
+    left: 0; bottom: 0;
+    padding: 8px 16px;
+    background: rgba(26, 26, 46, 0.74);
+    color: var(--c-white);
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="slide cmp-table">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="case-images">
+      {{#case_images}}
+      <figure>
+        {{#image}}<img src="{{ image }}" alt="{{ caption }}">{{/image}}
+        {{^image}}<div class="ph-frame" style="height:100%;min-height:0;border:none"></div>{{/image}}
+        {{#caption}}<figcaption class="cap">{{ caption }}</figcaption>{{/caption}}
+      </figure>
+      {{/case_images}}
+    </div>
+    <table class="cmp-table-el">
+      <tr>
+        <th style="width:26%">{{ headers.0 }}</th>
+        <th class="col-hot" style="width:36%">{{ headers.1 }}</th>
+        <th style="width:38%">{{ headers.2 }}</th>
+      </tr>
+      {{#rows}}
+      <tr>
+        <td class="ind">{{ indicator }}</td>
+        <td class="hot">{{ b }}{{#b_better}}<span class="better"> ◂</span>{{/b_better}}</td>
+        <td>{{ note }}</td>
+      </tr>
+      {{/rows}}
+    </table>
+    <div class="summary-row">
+      {{#summary_cards}}
+      <div class="sum-card {{#hot}}hot{{/hot}}">
+        <div class="sum-name">{{ name }}</div>
+        {{#items}}
+        <div class="sum-item"><span class="sum-k">{{ k }}</span><span>{{ v }}</span></div>
+        {{/items}}
+      </div>
+      {{/summary_cards}}
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

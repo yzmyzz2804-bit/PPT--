@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>安岳鞋服产业园四期</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #1E2A38;
+    --brand-secondary: #2B4C7E;
+    --brand-accent: #E87D2B;
+    --brand-accent_bright: #F0975A;
+    --brand-accent_light: #F5B586;
+    --brand-accent_lighter: #FAD3B5;
+    --brand-accent_lightest: #FDEAE0;
+    --brand-accent_warm: #E87D2B;
+    --brand-accent_warm_light: #F5B586;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #76808C;
+    --c-divider: #D5D8D2;
+    --c-card_border: #E3E6E0;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F4F5F3;
+    --c-bg_page_deep: #EDEFEA;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #2D5F5D;
+    --c-semantic_warning: #E87D2B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: var(--brand-primary);
+}
+
+  .slide-cover-soft { background: var(--c-bg-page); }
+  .slide-cover-soft .bg-layer {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/bg/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  /* 暖纸白雾面蒙层:底图退后成质感底 */
+  .slide-cover-soft .bg-veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      rgba(243, 241, 237, 0.80) 0%,
+      rgba(243, 241, 237, 0.62) 45%,
+      rgba(243, 241, 237, 0.82) 100%);
+    z-index: 2;
+  }
+  /* 中央偏右白色横带 */
+  .slide-cover-soft .title-band {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 54%;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 6px 32px rgba(26, 26, 46, 0.08);
+    padding: 44px 80px 44px 56px;
+    z-index: 3;
+    text-align: left;
+  }
+  .slide-cover-soft .cover-main {
+    font-family: var(--font-cn);
+    font-size: 46px;
+    font-weight: var(--fw-title);
+    color: var(--c-black);
+    line-height: 1.3;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    white-space: normal;
+  }
+  .slide-cover-soft .cover-sub {
+    font-family: var(--font-en);
+    font-size: 16px;
+    color: var(--c-text-secondary);
+    letter-spacing: 1px;
+    border-top: 1px solid var(--c-divider);
+    padding-top: 14px;
+  }
+  /* 底部居中项目信息(浅底 → 深色字) */
+  .slide-cover-soft .footer-block {
+    position: absolute;
+    bottom: 40px;
+    left: 0; right: 0;
+    text-align: center;
+    z-index: 3;
+    color: var(--c-text-secondary);
+  }
+  .slide-cover-soft .footer-project {
+    display: inline-block;
+    font-family: var(--font-cn);
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    padding: 8px 28px;
+    background: rgba(26, 26, 46, 0.78);
+    color: var(--c-white);
+  }
+  .slide-cover-soft .footer-date {
+    font-family: var(--font-en);
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-cover-soft">
+  <div class="bg-layer"></div>
+  <div class="bg-veil"></div>
+  <div class="title-band">
+    <h1 class="cover-main">安岳鞋服产业园四期</h1>
+    <div class="cover-sub">4 栋厂房 · 西侧研发宿舍 · 两方案比选<br>76.5 亩 · 4 栋 130×33×3F · 研发 50×30×3F · 宿舍 17F · 容积率 1.78~1.81</div>
+  </div>
+  <div class="footer-block">
+    <div class="footer-project">安岳鞋服产业园四期建筑概念方案</div>
+    <div class="footer-date">四川·安岳·产业集聚核心区 · 2026.10</div>
+  </div>
+</div>
+</body>
+</html>

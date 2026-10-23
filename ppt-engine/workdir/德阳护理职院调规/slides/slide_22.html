@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>建筑意向</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #46526B;
+}
+
+  .slide-chapter-c {
+    background: var(--c-bg-page);
+    display: flex;
+  }
+  .slide-chapter-c .ch-left {
+    width: 42%;
+    padding: 200px 60px 120px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .slide-chapter-c .ch-bar {
+    width: 64px;
+    height: 6px;
+    background: var(--ch-accent, var(--brand-primary));
+    margin-bottom: 36px;
+  }
+  .slide-chapter-c .big-num {
+    font-family: var(--font-en);
+    font-size: 170px;
+    font-weight: 700;
+    color: var(--ch-accent, var(--brand-primary));
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-left: -8px;
+  }
+  .slide-chapter-c .ch-name {
+    font-family: var(--font-cn);
+    font-size: 40px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .slide-chapter-c .ch-en {
+    font-family: var(--font-en);
+    font-size: 14px;
+    font-weight: var(--fw-en);
+    letter-spacing: 4px;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.75;
+  }
+  /* 右侧要点预览 */
+  .slide-chapter-c .ch-right {
+    flex: 1;
+    padding: 140px 100px 120px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+  .slide-chapter-c .points-label {
+    font-family: var(--font-en);
+    font-size: 13px;
+    font-weight: var(--fw-en);
+    letter-spacing: 3px;
+    color: var(--c-text-secondary);
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--c-divider);
+  }
+  .slide-chapter-c .pt-item {
+    display: flex;
+    gap: 28px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--c-card-border);
+    align-items: flex-start;
+  }
+  .slide-chapter-c .pt-item:last-child { border-bottom: none; }
+  .slide-chapter-c .pt-num {
+    font-family: var(--font-en);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.55;
+    line-height: 1.1;
+    min-width: 56px;
+  }
+  .slide-chapter-c .pt-body { flex: 1; }
+  .slide-chapter-c .pt-title {
+    font-size: 21px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 6px;
+  }
+  .slide-chapter-c .pt-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--c-text-secondary);
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-chapter-c">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">Sichuan Nursing Vocational College (Deyang Campus) Planning Adjustment</span>
+  </div>
+  <div class="ch-left">
+    <div class="ch-bar"></div>
+    <div class="big-num">06</div>
+    <div class="ch-name">建筑意向</div>
+    <div class="ch-en">Architectural Atmosphere</div>
+  </div>
+  <div class="ch-right">
+    <div class="points-label">CHAPTER HIGHLIGHTS · 本章要点</div>
+    
+    <div class="pt-item">
+      <div class="pt-num">01</div>
+      <div class="pt-body">
+        <div class="pt-title">体量性格</div>
+        <div class="pt-desc">敦厚质朴、厚重不笨重，横向舒展，立面有序韵律</div>
+      </div>
+    </div>
+    
+    <div class="pt-item">
+      <div class="pt-num">02</div>
+      <div class="pt-body">
+        <div class="pt-title">色彩系统</div>
+        <div class="pt-desc">暖灰/米黄主基调 + 深灰勾勒轮廓 + 木色点缀室内</div>
+      </div>
+    </div>
+    
+    <div class="pt-item">
+      <div class="pt-num">03</div>
+      <div class="pt-body">
+        <div class="pt-title">立面母题</div>
+        <div class="pt-desc">规整条窗 + 水平韵律 + 实墙与玻璃的节奏对比</div>
+      </div>
+    </div>
+    
+    <div class="pt-item">
+      <div class="pt-num">04</div>
+      <div class="pt-body">
+        <div class="pt-title">统一窗系统</div>
+        <div class="pt-desc">全校同款窗（深灰框+等距分格），排列组合形成韵律</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</body>
+</html>

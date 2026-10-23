@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>规划结构解析</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #8B6914;
+}
+
+  .slide.multi-card { position: relative; }
+  .slide.multi-card .page-bg {
+    position: absolute; inset: 0; background-size: cover;
+    background-position: center; z-index: 0;
+  }
+  .slide.multi-card .page-bg-overlay {
+    position: absolute; inset: 0; background: rgba(14, 27, 59, 0.65);
+    z-index: 1;
+  }
+  .slide.multi-card .brand-mark,
+  .slide.multi-card .page-header,
+  .slide.multi-card .slide-content,
+  .slide.multi-card .page-number { z-index: 3; }
+  .slide.multi-card .slide-content {
+    display: flex; flex-direction: column; gap: 24px;
+    /* slide-content 由 base.css 的 top+bottom 确定高度(1080-260-80=740px)。
+       flex + min-height:0 让子元素在这个固定框内排布,多出来的被 line-clamp / overflow:hidden 接管。*/
+    min-height: 0; overflow: hidden;
+  }
+  .slide.multi-card .row-data,
+  .slide.multi-card .row-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    /* 两行各占一半左右 (含 gap 余量),避免内容堆到 slide-content 外 */
+    flex: 1; min-height: 0; overflow: hidden;
+  }
+  .slide.multi-card .row-photos:empty,
+  .slide.multi-card .row-data:empty { display: none; }
+  /* 纯文字/大词卡: 内容垂直居中,避免长卡片底部空洞 */
+  .slide.multi-card .data-number:empty,
+  .slide.multi-card .data-unit:empty { display: none; }
+  .slide.multi-card .data-card {
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .slide.multi-card .photo-card {
+    display: flex; flex-direction: column;
+  }
+  .slide.multi-card .photo-card img {
+    width: 100%; flex: 1; min-height: 240px;
+    object-fit: cover;
+  }
+  .slide.multi-card .photo-card .ph-frame {
+    flex: 1; min-height: 240px; border: none;
+  }
+  /* 可选脚注条: 承接结论 / 底部主张 */
+  .slide.multi-card .footnote {
+    flex-shrink: 0;
+    margin-top: 4px;
+    padding: 16px 26px;
+    background: var(--c-bg-card);
+    border-left: 5px solid var(--ch-accent, var(--brand-accent));
+    box-shadow: var(--shadow-card);
+    font-size: 19px;
+    font-weight: var(--fw-title);
+    line-height: 1.6;
+    color: var(--brand-primary);
+  }
+</style>
+</head>
+<body>
+<div class="slide multi-card">
+  
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">Sichuan Nursing Vocational College (Deyang Campus) Planning Adjustment</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag"></div>
+    <div class="page-title">规划结构解析</div>
+    <div class="page-subtitle">Structure Analysis</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="row-data">
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">教学科研组团</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">教学实训 + 教师教研发展中心，校园学术引擎，庄重典雅</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">生活居住组团</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">学生宿舍 + 教师宿舍 + 食堂，配套齐全的生活片区，温馨舒适</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">体育活动组团</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">体育馆 + 风雨球场 + 活动中心，活力运动核心，主高侧低</span>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="row-photos">
+      
+    </div>
+    
+  </div>
+  <div class="page-number"><span class="current">12</span>/26</div>
+</div>
+</body>
+</html>

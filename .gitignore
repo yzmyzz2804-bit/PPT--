@@ -1,0 +1,46 @@
+# === Python ===
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# === Build artifacts ===
+build/**
+!build/.gitkeep
+build/
+
+# === Editor / OS ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === PPT Engine runtime ===
+slides/*.html
+!slides/.gitkeep
+
+# === Deck backups ===
+*.bak
+*.bak.*
+
+# === Archives / Temp unpack ===
+_unpack/
+_protocol_ref/
+_protocol_v11/
+*.zip
+*.tar.gz
+*.tgz
+
+# === Playwright ===
+.ms-playwright/
+
+# === Excel inspector tmp ===
+excel-inspector-tmp/
+
+# === Render output (PDF) ===
+*.pdf
+!docs/**/*.pdf
+!examples/**/*.pdf
+
+# === Trae runtime ===
+.trae/.trae/

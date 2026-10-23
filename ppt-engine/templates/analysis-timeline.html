@@ -1,0 +1,99 @@
+<!--
+@template: analysis-timeline
+@source: 新增分析页
+@slot: ch3 (案例借鉴) / ch6 (形态过渡)
+@description: 时间线路线图 - 横向时间轴+节点+阶段说明
+@required_fields: tag, title, subtitle, milestones (array of {year, name, desc})
+@coze_inherit: false
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.timeline .timeline-track {
+    position: relative;
+    margin-top: 60px;
+    padding: 40px 0;
+  }
+  .slide.timeline .axis {
+    position: absolute;
+    top: 50%;
+    left: 0; right: 0;
+    height: 2px;
+    background: var(--c-divider);
+  }
+  .slide.timeline .nodes {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+  .slide.timeline .node {
+    flex: 1;
+    text-align: center;
+    position: relative;
+  }
+  .slide.timeline .node-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--brand-accent);
+    margin: 0 auto 16px;
+    border: 3px solid var(--c-bg-page);
+    box-shadow: 0 0 0 2px var(--brand-accent);
+  }
+  .slide.timeline .node-year {
+    font-family: var(--font-en);
+    font-size: 20px;
+    font-weight: var(--fw-num);
+    color: var(--brand-primary);
+    margin-bottom: 4px;
+  }
+  .slide.timeline .node-name {
+    font-size: 15px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 4px;
+  }
+  .slide.timeline .node-desc {
+    font-size: 12px;
+    color: var(--c-text-secondary);
+    line-height: 1.5;
+    padding: 0 8px;
+  }
+</style>
+</head>
+<body>
+<div class="slide timeline">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="timeline-track">
+      <div class="axis"></div>
+      <div class="nodes">
+        {{#milestones}}
+        <div class="node">
+          <div class="node-dot"></div>
+          <div class="node-year">{{ year }}</div>
+          <div class="node-name">{{ name }}</div>
+          <div class="node-desc">{{ desc }}</div>
+        </div>
+        {{/milestones}}
+      </div>
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

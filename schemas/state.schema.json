@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "RECEIVED",
+        "IDENTIFIED",
+        "TAGGED",
+        "CONSTRAINTS_DRAFTED",
+        "CONTRACT_APPROVED",
+        "VERIFIED",
+        "OPTIONS_READY",
+        "OPTION_APPROVED",
+        "CONTENT_READY",
+        "CONTENT_APPROVED",
+        "RENDERED",
+        "QA_PASSED",
+        "RELEASE_APPROVED",
+        "RELEASED",
+        "RETROSPECTED",
+        "BLOCKED"
+      ]
+    },
+    "resume_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "updated_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "package_version": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "run_id",
+    "state",
+    "resume_state",
+    "sequence",
+    "updated_at",
+    "package_version"
+  ],
+  "additionalProperties": false
+}

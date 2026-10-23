@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>设计愿景</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #1B5E7E;
+}
+
+  .slide-chapter-b {
+    background: var(--c-bg-page);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  /* 超大数字图形主体 */
+  .slide-chapter-b .mega-num {
+    position: absolute;
+    right: -60px;
+    top: 44%;
+    transform: translateY(-50%);
+    font-family: var(--font-en);
+    font-size: 760px;
+    font-weight: 700;
+    line-height: 0.85;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.92;
+    letter-spacing: -20px;
+    user-select: none;
+  }
+  /* 底部信息横带 */
+  .slide-chapter-b .info-band {
+    position: absolute;
+    left: 80px;
+    bottom: 150px;
+    z-index: 5;
+  }
+  .slide-chapter-b .ch-bar {
+    width: 72px;
+    height: 6px;
+    background: var(--ch-accent, var(--brand-primary));
+    margin-bottom: 32px;
+  }
+  .slide-chapter-b .ch-name {
+    font-family: var(--font-cn);
+    font-size: 56px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+  .slide-chapter-b .ch-desc {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--c-text-secondary);
+    max-width: 600px;
+    margin-bottom: 22px;
+  }
+  .slide-chapter-b .ch-en {
+    font-family: var(--font-en);
+    font-size: 16px;
+    font-weight: var(--fw-en);
+    letter-spacing: 5px;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.75;
+  }
+  /* 右侧细竖装饰线,平衡大数字重量 */
+  .slide-chapter-b .side-rule {
+    position: absolute;
+    right: 80px;
+    top: 120px;
+    bottom: 120px;
+    width: 1px;
+    background: var(--ch-accent, var(--brand-primary));
+    opacity: 0.25;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-chapter-b">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">Sichuan Nursing Vocational College (Deyang Campus) Planning Adjustment</span>
+  </div>
+  <div class="mega-num">02</div>
+  <div class="side-rule"></div>
+  <div class="info-band">
+    <div class="ch-bar"></div>
+    <div class="ch-name">设计愿景</div>
+    <div class="ch-desc">因山就势 · 医养融合 · 风格统一</div>
+    <div class="ch-en">Design Vision</div>
+  </div>
+</div>
+</body>
+</html>

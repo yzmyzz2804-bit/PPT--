@@ -1,0 +1,4 @@
+{
+  "validated_documents": 4,
+  "note": "结构通过不等于业务就绪；状态推进另执行check-transition"
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "RUN-001",
+  "title": null,
+  "mode": "preserve_optimize",
+  "audience": null,
+  "objective": null,
+  "confidentiality": "internal",
+  "external_upload_allowed": false,
+  "requested_profiles": [
+    "reporting",
+    "print_a3"
+  ],
+  "input_files": [],
+  "status": "draft"
+}

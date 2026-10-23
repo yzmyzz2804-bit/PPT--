@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- cell 单元：模数方块组合 -->
+  <rect x="8" y="8" width="48" height="48" rx="4" stroke="#2B4C7E" stroke-width="3.5"/>
+  <line x1="32" y1="8" x2="32" y2="56" stroke="#2B4C7E" stroke-width="2.5"/>
+  <line x1="8" y1="32" x2="56" y2="32" stroke="#2B4C7E" stroke-width="2.5"/>
+  <rect x="10" y="10" width="20" height="20" fill="#2B4C7E" opacity="0.18"/>
+  <rect x="34" y="34" width="20" height="20" fill="#E87D2B" opacity="0.30"/>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "counts": {
+    "json_files": 39,
+    "schemas": 19,
+    "templates_and_examples": 6,
+    "role_prompts": 8,
+    "skills": 3,
+    "layout_specification_rows": 32,
+    "layout_configuration_bindings": 49
+  },
+  "scope": "结构及契约，不代表TRAE端实际集成或PPT视觉验收"
+}

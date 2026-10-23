@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>功能分区 · 交通组织</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #8B6914;
+}
+
+  .slide.cmp-table .cmp-table-el {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: var(--c-white);
+    box-shadow: var(--shadow-card);
+  }
+  .slide.cmp-table .cmp-table-el th {
+    background: var(--brand-secondary);
+    color: var(--c-white);
+    font-weight: var(--fw-title);
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 15px;
+  }
+  .slide.cmp-table .cmp-table-el th.col-hot {
+    background: var(--brand-accent);
+  }
+  .slide.cmp-table .cmp-table-el td {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--c-card-border);
+    color: var(--brand-primary);
+  }
+  .slide.cmp-table .cmp-table-el tr:nth-child(even) td {
+    background: #F7F5F1;
+  }
+  .slide.cmp-table .cmp-table-el td.ind { color: var(--c-text-secondary); }
+  .slide.cmp-table .cmp-table-el td.hot { font-weight: var(--fw-num); }
+  .slide.cmp-table .cmp-table-el td.hot .better { color: var(--brand-accent); }
+  .slide.cmp-table .summary-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .slide.cmp-table .sum-card {
+    background: var(--c-white);
+    border-top: 3px solid var(--brand-primary);
+    box-shadow: var(--shadow-card);
+    padding: 20px 24px;
+  }
+  .slide.cmp-table .sum-card.hot { border-top-color: var(--brand-accent); }
+  .slide.cmp-table .sum-name {
+    font-size: 18px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 12px;
+  }
+  .slide.cmp-table .sum-item {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    padding: 4px 0;
+    color: var(--brand-primary);
+  }
+  .slide.cmp-table .sum-k {
+    color: var(--c-text-secondary);
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+<div class="slide cmp-table">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">Anyue Chemical Park Command Center Architectural Design</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag"></div>
+    <div class="page-title">功能分区 · 交通组织</div>
+    <div class="page-subtitle">Zoning & Circulation</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <table class="cmp-table-el">
+      <tr>
+        <th style="width:26%">分区</th>
+        <th class="col-hot" style="width:36%">主要功能</th>
+        <th style="width:38%">建筑载体</th>
+      </tr>
+      
+      <tr>
+        <td class="ind">指挥核心区</td>
+        <td class="hot">展示厅 / 会议室 / 指挥中心 / 视频会商<span class="better"> ◂</span></td>
+        <td>主教学楼（改造）</td>
+      </tr>
+      
+      <tr>
+        <td class="ind">企业办公区</td>
+        <td class="hot">园区企业办公 / 管理用房<span class="better"> ◂</span></td>
+        <td>隔离点办公楼（保留）</td>
+      </tr>
+      
+      <tr>
+        <td class="ind">生活配套区</td>
+        <td class="hot">宿舍 / 食堂 / 活动室<span class="better"> ◂</span></td>
+        <td>保留建筑 + 屋顶加建</td>
+      </tr>
+      
+      <tr>
+        <td class="ind">应急功能区</td>
+        <td class="hot">应急环保监测 / 消洗区 / 设备用房<span class="better"> ◂</span></td>
+        <td>台地半地下空间</td>
+      </tr>
+      
+      <tr>
+        <td class="ind">入口展示区</td>
+        <td class="hot">门卫 / 展示广场 / 园区停车<span class="better"> ◂</span></td>
+        <td>新建 + 景观改造</td>
+      </tr>
+      
+    </table>
+    <div class="summary-row">
+      
+      <div class="sum-card hot">
+        <div class="sum-name">交通策略</div>
+        
+        <div class="sum-item"><span class="sum-k"></span><span>人车分流 · 主入口形象提升 · 消防环道 · 台地垂直交通</span></div>
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="page-number"><span class="current">11</span>/25</div>
+</div>
+</body>
+</html>

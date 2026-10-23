@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "fact",
+              "derived",
+              "inference",
+              "recommendation"
+            ]
+          },
+          "value": {
+            "type": [
+              "number",
+              "string",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "period": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "denominator": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "formula": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "source_locators": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "critical": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unverified",
+              "conflict",
+              "not_applicable"
+            ]
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uncertainty": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "claim_id",
+          "text",
+          "kind",
+          "value",
+          "unit",
+          "period",
+          "denominator",
+          "formula",
+          "inputs",
+          "source_ids",
+          "source_locators",
+          "critical",
+          "status",
+          "method",
+          "uncertainty"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "claims"
+  ],
+  "additionalProperties": false
+}

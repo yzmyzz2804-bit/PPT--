@@ -1,0 +1,13 @@
+{
+  "run_id": "RUN-001",
+  "role": "intake",
+  "phase": "IDENTIFIED",
+  "status": "blocked",
+  "input_refs": [],
+  "output_refs": [],
+  "issues": [
+    "[待填：真实情况]"
+  ],
+  "next_state": "IDENTIFIED",
+  "human_action": null
+}

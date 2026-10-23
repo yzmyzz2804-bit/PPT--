@@ -1,0 +1,408 @@
+{
+  "version": "layout-protocol-v1.1",
+  "project": {
+    "name": "四川护理职业学院（德阳校区）规划调整",
+    "name_en": "Sichuan Nursing Vocational College (Deyang Campus) Planning Adjustment",
+    "type": "campus_planning",
+    "theme": "warm-paper",
+    "concepts": ["因山就势", "医养融合", "生长校园"],
+    "date": "2025.11"
+  },
+  "assets_base_path": "assets/",
+  "total_pages": 26,
+  "chapters": [
+    {
+      "num": "01",
+      "name": "项目背景",
+      "name_en": "Project Background",
+      "pages": "P2 — P8",
+      "page_count": 7,
+      "core_message": "讲清楚「在哪、有什么、为什么要调规」"
+    },
+    {
+      "num": "02",
+      "name": "设计愿景",
+      "name_en": "Design Vision",
+      "pages": "P9 — P10",
+      "page_count": 2,
+      "core_message": "总领性三大愿景，不展开"
+    },
+    {
+      "num": "03",
+      "name": "规划结构",
+      "name_en": "Planning Structure",
+      "pages": "P11 — P13",
+      "page_count": 3,
+      "core_message": "一轴两心多组团的整体骨架"
+    },
+    {
+      "num": "04",
+      "name": "山体景观核心",
+      "name_en": "Mountain Landscape Core",
+      "pages": "P14 — P16",
+      "page_count": 3,
+      "core_message": "从「工程包袱」到「校园名片」—— 中医药学理念下的山体再生",
+      "is_new_chapter": true,
+      "remark": "调规核心命题章，原散落在各章的山体内容整合于此"
+    },
+    {
+      "num": "05",
+      "name": "方案展示",
+      "name_en": "Schematic Design",
+      "pages": "P17 — P22",
+      "page_count": 6,
+      "core_message": "鸟瞰 + 分析 + 指标 + 核心建筑 + 远期"
+    },
+    {
+      "num": "06",
+      "name": "建筑意向",
+      "name_en": "Architectural Atmosphere",
+      "pages": "P23 — P25",
+      "page_count": 3,
+      "core_message": "精选核心建筑，统一风格"
+    }
+  ],
+  "slides_structure": [
+    {
+      "page": 1,
+      "chapter": "封面",
+      "type": "cover",
+      "title": "四川护理职业学院（德阳校区）规划调整",
+      "subtitle": "Planning Adjustment of Sichuan Nursing Vocational College (Deyang Campus)",
+      "asset": {
+        "bg_image": "bg/cover.jpg"
+      }
+    },
+    {
+      "page": 2,
+      "chapter": "01 项目背景",
+      "type": "image-text-split",
+      "title": "项目概况",
+      "title_en": "Project Overview",
+      "content_summary": "原规划用地653亩 / 可用建设用地485亩 / 本次为调规项目",
+      "asset": {
+        "main_image": "images/site/original_masterplan.png"
+      }
+    },
+    {
+      "page": 3,
+      "chapter": "01 项目背景",
+      "type": "three-cards",
+      "title": "原规划待优化方向",
+      "title_en": "Issues to Address",
+      "cards_summary": ["山体利用不足", "功能能级待提升", "发展空间不足"],
+      "remark": "三个问题引出调规必要性"
+    },
+    {
+      "page": 4,
+      "chapter": "01 项目背景",
+      "type": "image-text-split",
+      "title": "案例借鉴 · 山地校园典型范式",
+      "title_en": "Case Study · Mountain Campus",
+      "asset": {
+        "main_image": "images/cases/mountain_campus.jpg"
+      }
+    },
+    {
+      "page": 5,
+      "chapter": "01 项目背景",
+      "type": "data-profile",
+      "title": "新增用地 · 规划设计条件",
+      "title_en": "New Site Conditions",
+      "dimensions_summary": ["用地面积67.5亩", "容积率0.5-1.5", "建筑密度≤25%", "建筑高度≤24m"]
+    },
+    {
+      "page": 6,
+      "chapter": "01 项目背景",
+      "type": "image-text-split",
+      "title": "场地现状 · 已建与待建",
+      "title_en": "Site Status",
+      "asset": {
+        "main_image": "images/site/status_aerial.jpg"
+      }
+    },
+    {
+      "page": 7,
+      "chapter": "01 项目背景",
+      "type": "image-text-split",
+      "title": "周边现状分析",
+      "title_en": "Surrounding Analysis",
+      "asset": {
+        "main_image": "images/site/surrounding.png"
+      }
+    },
+    {
+      "page": 8,
+      "chapter": "01 项目背景",
+      "type": "three-cards",
+      "title": "新增用地 · 规划思路",
+      "title_en": "Expansion Strategy",
+      "cards_summary": ["教学居住组团", "核心功能补位", "远期弹性预留"],
+      "remark": "背景章收尾，引出后续展开",
+      "asset": {
+        "bg_image": "images/concept/expansion_bg.jpg"
+      }
+    },
+    {
+      "page": 9,
+      "chapter": "02 设计愿景",
+      "type": "chapter-divider",
+      "chapter_num": "02",
+      "chapter_title": "设计愿景",
+      "chapter_concept": "Design Vision",
+      "chapter_subtitle": "因山就势 · 医养融合 · 生长校园",
+      "asset": {
+        "bg_image": "images/vision/vision_hero.jpg"
+      }
+    },
+    {
+      "page": 10,
+      "chapter": "02 设计愿景",
+      "type": "three-cards",
+      "title": "三大设计愿景",
+      "title_en": "Three Design Visions",
+      "cards_summary": ["因山就势", "医养融合", "生长校园"],
+      "remark": "总览性，后续各章展开",
+      "asset": {
+        "bg_image": "images/vision/three_visions_bg.jpg"
+      }
+    },
+    {
+      "page": 11,
+      "chapter": "03 规划结构",
+      "type": "image-text-split",
+      "title": "总平面布局",
+      "title_en": "Overall Masterplan",
+      "content_summary": "一轴 · 两心 · 多组团",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "70%"
+      },
+      "asset": {
+        "main_image": "images/site/masterplan_full.png"
+      }
+    },
+    {
+      "page": 12,
+      "chapter": "03 规划结构",
+      "type": "three-cards",
+      "title": "规划结构解析",
+      "title_en": "Structure Analysis",
+      "cards_summary": ["教学科研组团", "生活居住组团", "体育活动组团"]
+    },
+    {
+      "page": 13,
+      "chapter": "03 规划结构",
+      "type": "image-text-split",
+      "title": "因山就势 · 曲柔规划形态",
+      "title_en": "Mountain-Responsive Form",
+      "asset": {
+        "main_image": "images/site/curve_form.jpg"
+      }
+    },
+    {
+      "page": 14,
+      "chapter": "04 山体景观核心",
+      "type": "chapter-divider",
+      "chapter_num": "04",
+      "chapter_title": "山体景观核心",
+      "chapter_concept": "Mountain Landscape Core",
+      "chapter_subtitle": "从「工程包袱」到「校园名片」—— 中医药学理念下的山体再生",
+      "is_new": true,
+      "asset": {
+        "bg_image": "images/landscape/mountain_hero.jpg"
+      }
+    },
+    {
+      "page": 15,
+      "chapter": "04 山体景观核心",
+      "type": "image-text-split",
+      "title": "中医药学理念 · 山体景观再生",
+      "title_en": "TCM-Inspired Mountain Regeneration",
+      "content_summary": "保留地形 + 中医药植物 + 药草园 + 文化节点 + 步道系统",
+      "is_new_content": true,
+      "remark": "原绿轴山体升级为中医药主题景观核心",
+      "asset": {
+        "main_image": "images/landscape/tcm_mountain.jpg"
+      }
+    },
+    {
+      "page": 16,
+      "chapter": "04 山体景观核心",
+      "type": "image-text-split",
+      "title": "风雨球场 · 依山就势布局",
+      "title_en": "Covered Sports Court",
+      "content_summary": "顶棚式 / 非建筑 / 全天候 / 依山就势",
+      "is_new_content": true,
+      "remark": "学校领导要求，在已有建设用地内",
+      "asset": {
+        "main_image": "images/landscape/rain_court.jpg"
+      }
+    },
+    {
+      "page": 17,
+      "chapter": "05 方案展示",
+      "type": "chapter-divider",
+      "chapter_num": "05",
+      "chapter_title": "方案展示",
+      "chapter_concept": "Schematic Design",
+      "chapter_subtitle": "从总体到细部",
+      "asset": {
+        "bg_image": "images/scheme/scheme_hero.jpg"
+      }
+    },
+    {
+      "page": 18,
+      "chapter": "05 方案展示",
+      "type": "image-text-split",
+      "title": "整体鸟瞰图",
+      "title_en": "Aerial View",
+      "content_summary": "山校共生 · 医养融合",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "85%"
+      },
+      "asset": {
+        "main_image": "images/scheme/aerial_overall.jpg"
+      }
+    },
+    {
+      "page": 19,
+      "chapter": "05 方案展示",
+      "type": "comparison-table",
+      "title": "功能布局 · 交通组织",
+      "title_en": "Zoning & Circulation",
+      "table_summary": "功能分区 / 人行系统 / 车行系统 / 出入口 / 消防流线"
+    },
+    {
+      "page": 20,
+      "chapter": "05 方案展示",
+      "type": "comparison-table",
+      "title": "经济技术指标对比",
+      "title_en": "Technical & Economic Indicators",
+      "table_summary": "原规划 vs 调规后 vs 变化（用地 / 规模 / 面积 / 指标 / 山体）"
+    },
+    {
+      "page": 21,
+      "chapter": "05 方案展示",
+      "type": "three-cards",
+      "title": "核心新增建筑",
+      "title_en": "Key New Buildings",
+      "cards_summary": ["教师教研发展中心", "学生体育馆", "教学居住组团"],
+      "is_new_content": true
+    },
+    {
+      "page": 22,
+      "chapter": "05 方案展示",
+      "type": "image-text-split",
+      "title": "远期发展预留",
+      "title_en": "Long-term Development Reserve",
+      "content_summary": "120亩以外30-40亩 / 统一规划分期建设",
+      "asset": {
+        "main_image": "images/scheme/long_term_reserve.png"
+      }
+    },
+    {
+      "page": 23,
+      "chapter": "06 建筑意向",
+      "type": "chapter-divider",
+      "chapter_num": "06",
+      "chapter_title": "建筑意向",
+      "chapter_concept": "Architectural Atmosphere",
+      "chapter_subtitle": "医学人文 · 现代简约 · 山水气质",
+      "asset": {
+        "bg_image": "images/architecture/arch_hero.jpg"
+      }
+    },
+    {
+      "page": 24,
+      "chapter": "06 建筑意向",
+      "type": "image-text-split",
+      "title": "教学实训楼 · 教师教研发展中心",
+      "title_en": "Teaching Building · Faculty Center",
+      "asset": {
+        "main_image": "images/architecture/teaching_building.jpg"
+      }
+    },
+    {
+      "page": 25,
+      "chapter": "06 建筑意向",
+      "type": "comparison-table",
+      "title": "核心建筑意向对比",
+      "title_en": "Key Building Design Intent",
+      "table_summary": "体育馆 / 风雨球场 / 宿舍 / 食堂 的设计关键词和形象特征"
+    },
+    {
+      "page": 26,
+      "chapter": "结尾",
+      "type": "closing",
+      "thanks_title": "谢谢聆听",
+      "thanks_subtitle": "四川护理职业学院（德阳校区）规划调整",
+      "concept_recap": "因山就势 · 医养融合 · 生长校园",
+      "asset": {
+        "bg_image": "bg/closing.jpg"
+      }
+    }
+  ],
+  "new_content_marker": [
+    {
+      "pages": [14, 15, 16],
+      "chapter": "第四章 山体景观核心",
+      "note": "调规核心新增章，原散落山体内容整合于此"
+    },
+    {
+      "pages": [15],
+      "item": "中医药山体景观",
+      "note": "原绿轴山体升级为中医药学理念的景观核心"
+    },
+    {
+      "pages": [16],
+      "item": "风雨球场",
+      "note": "学校领导要求，顶棚式非建筑，依山就势布局"
+    },
+    {
+      "pages": [21],
+      "item": "三大新增建筑/功能",
+      "note": "教师教研发展中心 / 学生体育馆 / 教学居住组团"
+    },
+    {
+      "pages": [22],
+      "item": "远期发展预留",
+      "note": "120亩以外30-40亩，分期建设"
+    },
+    {
+      "pages": [5, 8],
+      "item": "新增用地条件与思路",
+      "note": "67.5亩已确认用地 + 远期预留"
+    }
+  ],
+  "trae_todo": {
+    "priority_1_high": [
+      "确认 6 章 26 页的版式匹配",
+      "第4章山体章需要视觉上突出（可考虑加章节底色/分隔线）",
+      "三卡片式 three-cards 支持背景底图（v1.1协议已支持）",
+      "comparison-table 支持 5 行左右的指标对比"
+    ],
+    "priority_2_medium": [
+      "image-text-split 的 full 大图模式（鸟瞰/总平页）",
+      "data-profile 4 个维度的横排布局",
+      "chapter-divider 支持长副标题（概念标语 + 解释语）"
+    ],
+    "priority_3_later": [
+      "校园规划主题的 icon 库（山体/建筑/医疗/教学等）",
+      "中医药主题的专属视觉元素（可后期迭代）"
+    ]
+  },
+  "my_todo": {
+    "content_side": [
+      "填充 26 页完整正文内容与汇报话术",
+      "整理素材图片清单并命名到位",
+      "给每页配上精确的 bullet / key_metrics / functional_zones 内容"
+    ],
+    "coordination_side": [
+      "统筹进度，确保两边内容对齐",
+      "Trae 模板就绪后，我这边出完整 JSON 跑通第一版",
+      "接收你的反馈后，迭代内容 + 协调 Trae 调模板"
+    ]
+  }
+}

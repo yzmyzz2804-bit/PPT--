@@ -1,0 +1,64 @@
+{
+  "version": "7.2.0",
+  "failure_case": "几何切块历史测试：字号达标但表格/图纸/标题被割裂",
+  "forbidden_method": "固定几何网格切页后以字号和字符覆盖作为完整验收",
+  "gates": [
+    {
+      "id": "L01",
+      "name": "对象识别与范围",
+      "acceptance": "源页所有段落、标题、图纸、图片、表格均有稳定object_id、源页定位及哈希；未识别项目列unknown",
+      "on_failure": "阻塞；允许整页参考但不得计为对象重排通过"
+    },
+    {
+      "id": "L02",
+      "name": "段落流动",
+      "acceptance": "标题与正文块完整；文字按段落排版，必要时只在行边界续页；不按固定坐标网格切字",
+      "on_failure": "返回文本排版器"
+    },
+    {
+      "id": "L03",
+      "name": "表格解析",
+      "acceptance": "原始单元格矩阵、合并单元格、表头、单位、主键及来源位置明确；逐格核对，不臆造",
+      "on_failure": "保留原表参考并标unresolved，不创建猜测表"
+    },
+    {
+      "id": "L04",
+      "name": "表格分页",
+      "acceptance": "按整行分页；每页重复表头；分列分页重复主键；同一单元格须与源值一致",
+      "on_failure": "返回表格排版器"
+    },
+    {
+      "id": "L05",
+      "name": "图纸完整",
+      "acceptance": "整图对象包围框完整包含边界、标注、图例；不以几何分片替代整图",
+      "on_failure": "恢复整图；局部放大只能另附且有映射"
+    },
+    {
+      "id": "L06",
+      "name": "可读性与图幅",
+      "acceptance": "原生A3已批准方向；正文>=14pt、表格/标签>=12pt；内嵌图中文字另测，不能因整图就豁免",
+      "on_failure": "失败/未检查真实保留，不缩小标准"
+    },
+    {
+      "id": "L07",
+      "name": "覆盖与一致",
+      "acceptance": "源对象全部映射；正文比对、表格逐格比对、完整图对象保留；字符框覆盖不替代语义完整",
+      "on_failure": "返回最小受影响对象，旧QA失效"
+    },
+    {
+      "id": "L08",
+      "name": "实际视觉",
+      "acceptance": "逐输出页有证据；检查断表、孤立标题、图文映射、裁切、空白、文字溢出；联系表只能组级有限确认",
+      "on_failure": "not_checked/失败不放正式发布"
+    },
+    {
+      "id": "L09",
+      "name": "测试与发布隔离",
+      "acceptance": "测试假设只用于独立分支；生产数据未核状态不改；测试件标明；正式内容/发布审批独立",
+      "on_failure": "禁止将测试输出或整页参考当成成品"
+    }
+  ],
+  "machine_manifest_schema": "schemas/object_layout.schema.json",
+  "strict_checker": "scripts/check_object_layout.py",
+  "references_do_not_count_as_reflow": true
+}

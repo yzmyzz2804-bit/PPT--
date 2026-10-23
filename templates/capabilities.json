@@ -1,0 +1,66 @@
+{
+  "run_id": "RUN-001",
+  "checked_at": null,
+  "tools": [
+    {
+      "capability": "file_read",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "ppt_extract",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "ocr",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "web_search",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "web_read",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "ppt_edit",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "pdf_render",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "visual_inspection",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "fonts",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    },
+    {
+      "capability": "human_approval",
+      "status": "unknown",
+      "tool_name": null,
+      "evidence": null
+    }
+  ]
+}

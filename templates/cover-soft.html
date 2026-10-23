@@ -1,0 +1,106 @@
+<!--
+@template: cover-soft
+@version: 1.0 对齐德阳深化版 0927 封面
+@slot: opening
+@description: 封面·淡化蒙白型 - 满版底图蒙暖纸白雾面 + 中央偏右白横带深色标题 + 底部深色项目信息。与 cover 的区别：底图被雾化退后，标题更聚焦
+@required_fields: title, subtitle, project_name, date, bg_image
+@image_rule: bg_image 满版 100% + 白雾蒙层
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-cover-soft { background: var(--c-bg-page); }
+  .slide-cover-soft .bg-layer {
+    position: absolute;
+    inset: 0;
+    background-image: url('{{ bg_image }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  /* 暖纸白雾面蒙层:底图退后成质感底 */
+  .slide-cover-soft .bg-veil {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      rgba(243, 241, 237, 0.80) 0%,
+      rgba(243, 241, 237, 0.62) 45%,
+      rgba(243, 241, 237, 0.82) 100%);
+    z-index: 2;
+  }
+  /* 中央偏右白色横带 */
+  .slide-cover-soft .title-band {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 54%;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 6px 32px rgba(26, 26, 46, 0.08);
+    padding: 44px 80px 44px 56px;
+    z-index: 3;
+    text-align: left;
+  }
+  .slide-cover-soft .cover-main {
+    font-family: var(--font-cn);
+    font-size: 46px;
+    font-weight: var(--fw-title);
+    color: var(--c-black);
+    line-height: 1.3;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    white-space: normal;
+  }
+  .slide-cover-soft .cover-sub {
+    font-family: var(--font-en);
+    font-size: 16px;
+    color: var(--c-text-secondary);
+    letter-spacing: 1px;
+    border-top: 1px solid var(--c-divider);
+    padding-top: 14px;
+  }
+  /* 底部居中项目信息(浅底 → 深色字) */
+  .slide-cover-soft .footer-block {
+    position: absolute;
+    bottom: 40px;
+    left: 0; right: 0;
+    text-align: center;
+    z-index: 3;
+    color: var(--c-text-secondary);
+  }
+  .slide-cover-soft .footer-project {
+    display: inline-block;
+    font-family: var(--font-cn);
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    padding: 8px 28px;
+    background: rgba(26, 26, 46, 0.78);
+    color: var(--c-white);
+  }
+  .slide-cover-soft .footer-date {
+    font-family: var(--font-en);
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-cover-soft">
+  {{#bg_image}}<div class="bg-layer"></div>
+  <div class="bg-veil"></div>{{/bg_image}}
+  <div class="title-band">
+    <h1 class="cover-main">{{ title }}</h1>
+    <div class="cover-sub">{{ subtitle }}</div>
+  </div>
+  <div class="footer-block">
+    <div class="footer-project">{{ project_name }}</div>
+    <div class="footer-date">{{ date }}</div>
+  </div>
+</div>
+</body>
+</html>

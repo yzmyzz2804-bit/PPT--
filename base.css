@@ -1,0 +1,471 @@
+/* ============================================================
+ * PPT 概念生成 - 基础样式 (base.css)
+ * ============================================================
+ * 提取自 COZE template_generator.py，改为 token 驱动：
+ * - 所有颜色/字体/字号引用 CSS 变量
+ * - 变量在构建时由 theme.json 注入（见 scripts/render_slide.py）
+ * - 切换主题 = 切换 :root 变量，base.css 不动
+ * ============================================================ */
+
+:root {
+  /* —— 品牌色 —— */
+  --brand-primary: #0E2A5B;
+  --brand-secondary: #1D3A8A;
+  --brand-accent: #2562EB;
+  --brand-accent-bright: #3B81F5;
+  --brand-accent-light: #60A5FA;
+  --brand-accent-lighter: #93C4FD;
+  --brand-accent-lightest: #BEDAFE;
+  --brand-accent-warm: #D9822B;
+  --brand-accent-warm-light: #F0A860;
+
+  /* —— 中性灰 (暖纸白基底,对齐参考版 0917) —— */
+  --c-black: #1A1A1A;
+  --c-text-secondary: #8A8F98;
+  --c-divider: #D8D4CC;
+  --c-card-border: #E8E4DC;
+  --c-bg-card: #FFFFFF;
+  --c-bg-page: #F3F1ED;
+  --c-bg-page-deep: #EEECE9;
+  --c-white: #FFFFFF;
+
+  /* —— 功能色 —— */
+  --c-success: #049569;
+  --c-warning: #D9822B;
+
+  /* —— 字体 —— */
+  --font-cn: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+  --font-en: "Arial", "Helvetica", "Inter", sans-serif;
+  --font-num: "Arial", "Helvetica", "Inter", sans-serif;
+
+  /* —— 字号 —— */
+  --fs-mega: 84px;
+  --fs-hero: 56px;
+  --fs-page-title: 34px;
+  --fs-card-title: 22px;
+  --fs-body: 17px;
+  --fs-caption: 13px;
+  --fs-en-label: 13px;
+
+  /* —— 字重 —— */
+  --fw-title: 700;
+  --fw-body: 400;
+  --fw-en: 600;
+  --fw-num: 600;
+
+  /* —— 画布与边距 —— */
+  --slide-w: 1920px;
+  --slide-h: 1080px;
+  --safe-margin: 80px;
+
+  /* —— 圆角 —— */
+  --radius: 6px;
+  --radius-card: 12px;
+
+  /* —— 阴影 —— */
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 4px 32px rgba(37, 98, 235, 0.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  font-family: var(--font-cn);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--brand-primary);
+  background: #e8ecf0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+ * 单页幻灯片容器
+ * ============================================================ */
+.slide {
+  position: relative;
+  width: var(--slide-w);
+  height: var(--slide-h);
+  background: var(--c-bg-page);
+  overflow: hidden;
+  margin: 40px auto;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================================
+ * 品牌标识（左上角，每页统一）
+ * ============================================================ */
+.brand-mark {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+}
+.brand-mark .square {
+  width: 14px;
+  height: 14px;
+  background: var(--c-divider);
+}
+.brand-mark .line {
+  width: 36px;
+  height: 2px;
+  background: var(--c-divider);
+}
+.brand-mark .text {
+  font-family: var(--font-en);
+  font-size: var(--fs-en-label);
+  font-weight: var(--fw-en);
+  letter-spacing: 2px;
+  color: var(--c-text-secondary);
+  text-transform: uppercase;
+}
+
+/* ============================================================
+ * 页面标题区（三段式：英文标签 → 中文标题 → 英文副标题）
+ * ============================================================ */
+.page-header {
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  right: 80px;
+  z-index: 5;
+}
+.page-tag {
+  font-family: var(--font-en);
+  font-size: var(--fs-en-label);
+  font-weight: var(--fw-en);
+  letter-spacing: 2px;
+  color: var(--c-text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.page-title {
+  font-family: var(--font-cn);
+  font-size: var(--fs-page-title);
+  font-weight: var(--fw-title);
+  color: var(--brand-primary);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.page-subtitle {
+  font-family: var(--font-en);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--c-text-secondary);
+}
+.title-line {
+  width: 36px;
+  height: 3px;
+  background: var(--ch-accent, var(--brand-accent));
+  margin-top: 20px;
+}
+
+/* ============================================================
+ * 内容区域
+ * ============================================================ */
+.slide-content {
+  position: absolute;
+  top: 260px;
+  left: 80px;
+  right: 80px;
+  bottom: 80px;
+  z-index: 2;
+}
+
+/* ============================================================
+ * 卡片组件
+ * ============================================================ */
+.card {
+  background: var(--c-bg-card);
+  border: 1px solid var(--c-card-border);
+  border-radius: var(--radius);
+  padding: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.card-accent-top::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--brand-accent);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.card-accent-left::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 4px;
+  background: var(--brand-accent);
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+.card-title {
+  font-family: var(--font-cn);
+  font-size: var(--fs-card-title);
+  font-weight: var(--fw-title);
+  color: var(--brand-primary);
+  margin-bottom: 16px;
+}
+.card-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--brand-primary);
+  opacity: 0.85;
+}
+
+/* 数据卡片 */
+.data-card { text-align: center; padding: 28px 20px; }
+.data-number {
+  font-family: var(--font-num);
+  font-size: 48px;
+  font-weight: var(--fw-num);
+  color: var(--brand-primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.data-unit {
+  font-family: var(--font-en);
+  font-size: 14px;
+  color: var(--c-text-secondary);
+}
+.data-label {
+  font-size: 17px;
+  font-weight: var(--fw-title);
+  color: var(--brand-primary);
+  margin-top: 12px;
+}
+.data-items {
+  margin-top: 16px;
+  border-top: 1px solid var(--c-card-border);
+  padding-top: 16px;
+}
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 14px;
+}
+.data-item-key { color: var(--c-text-secondary); }
+.data-item-val {
+  font-family: var(--font-num);
+  font-weight: var(--fw-num);
+  color: var(--brand-primary);
+}
+
+/* 照片卡片 */
+.photo-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--c-card-border);
+  background: var(--c-bg-card);
+}
+.photo-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.photo-caption {
+  padding: 14px 18px;
+  background: var(--c-bg-card);
+}
+.photo-title {
+  font-size: 15px;
+  font-weight: var(--fw-title);
+  color: var(--brand-primary);
+  margin-bottom: 4px;
+}
+.photo-tag {
+  font-size: 12px;
+  color: var(--c-text-secondary);
+  font-family: var(--font-en);
+}
+
+/* ============================================================
+ * 分栏布局
+ * ============================================================ */
+.split-layout {
+  display: flex;
+  gap: 48px;
+  height: 100%;
+}
+.split-left { width: 58%; position: relative; }
+.split-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+.split-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 2x2 网格 */
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ============================================================
+ * 占位相框 (排版底版: 图片未填入时的统一骨架)
+ * ============================================================ */
+.ph-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border: 2px dashed var(--brand-accent-lighter);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(37, 98, 235, 0.025), rgba(14, 42, 91, 0.04));
+  background-color: rgba(255, 255, 255, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--brand-accent);
+  text-align: center;
+}
+.ph-frame .ph-icon {
+  width: 56px;
+  height: 56px;
+  opacity: 0.55;
+}
+.ph-frame .ph-title {
+  font-size: 17px;
+  font-weight: var(--fw-title);
+  letter-spacing: 2px;
+  color: var(--brand-primary);
+  opacity: 0.55;
+}
+.ph-frame .ph-hint {
+  font-size: 12px;
+  color: var(--c-text-secondary);
+  letter-spacing: 1px;
+  max-width: 70%;
+  line-height: 1.7;
+}
+/* 分栏左右翻转(轮廓交替) */
+.split-layout.reverse { flex-direction: row-reverse; }
+
+/* 方案对比 */
+.compare-layout {
+  display: flex;
+  gap: 32px;
+  height: 100%;
+}
+.compare-col {
+  flex: 1;
+  background: var(--c-bg-card);
+  border: 1px solid var(--c-card-border);
+  border-radius: var(--radius);
+  padding: 32px;
+  position: relative;
+}
+.compare-col.featured {
+  border-color: var(--brand-accent);
+  border-width: 2px;
+}
+.compare-title {
+  font-size: 24px;
+  font-weight: var(--fw-title);
+  color: var(--brand-primary);
+  margin-bottom: 12px;
+}
+.compare-subtitle {
+  font-family: var(--font-en);
+  font-size: 13px;
+  color: var(--c-text-secondary);
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.compare-items { list-style: none; }
+.compare-item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--c-card-border);
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.compare-item:last-child { border-bottom: none; }
+.compare-item-key { color: var(--c-text-secondary); }
+.compare-item-val {
+  font-weight: var(--fw-num);
+  font-family: var(--font-num);
+}
+
+/* ============================================================
+ * 列表样式
+ * ============================================================ */
+.feature-list { list-style: none; }
+.feature-list li {
+  padding: 8px 0 8px 24px;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--brand-primary);
+  opacity: 0.85;
+}
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  background: var(--brand-accent);
+  border-radius: 50%;
+}
+
+/* ============================================================
+ * 底部页码
+ * ============================================================ */
+.page-number {
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+  font-family: var(--font-en);
+  font-size: 13px;
+  color: var(--c-text-secondary);
+  z-index: 10;
+}
+.page-number .current {
+  font-size: 20px;
+  font-weight: var(--fw-title);
+  color: var(--brand-primary);
+  margin-right: 4px;
+}
+
+/* ============================================================
+ * 打印 (PDF 导出)
+ * ============================================================ */
+@media print {
+  @page {
+    size: 1920px 1080px;
+    margin: 0;
+  }
+  body { background: #fff; margin: 0; padding: 0; }
+  .slide {
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+  .slide:last-child { page-break-after: auto; }
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* ============================================================
+ * 页码停用（2026-10-16 规则：正式稿一律不显示页数标注）
+ * ============================================================ */
+.page-number { display: none; }

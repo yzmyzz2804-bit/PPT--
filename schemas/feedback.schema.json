@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "package_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "result": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "needs_revision",
+        "blocked"
+      ]
+    },
+    "issue_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "proposed_changes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "auto_apply": {
+      "const": false
+    }
+  },
+  "required": [
+    "run_id",
+    "package_version",
+    "result",
+    "issue_ids",
+    "observations",
+    "proposed_changes",
+    "auto_apply"
+  ],
+  "additionalProperties": false
+}

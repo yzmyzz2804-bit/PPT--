@@ -1,0 +1,63 @@
+{
+  "version": "7.2.0",
+  "paper": "A3",
+  "steps": [
+    {
+      "id": "A01",
+      "name": "文件包校验",
+      "executor": "本包脚本",
+      "command": "python scripts/validate_package.py",
+      "status": "ready"
+    },
+    {
+      "id": "A02",
+      "name": "门控回归测试",
+      "executor": "本包脚本",
+      "command": "python -m unittest discover -s tests -v",
+      "status": "ready"
+    },
+    {
+      "id": "A03",
+      "name": "TRAE规则及技能加载确认",
+      "executor": "用户端TRAE",
+      "evidence": "填写templates/acceptance_report.json，记录实际加载与工具名称",
+      "status": "requires_local_environment"
+    },
+    {
+      "id": "A04",
+      "name": "真实样本与Architect OS纪要交接",
+      "executor": "用户端TRAE",
+      "evidence": "输入SHA、页数、抽查片段、纪要数据进入claims",
+      "status": "requires_source_files"
+    },
+    {
+      "id": "A05",
+      "name": "A3实际PDF图幅校验",
+      "executor": "脚本与渲染工具",
+      "command": "python scripts/check_print_pdf.py --file <实际PDF> --orientation landscape --output <当前运行>/05_qa/a3-size-check.json",
+      "status": "requires_rendered_pdf"
+    },
+    {
+      "id": "A06",
+      "name": "双版视觉与数字验收",
+      "executor": "QA与人工",
+      "evidence": "逐页截图/检查记录、claim对照、A3实际打印缩放与灰度",
+      "status": "requires_rendered_outputs"
+    },
+    {
+      "id": "A07",
+      "name": "审批授权隔离",
+      "executor": "宿主或人工桥接",
+      "evidence": "执行Agent不能自批的权限或UI确认流程",
+      "status": "requires_host_binding"
+    },
+    {
+      "id": "A08",
+      "name": "反馈与规则升级",
+      "executor": "归档角色",
+      "evidence": "feedback模板+change proposal+人工批准+新版本回归",
+      "status": "ready"
+    }
+  ],
+  "prohibited_claim": "没有实际执行证据时不得标记TRAE已接通、真实PPT已通过或后台服务已启动。"
+}

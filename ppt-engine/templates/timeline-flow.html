@@ -1,0 +1,165 @@
+<!--
+@template: timeline-flow
+@version: 1.0 分章色体系
+@slot: ch_*
+@description: 横向流程时间线 - 4-7 个流程节点沿主轴排列,节点圆点/序号+标题+说明,适合工艺流程/流线组织/建设分期
+@required_fields: title, steps (array of {num, title, desc})
+@optional_fields: tag, subtitle, flow_note
+@image_rule: 无图纯排版
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-tl .tl-wrap {
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    right: 80px;
+  }
+  /* 流程主轴 */
+  .slide-tl .tl-axis {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .slide-tl .tl-axis::before {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: var(--c-divider);
+    z-index: 0;
+  }
+  .slide-tl .tl-node {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 0;
+    padding: 0 14px;
+    text-align: center;
+  }
+  .slide-tl .tl-node:last-child .tl-arrow { display: none; }
+  .slide-tl .tl-dot {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background: var(--c-bg-card);
+    border: 2px solid var(--ch-accent, var(--brand-primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-en);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--ch-accent, var(--brand-primary));
+    position: relative;
+  }
+  .slide-tl .tl-node:first-child .tl-dot {
+    background: var(--ch-accent, var(--brand-primary));
+    color: #fff;
+  }
+  /* 节点间箭头 */
+  .slide-tl .tl-arrow {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    font-size: 16px;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.5;
+    z-index: 2;
+  }
+  .slide-tl .tl-step-tag {
+    font-family: var(--font-en);
+    font-size: 12px;
+    font-weight: var(--fw-en);
+    letter-spacing: 2px;
+    color: var(--c-text-secondary);
+    margin-bottom: 8px;
+  }
+  .slide-tl .tl-step-title {
+    font-size: 21px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 12px;
+    line-height: 1.35;
+  }
+  .slide-tl .tl-step-desc {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--c-text-secondary);
+    text-align: left;
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    min-height: 150px;
+  }
+  /* 底部结论条 */
+  .slide-tl .tl-note {
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    bottom: 90px;
+    background: var(--ch-accent, var(--brand-primary));
+    color: #fff;
+    padding: 22px 32px;
+    font-size: 16px;
+    line-height: 1.7;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .slide-tl .tl-note .nl {
+    font-family: var(--font-en);
+    font-size: 13px;
+    font-weight: var(--fw-en);
+    letter-spacing: 3px;
+    opacity: 0.75;
+    white-space: nowrap;
+    border-right: 1px solid rgba(255,255,255,0.35);
+    padding-right: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-tl">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="tl-wrap">
+    <div class="tl-axis">
+      {{#steps}}
+      <div class="tl-node">
+        <div class="tl-dot">{{ num }}<span class="tl-arrow">▶</span></div>
+        <div class="tl-step-tag">STEP {{ num }}</div>
+        <div class="tl-step-title">{{ title }}</div>
+        <div class="tl-step-desc">{{ desc }}</div>
+      </div>
+      {{/steps}}
+    </div>
+  </div>
+  {{#flow_note}}
+  <div class="tl-note">
+    <span class="nl">FLOW LOGIC</span>
+    <span>{{ flow_note }}</span>
+  </div>
+  {{/flow_note}}
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

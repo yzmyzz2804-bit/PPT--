@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "python_syntax_files": 12,
+  "retained_identical_files": 61,
+  "missing_original_files": [],
+  "changed_files": [
+    "README.md",
+    "TRAE_START_HERE.md",
+    "requirements.txt",
+    "CHANGELOG.md",
+    "config/acceptance_plan.json",
+    "config/workflow.json",
+    "config/agents.json",
+    "config/layout_table_mapping.json",
+    "config/source_registry.json",
+    "config/memory_policy.json",
+    "config/prompt_bundle.json",
+    "config/layout_profiles.json",
+    "config/io_policy.json",
+    "config/markdown_style.json",
+    "config/tool_bindings.template.json",
+    "templates/feedback.json",
+    "templates/acceptance_report.json",
+    "docs/README.md",
+    "docs/03-数据与审批控制.md",
+    "scripts/compile_prompts.py",
+    "scripts/workbench.py",
+    "tests/test_workbench.py",
+    "schemas/prompt_bundle.schema.json",
+    "prompts/00-controller.md"
+  ],
+  "schema_changes": [
+    "schemas/prompt_bundle.schema.json"
+  ],
+  "original_manifest_and_results_retained": true,
+  "active_version": "6.3.0",
+  "original_read_only": true
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>三类遗留建筑现状</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #0E2A5B;
+}
+
+  .slide.multi-card { position: relative; }
+  .slide.multi-card .page-bg {
+    position: absolute; inset: 0; background-size: cover;
+    background-position: center; z-index: 0;
+  }
+  .slide.multi-card .page-bg-overlay {
+    position: absolute; inset: 0; background: rgba(14, 27, 59, 0.65);
+    z-index: 1;
+  }
+  .slide.multi-card .brand-mark,
+  .slide.multi-card .page-header,
+  .slide.multi-card .slide-content,
+  .slide.multi-card .page-number { z-index: 3; }
+  .slide.multi-card .slide-content {
+    display: flex; flex-direction: column; gap: 24px;
+  }
+  .slide.multi-card .row-data,
+  .slide.multi-card .row-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; flex: 1;
+  }
+  .slide.multi-card .row-photos:empty,
+  .slide.multi-card .row-data:empty { display: none; }
+  /* 无大数字的纯文字卡: 隐藏空数字行,避免顶部空洞 */
+  .slide.multi-card .data-number:empty,
+  .slide.multi-card .data-unit:empty { display: none; }
+  .slide.multi-card .data-card:has(.data-number:empty) {
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .slide.multi-card .photo-card {
+    display: flex; flex-direction: column;
+  }
+  .slide.multi-card .photo-card img {
+    width: 100%; flex: 1; min-height: 240px;
+    object-fit: cover;
+  }
+  .slide.multi-card .photo-card .ph-frame {
+    flex: 1; min-height: 240px; border: none;
+  }
+</style>
+</head>
+<body>
+<div class="slide multi-card">
+  
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">Anyue Chemical Park Command Center Architectural Design</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag"></div>
+    <div class="page-title">三类遗留建筑现状</div>
+    <div class="page-subtitle">Three Types of Existing Buildings</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="row-data">
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">早期教学楼</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">砖混结构，现状完整，但抗震不满足现行规范，需加固改造</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">疫情隔离点办公楼</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">建筑现状完整，可保留使用，结合功能局部加建</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">半拉子养老院</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key"></span>
+            <span class="data-item-val">仅修了一层且只有土建部分，建议拆除，释放场地空间</span>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="row-photos">
+      
+    </div>
+  </div>
+  <div class="page-number"><span class="current">4</span>/25</div>
+</div>
+</body>
+</html>

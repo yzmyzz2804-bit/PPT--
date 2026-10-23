@@ -1,0 +1,108 @@
+<!--
+@template: chapter-divider-a
+@version: 3.0 分章色体系
+@slot: ch_*
+@description: 章节过渡·标准型 - 左偏大数字 + 章节名 + 英文副标 + 章节描述,强调色随章切换(--ch-accent)
+@required_fields: chapter_num, chapter_name, chapter_name_en
+@optional_fields: chapter_desc, bg_image
+@image_rule: bg_image 为空时纯暖纸底;有图时左45%图+灰调wash
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ chapter_name }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-chapter { background: var(--c-bg-page); display: flex; }
+  .slide-chapter .photo-left {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-chapter .photo-left .bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('{{ bg_image }}');
+    background-size: cover;
+    background-position: center;
+  }
+  .slide-chapter .photo-left .wash {
+    position: absolute;
+    inset: 0;
+    /* 灰调渐变滤掉 CAD 彩色地块(粉/红/绿) */
+    background: linear-gradient(90deg,
+      rgba(190, 190, 195, 0.55) 0%,
+      rgba(200, 200, 205, 0.72) 55%,
+      rgba(215, 215, 218, 0.92) 100%);
+  }
+  .slide-chapter .photo-left .brand-mark { z-index: 5; }
+  .slide-chapter .num-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px 0 80px;
+    position: relative;
+  }
+  .slide-chapter .ch-bar {
+    width: 64px;
+    height: 6px;
+    background: var(--ch-accent, var(--brand-primary));
+    margin-bottom: 40px;
+  }
+  .slide-chapter .big-num {
+    font-family: var(--font-en);
+    font-size: 180px;
+    font-weight: 700;
+    color: var(--ch-accent, var(--brand-primary));
+    line-height: 1;
+    margin-bottom: 18px;
+    margin-left: -8px;
+  }
+  .slide-chapter .ch-name {
+    font-family: var(--font-cn);
+    font-size: 44px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 24px;
+  }
+  .slide-chapter .ch-desc {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--c-text-secondary);
+    max-width: 520px;
+    margin-bottom: 28px;
+  }
+  .slide-chapter .ch-en {
+    font-family: var(--font-en);
+    font-size: 15px;
+    font-weight: var(--fw-en);
+    letter-spacing: 4px;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-chapter">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  {{#bg_image}}
+  <div class="photo-left">
+    <div class="bg"></div>
+    <div class="wash"></div>
+  </div>
+  {{/bg_image}}
+  <div class="num-right">
+    <div class="ch-bar"></div>
+    <div class="big-num">{{ chapter_num }}</div>
+    <div class="ch-name">{{ chapter_name }}</div>
+    {{#chapter_desc}}<div class="ch-desc">{{ chapter_desc }}</div>{{/chapter_desc}}
+    <div class="ch-en">{{ chapter_name_en }}</div>
+  </div>
+</div>
+</body>
+</html>

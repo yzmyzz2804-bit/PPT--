@@ -1,0 +1,136 @@
+<!--
+@template: scheme-present
+@source: COZE 8版式之一
+@slot: ch7
+@description: 方案呈现页 - SCHEME编号大字+方案总平图/示意图占大区域+核心指标
+@required_fields: scheme_num, scheme_name, scheme_name_en, image, metrics (array of {key, val}), description
+@coze_inherit: true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ scheme_name }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.scheme .scheme-num {
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    font-family: var(--font-en);
+    font-size: 24px;
+    font-weight: var(--fw-en);
+    letter-spacing: 4px;
+    color: var(--brand-accent);
+  }
+  .slide.scheme .scheme-body {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+  }
+  .slide.scheme .scheme-image {
+    flex: 3.2;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+  }
+  .slide.scheme .scheme-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .slide.scheme .scheme-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .slide.scheme .scheme-title {
+    font-size: 28px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.3;
+  }
+  .slide.scheme .scheme-en {
+    font-family: var(--font-en);
+    font-size: 14px;
+    color: var(--c-text-secondary);
+    letter-spacing: 1px;
+    margin-top: -16px;
+  }
+  .slide.scheme .scheme-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--brand-primary);
+    opacity: 0.85;
+  }
+  .slide.scheme .scheme-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .slide.scheme .metric {
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+  }
+  .slide.scheme .metric-key {
+    font-size: 12px;
+    color: var(--c-text-secondary);
+    margin-bottom: 4px;
+  }
+  .slide.scheme .metric-val {
+    font-family: var(--font-num);
+    font-size: 20px;
+    font-weight: var(--fw-num);
+    color: var(--brand-primary);
+  }
+</style>
+</head>
+<body>
+<div class="slide scheme">
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  {{#scheme_num}}<div class="scheme-num">SCHEME {{ scheme_num }}</div>{{/scheme_num}}
+  <div class="page-header" style="left: 80px;">
+    <div class="page-title">{{ scheme_name }}</div>
+    <div class="page-subtitle">{{ scheme_name_en }}</div>
+  </div>
+  <div class="slide-content">
+    <div class="scheme-body">
+      <div class="scheme-image">
+        {{#image}}<img src="{{ image }}" alt="{{ scheme_name }}">{{/image}}
+        {{^image}}<div class="ph-frame">
+          <svg class="ph-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="6" y="12" width="52" height="40" rx="3"/>
+            <circle cx="22" cy="26" r="4"/>
+            <path d="M6 44l16-14 12 10 8-7 16 13"/>
+          </svg>
+          <div class="ph-title">图纸 / 示意图位</div>
+          <div class="ph-hint">在 deck.yaml 本页 data 填写 image 路径</div>
+        </div>{{/image}}
+      </div>
+      <div class="scheme-side">
+        {{#description}}<div class="scheme-desc">{{ description }}</div>{{/description}}
+        <div class="scheme-metrics">
+          {{#metrics}}
+          <div class="metric">
+            <div class="metric-key">{{ key }}</div>
+            <div class="metric-val">{{ val }}</div>
+          </div>
+          {{/metrics}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

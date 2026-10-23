@@ -1,0 +1,75 @@
+<!--
+@template: closing
+@version: 2.0 对齐参考版 0917
+@slot: ending
+@description: 结尾页 - 暖纸底 + 居中黑色概念口号 + THANKS + 底部项目信息
+@required_fields: closing_text, closing_sub, project_name
+@image_rule: 无图,纯排版
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ closing_text }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-closing {
+    background: var(--c-bg-page);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .slide-closing .closing-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('{{ bg_image }}');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+  }
+  .slide-closing .closing-text,
+  .slide-closing .closing-sub,
+  .slide-closing .footer { position: relative; z-index: 1; }
+  .slide-closing .closing-text {
+    font-family: var(--font-cn);
+    font-size: 52px;
+    font-weight: var(--fw-title);
+    color: var(--c-black);
+    letter-spacing: 3px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .slide-closing .closing-sub {
+    font-family: var(--font-cn);
+    font-size: 18px;
+    color: #555;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .slide-closing .footer {
+    position: absolute;
+    bottom: 40px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: var(--font-cn);
+    font-size: 13px;
+    color: var(--c-text-secondary);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-closing">
+  {{#bg_image}}<div class="closing-bg"></div>{{/bg_image}}
+  <div class="closing-text">{{ closing_text }}</div>
+  <div class="closing-sub">{{ closing_sub }}</div>
+  <div class="footer">{{ project_name }} · 概念方案汇报</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,611 @@
+project:
+  name: 四川护理职业学院（德阳校区）规划调整
+  name_en: Sichuan Nursing Vocational College (Deyang Campus) Planning Adjustment
+  type: campus_planning
+  date: '2025.11'
+theme: blue-grey-coze
+slides:
+- id: slide_01
+  chapter: ch1
+  template: cover
+  title: 四川护理职业学院（德阳校区）规划调整
+  status: rendered
+  data:
+    title: 四川护理职业学院（德阳校区）规划调整
+    subtitle: Planning Adjustment of Sichuan Nursing Vocational College (Deyang Campus)
+    bg_image: ../assets/bg/cover.jpg
+  page_num: '1'
+  last_modified: 2026-10-23 17:31
+- id: slide_02
+  chapter: ch1
+  template: split-image-text
+  title: 项目概况
+  status: rendered
+  data:
+    title: 项目概况
+    subtitle: Project Overview
+    tag: 德阳校区调规
+    image: ../assets/images/site/original_masterplan.png
+    cards:
+    - title: ''
+      text: 四川护理职业学院德阳校区，原规划用地 653 亩，可用建设用地 485 亩<br>本次为学院德阳校区的规划调整：原规划未修建部分 + 新增建设用地整体规划<br>在校生规模从约
+        1 万人提升至约 1.2 万人，新增教师教研发展中心、学生体育馆等核心功能<br>基地禀赋优越：东侧城市公园、自然水系贯穿、中部山体生态核心
+    - title: 核心指标
+      text: 调规后总用地：约 773 亩<br>在校生规模：1.2 万人<br>新增用地：约 120 亩
+  page_num: '2'
+  last_modified: 2026-10-23 17:31
+- id: slide_03
+  chapter: ch1
+  template: multi-card-row
+  title: 原规划待优化方向
+  status: rendered
+  data:
+    title: 原规划待优化方向
+    subtitle: Issues to Address
+    tag: ''
+    data_cards:
+    - number: ''
+      unit: ''
+      label: 山体利用不足
+      items:
+      - key: ''
+        val: 现状山体未充分合理利用，土方成本高，景观资源浪费 —— 调规核心命题
+    - number: ''
+      unit: ''
+      label: 功能能级待提升
+      items:
+      - key: ''
+        val: 缺少教师发展中心、学生体育馆等核心功能，校园能级与学科发展不匹配
+    - number: ''
+      unit: ''
+      label: 建筑风格待统一
+      items:
+      - key: ''
+        val: 既有建筑风格多样，缺少统一的校园建筑语言与身份识别
+    photo_cards: []
+    bg_image: ''
+  page_num: '3'
+  last_modified: 2026-10-23 17:31
+- id: slide_04
+  chapter: ch1
+  template: split-image-text
+  title: 基地禀赋 · 自然与城市
+  status: rendered
+  data:
+    title: 基地禀赋 · 自然与城市
+    subtitle: Site Endowment
+    tag: 山 · 水 · 园 · 城
+    image: ../assets/images/site/surrounding.png
+    cards:
+    - title: ''
+      text: 基地内现状山体保留，形成校园中央生态绿核<br>东侧紧邻城市公园，景观资源优越，向外延伸生态走廊<br>自然水系贯穿基地，为校园提供灵动的水景观基底<br>南侧城市道路便捷通达，新增用地与既有校区无缝衔接
+  page_num: '4'
+  last_modified: 2026-10-23 17:31
+- id: slide_05
+  chapter: ch1
+  template: multi-card-row
+  title: 新增用地 · 规划设计条件
+  status: rendered
+  data:
+    title: 新增用地 · 规划设计条件
+    subtitle: New Site Conditions
+    tag: ''
+    data_cards:
+    - number: 67.5 亩
+      unit: ''
+      label: 新增用地面积
+      items:
+      - key: ''
+        val: 已确认新增建设用地
+    - number: 0.5 ~ 1.5
+      unit: ''
+      label: 容积率
+      items:
+      - key: ''
+        val: 下限 / 上限
+    - number: ≤ 25%
+      unit: ''
+      label: 建筑密度
+      items:
+      - key: ''
+        val: 低密度生态校园
+    - number: ≤ 24m
+      unit: ''
+      label: 建筑高度
+      items:
+      - key: ''
+        val: 多层，与山体协调
+    photo_cards:
+    - image: ../assets/images/site/new_site_condition.png
+      title: 规划设计条件
+      tag: ''
+  page_num: '5'
+  last_modified: 2026-10-23 17:31
+- id: slide_06
+  chapter: ch1
+  template: split-image-text
+  title: 场地现状 · 已建与待建
+  status: rendered
+  data:
+    title: 场地现状 · 已建与待建
+    subtitle: Site Status
+    tag: 初具规模，南侧待建
+    image: ../assets/images/site/status_aerial.jpg
+    cards:
+    - title: ''
+      text: 校区已初具规模，运行良好，形成基本的教学与生活配套<br>南侧用地部分区域处于建设阶段，发展潜力充足<br>现状山丘保留，为校园生态核心与景观锚点<br>新增用地与既有校区功能联动、空间连续、风格统一
+  page_num: '6'
+  last_modified: 2026-10-23 17:31
+- id: slide_07
+  chapter: ch1
+  template: split-image-text
+  title: 新增用地 · 规划思路
+  status: rendered
+  data:
+    title: 新增用地 · 规划思路
+    subtitle: Expansion Strategy
+    tag: 功能补位 · 能级跃升
+    image: ../assets/images/concept/expansion_bg.jpg
+    cards:
+    - title: ''
+      text: 教学居住组团：新增用地内布置教学与居住空间，满足规模扩张，与既有校区联动<br>核心功能补位：教师教研发展中心、学生体育馆落位新增用地，补齐校园短板<br>远期弹性预留：120
+        亩以外的远期预留用地，为未来发展留足空间<br>风雨球场：既有建设用地内增设顶棚式风雨球场，提升运动场地品质
+  page_num: '7'
+  last_modified: 2026-10-23 17:31
+- id: slide_08
+  chapter: ch1
+  template: multi-card-row
+  title: 三大设计策略
+  status: rendered
+  data:
+    title: 三大设计策略
+    subtitle: Three Design Strategies
+    tag: ''
+    data_cards:
+    - number: ''
+      unit: ''
+      label: 因山就势
+      items:
+      - key: ''
+        val: 建筑布局顺应山势，保护原有山体地貌，曲柔形态呼应山形
+    - number: ''
+      unit: ''
+      label: 医养融合
+      items:
+      - key: ''
+        val: 中医药理念植入山体景观，学研住景四维一体，彰显护理特色
+    - number: ''
+      unit: ''
+      label: 风格统一
+      items:
+      - key: ''
+        val: 敦厚质朴的暖灰建筑语言，全校统一的窗系统与材质体系
+    photo_cards: []
+    bg_image: ../assets/images/vision/three_visions_bg.jpg
+  page_num: '8'
+  last_modified: 2026-10-23 17:31
+- id: slide_09
+  chapter: ch2
+  template: chapter-divider-b
+  title: ''
+  status: rendered
+  data:
+    chapter_num: '02'
+    chapter_name: 设计愿景
+    chapter_name_en: Design Vision
+    chapter_desc: 因山就势 · 医养融合 · 风格统一
+    bg_image: ../assets/images/vision/vision_hero.jpg
+  page_num: '9'
+  last_modified: 2026-10-23 17:31
+- id: slide_10
+  chapter: ch2
+  template: multi-card-row
+  title: 三大设计愿景
+  status: rendered
+  data:
+    title: 三大设计愿景
+    subtitle: Three Design Visions
+    tag: ''
+    data_cards:
+    - number: ''
+      unit: ''
+      label: 因山就势的生长校园
+      items:
+      - key: ''
+        val: 建筑布局顺应山势，靠山处呈应山势，曲柔规划形态，分期弹性发展
+    - number: ''
+      unit: ''
+      label: 医养融合的景观校园
+      items:
+      - key: ''
+        val: 中医药理念植入山体景观，药草园+山地步道+康养节点，景医合一
+    - number: ''
+      unit: ''
+      label: 风格统一的人文校园
+      items:
+      - key: ''
+        val: 敦厚质朴的暖灰建筑语言，统一窗系统与材质体系，医学人文气质
+    photo_cards: []
+    bg_image: ../assets/images/vision/three_visions_bg.jpg
+  page_num: '10'
+  last_modified: 2026-10-23 17:31
+- id: slide_11
+  chapter: ch3
+  template: split-image-text
+  title: 总平面布局
+  status: rendered
+  data:
+    title: 总平面布局
+    subtitle: Overall Masterplan
+    tag: 一轴 · 两心 · 多组团
+    image: ../assets/images/site/masterplan_full.png
+    cards:
+    - title: ''
+      text: 一轴：南北校园主轴线，串联既有与新增<br>两心：北侧教学中心 + 中部山体景观中心<br>多组团：教学 / 生活 / 体育 / 科研 四大功能组团<br>人车分流，步行优先，环线组织车行
+  page_num: '11'
+  last_modified: 2026-10-23 17:31
+- id: slide_12
+  chapter: ch3
+  template: multi-card-row
+  title: 规划结构解析
+  status: rendered
+  data:
+    title: 规划结构解析
+    subtitle: Structure Analysis
+    tag: ''
+    data_cards:
+    - number: ''
+      unit: ''
+      label: 教学科研组团
+      items:
+      - key: ''
+        val: 教学实训 + 教师教研发展中心，校园学术引擎，庄重典雅
+    - number: ''
+      unit: ''
+      label: 生活居住组团
+      items:
+      - key: ''
+        val: 学生宿舍 + 教师宿舍 + 食堂，配套齐全的生活片区，温馨舒适
+    - number: ''
+      unit: ''
+      label: 体育活动组团
+      items:
+      - key: ''
+        val: 体育馆 + 风雨球场 + 活动中心，活力运动核心，主高侧低
+    photo_cards: []
+    bg_image: ''
+  page_num: '12'
+  last_modified: 2026-10-23 17:31
+- id: slide_13
+  chapter: ch3
+  template: split-image-text
+  title: 因山就势 · 曲柔规划形态
+  status: rendered
+  data:
+    title: 因山就势 · 曲柔规划形态
+    subtitle: Mountain-Responsive Form
+    tag: 靠山处呈应山势，形态柔美
+    image: ../assets/images/site/curve_form.jpg
+    cards:
+    - title: ''
+      text: 借鉴中国传统设计手法，靠山处呈应山势<br>规划形态上呈现曲线柔美韵律，建筑沿山形排布<br>靠山侧以宿舍功能为主，充分享受山景与自然<br>教学组团布置于平坦区域，打造学校教学新高地
+  page_num: '13'
+  last_modified: 2026-10-23 17:31
+- id: slide_14
+  chapter: ch3
+  template: split-image-text
+  title: 中医药学理念 · 山体景观再生
+  status: rendered
+  data:
+    title: 中医药学理念 · 山体景观再生
+    subtitle: TCM-Inspired Mountain Regeneration
+    tag: 绿轴核心 · 景医合一
+    image: ../assets/images/landscape/tcm_mountain.jpg
+    cards:
+    - title: ''
+      text: 保留原有山地地形，最小化工程干预，山校共生<br>植入中医药植物群落，药草园、中医文化节点、山地步道<br>打造集教学、休闲、康养于一体的校园景观核心<br>呼应护理职业学院的医学学科特色，寓教于景<br>游步道串联山体各节点，形成完整的山地体验环线
+    - title: 核心指标
+      text: 山体景观面积：约 50 亩<br>中医药植物：30+ 种<br>游步道总长：约 1.5 km
+  page_num: '14'
+  last_modified: 2026-10-23 17:31
+- id: slide_15
+  chapter: ch4
+  template: chapter-divider-a
+  title: ''
+  status: rendered
+  data:
+    chapter_num: '04'
+    chapter_name: 核心规划
+    chapter_name_en: Core Planning
+    chapter_desc: 功能提质 · 能级跃升
+    bg_image: ../assets/images/scheme/scheme_hero.jpg
+  page_num: '15'
+  last_modified: 2026-10-23 17:31
+- id: slide_16
+  chapter: ch4
+  template: split-image-text
+  title: 教师教研发展中心
+  status: rendered
+  data:
+    title: 教师教研发展中心
+    subtitle: Faculty Development Center
+    tag: 对外学术 · 庄重秩序
+    image: ../assets/images/architecture/faculty_center.jpg
+    cards:
+    - title: ''
+      text: 对外展示的"面子建筑"，定位学术交流与师资发展核心平台<br>参考青海理工智慧学术中心 + 西湖大学学术会堂：庄重秩序、入口仪式感<br>功能：学术报告厅
+        / 会议室 / 教师培训 / 交流展示 / 办公，中庭串联<br>立面：类对称布局，入口居中突出，局部石材 + 玻璃幕墙 + 金属收边<br>中央大堂通高空间
+        + 主楼梯 + 休息区，承接人流与交流
+    - title: 核心指标
+      text: 建筑面积：约 8000 ㎡<br>层数：4-5 层<br>定位：校园学术新地标
+  page_num: '16'
+  last_modified: 2026-10-23 17:31
+- id: slide_17
+  chapter: ch4
+  template: split-image-text
+  title: 学生体育馆
+  status: rendered
+  data:
+    title: 学生体育馆
+    subtitle: Student Gymnasium
+    tag: 主高侧低 · 厚重稳重
+    image: ../assets/images/architecture/gymnasium.jpg
+    cards:
+    - title: ''
+      text: 主赛场为大跨度空间，周边配套用房包裹消解大体量，主高侧低<br>参考青海理工体育馆：实墙+条窗+浅坡屋顶，厚重但有节奏<br>功能：主赛场（篮球+看台约1500座）+
+        训练馆 + 配套用房<br>立面：大尺度实墙（暖灰）+ 高侧窗带 + 入口门式框架，强调到达感<br>屋面：浅坡金属屋面（深灰），南向采光天窗，赛场引入自然光
+    - title: 核心指标
+      text: 建筑面积：约 6000 ㎡<br>座 位 数：约 1500 座<br>功能定位：教学+赛事+集会
+  page_num: '17'
+  last_modified: 2026-10-23 17:31
+- id: slide_18
+  chapter: ch4
+  template: compare-table
+  title: 教学居住组团 · 远期预留
+  status: rendered
+  data:
+    headers:
+    - 板块
+    - 核心内容
+    - 实施策略
+    rows:
+    - indicator: 教学居住组团
+      b: 新增教学空间 + 学生宿舍 + 配套食堂
+      b_better: true
+      note: 与既有校区功能联动、空间连续，统一规划分期实施
+    - indicator: 教师宿舍
+      b: 独立单元，配套齐全，靠近教学区
+      b_better: true
+      note: 舒适私密，步行可达，职住平衡，暖灰调统一风格
+    - indicator: 远期预留用地
+      b: 120 亩以外约 30-40 亩远期预留
+      b_better: true
+      note: 统一规划，弹性发展，为未来学科扩张留空间
+    - indicator: 分期建设策略
+      b: 一期核心功能 / 二期补充完善 / 三期拓展预留
+      b_better: true
+      note: 每一期形成完整功能闭环，不影响校园运营
+    summary_cards:
+    - name: 核心原则
+      items:
+      - k: ''
+        v: 统一规划 · 分期建设 · 滚动发展 · 弹性预留
+      hot: true
+    tag: ''
+  page_num: '18'
+  last_modified: 2026-10-23 17:31
+- id: slide_19
+  chapter: ch5
+  template: split-image-text
+  title: 整体鸟瞰图
+  status: rendered
+  data:
+    title: 整体鸟瞰图
+    subtitle: Aerial View
+    tag: 山校共生 · 医养融合 · 风格统一
+    image: ../assets/images/scheme/aerial_overall.jpg
+    cards:
+    - title: 核心定位
+      text: 山校共生 · 医养融合 · 风格统一
+  page_num: '19'
+  last_modified: 2026-10-23 17:31
+- id: slide_20
+  chapter: ch5
+  template: compare-table
+  title: 功能布局 · 交通组织
+  status: rendered
+  data:
+    headers:
+    - 维度
+    - 布局策略
+    - 核心说明
+    rows:
+    - indicator: 功能分区
+      b: 一轴两心多组团
+      b_better: true
+      note: 教学/生活/体育/科研 四大组团清晰划分，动静分离
+    - indicator: 人行系统
+      b: 主轴贯穿
+      b_better: true
+      note: 南北主轴串联各功能组团，步行优先，景观步道串联山体
+    - indicator: 车行系统
+      b: 外环成环
+      b_better: true
+      note: 机动车外环通行，人车分流，减少对教学生活区干扰
+    - indicator: 出入口
+      b: 北侧主入 / 南侧次入
+      b_better: true
+      note: 主入口承接既有校区，次入口对接新增用地
+    - indicator: 消防流线
+      b: 环形消防通道
+      b_better: true
+      note: 满足规范要求，通达性良好
+    summary_cards:
+    - name: 核心原则
+      items:
+      - k: ''
+        v: 人车分流 · 步行优先 · 功能清晰 · 山校联动
+      hot: true
+    tag: ''
+  page_num: '20'
+  last_modified: 2026-10-23 17:31
+- id: slide_21
+  chapter: ch5
+  template: compare-table
+  title: 经济技术指标对比
+  status: rendered
+  data:
+    headers:
+    - 指标项
+    - 调规后
+    - 原规划 / 变化
+    rows:
+    - indicator: 总用地面积
+      b: 约 773 亩
+      b_better: true
+      note: 653 亩（+约 120 亩）
+    - indicator: 在校生规模
+      b: 1.2 万人
+      b_better: true
+      note: 约 1 万人（+2000 人）
+    - indicator: 总建筑面积
+      b: 约 6.16 万㎡
+      b_better: true
+      note: 约 5.2 万㎡（+约 1 万㎡）
+    - indicator: 教师发展中心
+      b: 约 8000 ㎡
+      b_better: true
+      note: 无（新增核心功能）
+    - indicator: 学生体育馆
+      b: 约 6000 ㎡
+      b_better: true
+      note: 无（新增核心功能）
+    - indicator: 风雨球场
+      b: 顶棚式，非建筑
+      b_better: true
+      note: 无（新增）
+    - indicator: 山体景观
+      b: 约 50 亩（中医药主题）
+      b_better: true
+      note: 未充分利用（核心提升）
+    - indicator: 建筑高度
+      b: ≤ 24m
+      b_better: true
+      note: —（多层，与山体协调）
+    summary_cards:
+    - name: 调规目标
+      items:
+      - k: ''
+        v: 保护生态 + 适度扩容 + 功能提质 + 风格统一
+      hot: true
+    tag: ''
+  page_num: '21'
+  last_modified: 2026-10-23 17:31
+- id: slide_22
+  chapter: ch6
+  template: chapter-divider-c
+  title: ''
+  status: rendered
+  data:
+    chapter_num: '06'
+    chapter_name: 建筑意向
+    chapter_name_en: Architectural Atmosphere
+    chapter_desc: 敦厚质朴 · 暖灰基调 · 医学人文
+    bg_image: ../assets/images/architecture/arch_hero.jpg
+    points:
+    - num: '01'
+      title: 体量性格
+      desc: 敦厚质朴、厚重不笨重，横向舒展，立面有序韵律
+    - num: '02'
+      title: 色彩系统
+      desc: 暖灰/米黄主基调 + 深灰勾勒轮廓 + 木色点缀室内
+    - num: '03'
+      title: 立面母题
+      desc: 规整条窗 + 水平韵律 + 实墙与玻璃的节奏对比
+    - num: '04'
+      title: 统一窗系统
+      desc: 全校同款窗（深灰框+等距分格），排列组合形成韵律
+  page_num: '22'
+  last_modified: 2026-10-23 17:31
+- id: slide_23
+  chapter: ch6
+  template: split-image-text
+  title: 建筑风格 DNA
+  status: rendered
+  data:
+    title: 建筑风格 DNA
+    subtitle: Architectural Style DNA
+    tag: 五大风格基因
+    image: ../assets/images/architecture/teaching_building.jpg
+    cards:
+    - title: ''
+      text: 体量性格：敦厚质朴、厚重不笨重，横向舒展，立面有序韵律<br>色彩系统：暖灰/米黄主基调 + 深灰勾勒轮廓 + 木色点缀室内<br>立面母题：规整条窗
+        + 水平/竖向韵律 + 实墙与玻璃节奏对比<br>入口处理：内凹入口 + 灰空间 + 雨篷挑出，强调"进入"仪式感<br>统一窗系统：全校同款窗（深灰框+等距分格），排列组合形成韵律
+  page_num: '23'
+  last_modified: 2026-10-23 17:31
+- id: slide_24
+  chapter: ch6
+  template: compare-table
+  title: 四类核心建筑 · 风格对照
+  status: rendered
+  data:
+    headers:
+    - 建筑类型
+    - 体量策略
+    - 立面语言 / 关键词
+    rows:
+    - indicator: 教师发展中心
+      b: 方正庄重 + 中庭串联
+      b_better: true
+      note: 对称/类对称 + 石材点缀 + 入口门廊<br>庄重秩序 · 入口仪式 · 中央中庭
+    - indicator: 学生体育馆
+      b: 主高侧低 + 配套包裹消解
+      b_better: true
+      note: 实墙+高侧窗 + 门式框架入口 + 浅坡屋顶<br>厚重稳重 · 实墙条窗 · 高侧采光
+    - indicator: 学生宿舍
+      b: 曲柔排布 + 靠山观景
+      b_better: true
+      note: 水平条窗韵律 + 暖灰基调 + 山景阳台<br>温馨舒适 · 水平韵律 · 山景互动
+    - indicator: 食堂
+      b: 2层方盒子 + 上虚下实
+      b_better: true
+      note: 横向条窗+实墙交替 + 二层大窗观景<br>方正盒子 · 水平韵律 · 景观互动
+    summary_cards:
+    - name: 统一语言
+      items:
+      - k: ''
+        v: 暖灰基调 + 水平舒展 + 统一窗系统 + 木色点缀 + 内院中庭
+      hot: true
+    tag: ''
+  page_num: '24'
+  last_modified: 2026-10-23 17:31
+- id: slide_25
+  chapter: ch6
+  template: split-image-text
+  title: 风雨球场 · 依山就势布局
+  status: rendered
+  data:
+    title: 风雨球场 · 依山就势布局
+    subtitle: Covered Sports Court
+    tag: 顶棚式 · 非建筑 · 全天候
+    image: ../assets/images/landscape/rain_court.jpg
+    cards:
+    - title: ''
+      text: 学校领导要求：在已有建设用地内修建风雨球场<br>形式：顶棚式结构，非建筑，全天候户外活动空间<br>布局策略：依山就势，布置在山体周边平坦区域<br>与山体景观融合，不破坏山体轮廓线<br>满足篮球、羽毛球、排球等多种运动需求
+  page_num: '25'
+  last_modified: 2026-10-23 17:31
+- id: slide_26
+  chapter: ch6
+  template: closing
+  title: ''
+  status: rendered
+  data:
+    closing_text: 谢谢聆听
+    closing_sub: 因山就势 · 医养融合 · 风格统一<br>四川护理职业学院（德阳校区）规划调整
+    bg_image: ../assets/bg/closing.jpg
+  page_num: '26'
+  last_modified: 2026-10-23 17:31
+_total_pages: 26
+build:
+  last_build: 2026-10-23 17:32
+  last_build_pdf: E:\TRAE\PPT概念规划设计\ppt-engine\workdir\德阳护理职院调规\build\四川护理职业学院（德阳校区）规划调整.pdf

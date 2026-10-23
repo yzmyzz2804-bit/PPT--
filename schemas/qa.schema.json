@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "deck_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "artifacts_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "structure",
+              "numbers",
+              "visual",
+              "cross_variant",
+              "approvals",
+              "delivery"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "not_checked"
+            ]
+          },
+          "evidence": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "status",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "open_p0": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "open_p1": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "deck_sha256",
+    "artifacts_sha256",
+    "checks",
+    "open_p0",
+    "open_p1",
+    "issues"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,53 @@
+{
+  "version": "7.2.0",
+  "lessons": [
+    {
+      "id": "BUG-PDF-KIND",
+      "issue": "输入允许PDF但任务类型枚举不一致，显式登记缺失",
+      "fix": "add-input显式映射扩展名→类型，并校验后缀、大小、类型一致",
+      "state": "fixed_with_regression"
+    },
+    {
+      "id": "BUG-BLOCK-RESUME",
+      "issue": "阻塞、恢复、回退、流程驱动命令缺失",
+      "fix": "补齐命令、锁与审计；缺审批进BLOCKED，恢复重验依赖，回退快照并撤销审批",
+      "state": "fixed_with_regression"
+    },
+    {
+      "id": "BUG-CLAIMS-CYCLE",
+      "issue": "派生事实循环依赖可通过核验",
+      "fix": "依赖图检查：拒绝自环/互环/缺输入",
+      "state": "fixed_with_regression"
+    },
+    {
+      "id": "BUG-FAKE-RENDER",
+      "issue": "改名文本/普通zip可冒充渲染产物通过QA",
+      "fix": "交付扩展名+内部格式+可解析页面检查；QA前重核哈希",
+      "state": "fixed_with_regression"
+    },
+    {
+      "id": "BUG-CONFIG-LOCK",
+      "issue": "配置锁缺项或版本漂移仍可通过",
+      "fix": "完整冻结集合、哈希与版本校验；迁移只建新运行",
+      "state": "fixed_with_regression"
+    },
+    {
+      "id": "BUG-DOC-DRIFT",
+      "issue": "收尾文档沿用中间版本页数/哈希，与实际产物不一致",
+      "fix": "最终状态文档以实际PDF重读为准；封测重读页数/尺寸/哈希后回填",
+      "state": "fixed_with_regression"
+    },
+    {
+      "id": "LESSON-GEOMETRIC-SPLIT",
+      "issue": "按固定坐标网格切块代替语义重排，字号达标但表格/图纸/标题被割裂",
+      "fix": "L01—L09对象门控：完整图块、段落流动、表格按行列分页并重复表头主键；字号/字符覆盖不得代替语义完整",
+      "state": "rule_prevented"
+    },
+    {
+      "id": "LESSON-VISUAL-CLAIM",
+      "issue": "联系表/机器检查被误当作逐字视觉通过",
+      "fix": "视觉分级：机制检查/有限审阅/逐字目视分开记录；未执行不得声称",
+      "state": "rule_prevented"
+    }
+  ]
+}

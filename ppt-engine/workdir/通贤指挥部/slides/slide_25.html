@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>谢谢聆听</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: var(--brand-primary);
+}
+
+  .slide-closing {
+    background: var(--c-bg-page);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .slide-closing .closing-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/bg/closing.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 78%);
+  }
+  .slide-closing .closing-text,
+  .slide-closing .closing-sub,
+  .slide-closing .footer { position: relative; z-index: 1; }
+  .slide-closing .closing-text {
+    font-family: var(--font-cn);
+    font-size: 52px;
+    font-weight: var(--fw-title);
+    color: var(--c-black);
+    letter-spacing: 3px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  .slide-closing .closing-sub {
+    font-family: var(--font-cn);
+    font-size: 18px;
+    color: #555;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .slide-closing .footer {
+    position: absolute;
+    bottom: 40px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: var(--font-cn);
+    font-size: 13px;
+    color: var(--c-text-secondary);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-closing">
+  <div class="closing-bg"></div>
+  <div class="closing-text">谢谢聆听</div>
+  <div class="closing-sub">安岳县化工园区项目指挥部建筑设计</div>
+  <div class="footer">安岳县化工园区项目指挥部建筑设计 · 概念方案汇报</div>
+</div>
+</body>
+</html>

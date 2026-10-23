@@ -1,0 +1,11 @@
+{
+  "run_id": "RUN-001",
+  "package_version": "7.2.0",
+  "result": "blocked",
+  "issue_ids": [],
+  "observations": [
+    "[待填：真实结果]"
+  ],
+  "proposed_changes": [],
+  "auto_apply": false
+}

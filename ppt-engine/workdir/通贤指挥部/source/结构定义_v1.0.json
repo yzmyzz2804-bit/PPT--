@@ -1,0 +1,620 @@
+{
+  "version": "layout-protocol-v1.1",
+  "project": {
+    "name": "安岳县化工园区项目指挥部建筑设计",
+    "name_en": "Anyue Chemical Park Command Center Architectural Design",
+    "type": "building_renovation",
+    "theme": "blue-grey-business",
+    "date": "2026.10"
+  },
+  "assets_base_path": "tongxian_assets/",
+  "total_pages": 25,
+  "chapters": [
+    {
+      "num": "01",
+      "title": "项目背景与现状",
+      "pages": "P2 - P5",
+      "concept": "Project Background"
+    },
+    {
+      "num": "02",
+      "title": "改造策略",
+      "pages": "P6 - P8",
+      "concept": "Renovation Strategy"
+    },
+    {
+      "num": "03",
+      "title": "总体规划",
+      "pages": "P9 - P11",
+      "concept": "Master Planning"
+    },
+    {
+      "num": "04",
+      "title": "建筑方案",
+      "pages": "P12 - P16",
+      "concept": "Architectural Design"
+    },
+    {
+      "num": "05",
+      "title": "重点空间",
+      "pages": "P17 - P20",
+      "concept": "Key Spaces"
+    },
+    {
+      "num": "06",
+      "title": "结构加固",
+      "pages": "P21 - P22",
+      "concept": "Structural Strengthening"
+    },
+    {
+      "num": "07",
+      "title": "经济技术指标",
+      "pages": "P23",
+      "concept": "Economic Indicators"
+    },
+    {
+      "num": "08",
+      "title": "技术图纸",
+      "pages": "P24",
+      "concept": "Technical Drawings"
+    }
+  ],
+  "concept_theme": "留 · 改 · 增 — 存量建筑的再生策略",
+  "core_logic": "留（保留可利用建筑）→ 改（加固改造升级）→ 增（加建功能补齐）",
+  "slides_structure": [
+    {
+      "page": 1,
+      "type": "cover",
+      "title": "安岳县化工园区项目指挥部",
+      "subtitle": "建筑设计方案 · 专家评审版",
+      "meta": {
+        "date": "2026.10"
+      },
+      "asset": {
+        "bg_image": "bg/cover.jpg"
+      }
+    },
+    {
+      "page": 2,
+      "type": "chapter-divider",
+      "chapter_num": "01",
+      "chapter_title": "项目背景与现状",
+      "chapter_concept": "Project Background",
+      "chapter_subtitle": "存量建筑 · 改造新生",
+      "asset": {
+        "bg_image": "images/site/site_aerial.jpg"
+      }
+    },
+    {
+      "page": 3,
+      "type": "image-text-split",
+      "title": "项目概况",
+      "title_en": "Project Overview",
+      "content": {
+        "callout": "化工园区指挥中枢",
+        "bullets": [
+          "项目位于安岳县通贤镇，G247 国道旁",
+          "利用原小学、医学集中隔离点等既有建筑改造",
+          "定位：化工园区项目指挥部 + 应急环保监测中心",
+          "功能涵盖园区展示、会议会商、指挥调度、办公住宿",
+          "10号召开专家评审会，聚焦方案性内容"
+        ],
+        "key_metrics": [
+          {
+            "label": "总用地面积",
+            "value": "约 15 亩"
+          },
+          {
+            "label": "既有建筑",
+            "value": "3 类"
+          },
+          {
+            "label": "专家会时间",
+            "value": "10.10 下午"
+          }
+        ]
+      },
+      "asset": {
+        "main_image": "images/site/masterplan_aerial.jpg"
+      }
+    },
+    {
+      "page": 4,
+      "type": "three-cards",
+      "title": "三类遗留建筑现状",
+      "title_en": "Three Types of Existing Buildings",
+      "cards": [
+        {
+          "title": "早期教学楼",
+          "title_en": "Teaching Building",
+          "desc": "砖混结构，现状完整，但抗震不满足现行规范，需加固改造",
+          "icon": "icons/building.svg"
+        },
+        {
+          "title": "疫情隔离点办公楼",
+          "title_en": "Quarantine Building",
+          "desc": "建筑现状完整，可保留使用，结合功能局部加建",
+          "icon": "icons/preserve.svg"
+        },
+        {
+          "title": "半拉子养老院",
+          "title_en": "Unfinished Building",
+          "desc": "仅修了一层且只有土建部分，建议拆除，释放场地空间",
+          "icon": "icons/renovate.svg"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "type": "image-text-split",
+      "title": "场地现状问题",
+      "title_en": "Site Issues",
+      "content": {
+        "callout": "四大现状问题",
+        "bullets": [
+          "入口坡度较大，展示性弱，到达体验不佳",
+          "场地西北侧有现状荒草地，未利用且不占永农指标",
+          "建筑风格不统一，既有建筑年代不同、形象各异",
+          "各建筑之间联系弱，缺乏整体规划与景观串联",
+          "场地高差未充分利用，台地空间潜力待挖掘"
+        ]
+      },
+      "asset": {
+        "main_image": "images/site/problem_analysis.png"
+      }
+    },
+    {
+      "page": 6,
+      "type": "chapter-divider",
+      "chapter_num": "02",
+      "chapter_title": "改造策略",
+      "chapter_concept": "Renovation Strategy",
+      "chapter_subtitle": "留 · 改 · 增",
+      "asset": {
+        "bg_image": "images/concept/strategy_hero.jpg"
+      }
+    },
+    {
+      "page": 7,
+      "type": "three-cards",
+      "title": "留 · 改 · 增 — 三大策略",
+      "title_en": "Preserve · Renovate · Add",
+      "cards": [
+        {
+          "title": "留—保留利用",
+          "title_en": "Preserve",
+          "desc": "保留教学楼、隔离点等结构完好建筑，节约投资，延续记忆",
+          "icon": "icons/preserve.svg"
+        },
+        {
+          "title": "改—加固升级",
+          "title_en": "Renovate",
+          "desc": "砖混结构加固改造，抗震升级，立面更新，功能置换",
+          "icon": "icons/renovate.svg"
+        },
+        {
+          "title": "增—加建补齐",
+          "title_en": "Add",
+          "desc": "屋顶加建活动室，新建门卫，利用台地做设备用房与车库",
+          "icon": "icons/add.svg"
+        }
+      ],
+      "asset": {
+        "bg_image": "images/concept/renovation_strategy.jpg"
+      }
+    },
+    {
+      "page": 8,
+      "type": "image-text-split",
+      "title": "拆改总图",
+      "title_en": "Demolition & Renovation Plan",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "75%"
+      },
+      "content": {
+        "callout": "一张图看清：保留 / 拆除 / 新建",
+        "bullets": [
+          "保留：教学楼 + 隔离点办公楼 + 消防水池 + 门卫",
+          "拆除：半拉子养老院 + 部分围墙 + 局部水泥地面",
+          "新增：屋顶加建层 + 新建门卫房 + 台地设备用房",
+          "连接：草地设踏步，串联保留建筑，形成整体"
+        ]
+      },
+      "asset": {
+        "main_image": "images/site/demolition_plan.png"
+      }
+    },
+    {
+      "page": 9,
+      "type": "chapter-divider",
+      "chapter_num": "03",
+      "chapter_title": "总体规划",
+      "chapter_concept": "Master Planning",
+      "chapter_subtitle": "一核 · 两区 · 多节点",
+      "asset": {
+        "bg_image": "images/site/masterplan_aerial.jpg"
+      }
+    },
+    {
+      "page": 10,
+      "type": "image-text-split",
+      "title": "总平面布局",
+      "title_en": "Site Masterplan",
+      "layout": {
+        "image_position": "full",
+        "image_ratio": "70%"
+      },
+      "content": {
+        "callout": "一核 · 两区 · 多节点",
+        "bullets": [
+          "一核：指挥中心核心区（主教学楼改造）",
+          "两区：园区企业办公区 + 生活配套区",
+          "多节点：展示广场、梯步景观、应急中心、停车区",
+          "利用台地高差：半地下应急中心 + 工作车辆车库"
+        ]
+      },
+      "asset": {
+        "main_image": "images/site/masterplan.png"
+      }
+    },
+    {
+      "page": 11,
+      "type": "comparison-table",
+      "title": "功能分区 · 交通组织",
+      "title_en": "Zoning & Circulation",
+      "table": {
+        "headers": [
+          "分区",
+          "主要功能",
+          "建筑载体"
+        ],
+        "rows": [
+          [
+            "指挥核心区",
+            "展示厅 / 会议室 / 指挥中心 / 视频会商",
+            "主教学楼（改造）"
+          ],
+          [
+            "企业办公区",
+            "园区企业办公 / 管理用房",
+            "隔离点办公楼（保留）"
+          ],
+          [
+            "生活配套区",
+            "宿舍 / 食堂 / 活动室",
+            "保留建筑 + 屋顶加建"
+          ],
+          [
+            "应急功能区",
+            "应急环保监测 / 消洗区 / 设备用房",
+            "台地半地下空间"
+          ],
+          [
+            "入口展示区",
+            "门卫 / 展示广场 / 园区停车",
+            "新建 + 景观改造"
+          ]
+        ],
+        "verdict": {
+          "label": "交通策略",
+          "text": "人车分流 · 主入口形象提升 · 消防环道 · 台地垂直交通"
+        }
+      }
+    },
+    {
+      "page": 12,
+      "type": "chapter-divider",
+      "chapter_num": "04",
+      "chapter_title": "建筑方案",
+      "chapter_concept": "Architectural Design",
+      "chapter_subtitle": "现代简约 · 工业气质",
+      "asset": {
+        "bg_image": "images/architecture/floor_plan_bg.jpg"
+      }
+    },
+    {
+      "page": 13,
+      "type": "image-text-split",
+      "title": "建筑立面意向",
+      "title_en": "Architectural Elevation",
+      "content": {
+        "callout": "现代简约 · 工业气质",
+        "bullets": [
+          "立面风格：现代简约，干净利落，体现化工园区的理性气质",
+          "色彩体系：白 + 深灰 + 工业蓝点缀，既有建筑统一翻新",
+          "材料策略：涂料为主 + 局部铝板/玻璃，经济高效",
+          "屋顶加建：开放式活动室，通透轻盈，不压抑原有建筑",
+          "入口处理：主入口雨篷挑出，强化仪式感与到达性"
+        ]
+      },
+      "asset": {
+        "main_image": "images/architecture/command_center.jpg"
+      }
+    },
+    {
+      "page": 14,
+      "type": "image-text-split",
+      "title": "方案一 · 平面布局",
+      "title_en": "Scheme 1 · Floor Plan",
+      "content": {
+        "callout": "功能集中 · 流线清晰",
+        "bullets": [
+          "一层：展示厅 + 会客 + 指挥中心 + 消控室",
+          "二层：视频会商室 + 会议室 + 办公",
+          "三层：应急环保监测 + 指挥调度 + 休息",
+          "垂直交通：两部楼梯，一部电梯（改造加装）",
+          "特点：公共功能靠下，办公在上，流线清晰"
+        ]
+      },
+      "asset": {
+        "main_image": "images/architecture/plan_s1_1f.png"
+      }
+    },
+    {
+      "page": 15,
+      "type": "image-text-split",
+      "title": "方案二 · 平面布局",
+      "title_en": "Scheme 2 · Floor Plan",
+      "content": {
+        "callout": "灵活分隔 · 多功能性",
+        "bullets": [
+          "一层：入口大堂 + 展厅 + 多功能厅（可分隔）",
+          "二层：开敞办公 + 会议室群 + 茶歇区",
+          "三层：指挥中心 + 环保监测 + 值班住宿",
+          "结构利用：原有承重墙保留，新增轻质隔墙",
+          "特点：灵活性强，适应未来功能调整"
+        ]
+      },
+      "asset": {
+        "main_image": "images/architecture/plan_s2_1f.png"
+      }
+    },
+    {
+      "page": 16,
+      "type": "comparison-table",
+      "title": "方案对比",
+      "title_en": "Scheme Comparison",
+      "table": {
+        "headers": [
+          "维度",
+          "方案一",
+          "方案二"
+        ],
+        "rows": [
+          [
+            "布局特点",
+            "功能集中，竖向分区明确",
+            "灵活分隔，适应性强"
+          ],
+          [
+            "流线组织",
+            "清晰直接，效率高",
+            "开敞流动，空间感好"
+          ],
+          [
+            "改造难度",
+            "墙体改动少，造价较低",
+            "轻质隔墙多，改造量稍大"
+          ],
+          [
+            "使用灵活性",
+            "功能固定，适合定位明确",
+            "可分可合，适应未来变化"
+          ],
+          [
+            "推荐场景",
+            "功能稳定的指挥办公",
+            "多功能复合的展示交流"
+          ]
+        ],
+        "verdict": {
+          "label": "推荐倾向",
+          "text": "推荐方案一：功能明确、改造量小、造价经济，符合指挥部定位"
+        }
+      }
+    },
+    {
+      "page": 17,
+      "type": "chapter-divider",
+      "chapter_num": "05",
+      "chapter_title": "重点空间",
+      "chapter_concept": "Key Spaces",
+      "chapter_subtitle": "形象展示 · 高效调度",
+      "asset": {
+        "bg_image": "images/interior/command_center.jpg"
+      }
+    },
+    {
+      "page": 18,
+      "type": "image-text-split",
+      "title": "园区展示厅",
+      "title_en": "Exhibition Hall",
+      "content": {
+        "callout": "园区窗口 · 第一印象",
+        "bullets": [
+          "位置：一层主入口右侧，第一触点",
+          "功能：园区规划展示 + 产业布局 + 项目成就",
+          "设计：简洁现代，大面积展墙 + 数字屏",
+          "空间：通高两层，气势开阔",
+          "材料：木色 + 白色 + 深灰，简洁克制"
+        ]
+      },
+      "asset": {
+        "main_image": "images/interior/exhibition_hall.jpg"
+      }
+    },
+    {
+      "page": 19,
+      "type": "image-text-split",
+      "title": "应急环保监测指挥中心",
+      "title_en": "Emergency Command Center",
+      "content": {
+        "callout": "调度中枢 · 实时响应",
+        "bullets": [
+          "位置：三层，视野开阔，便于指挥调度",
+          "核心配置：大屏拼接墙 + 操作台 + 值班工位",
+          "功能：环境监测 + 应急指挥 + 视频调度",
+          "配套：独立空调系统 + UPS 供电 + 消防保障",
+          "空间氛围：沉稳专业，深蓝灰调，24小时运行"
+        ]
+      },
+      "asset": {
+        "main_image": "images/interior/command_center.jpg"
+      }
+    },
+    {
+      "page": 20,
+      "type": "image-text-split",
+      "title": "视频会商室",
+      "title_en": "Video Conference Room",
+      "content": {
+        "callout": "高效协同 · 远程决策",
+        "bullets": [
+          "位置：二层，安静且交通便利",
+          "功能：视频会议 + 方案评审 + 远程会商",
+          "配置：4K 摄像头 + 全向麦 + 共享屏幕系统",
+          "座位：约 20 人圆桌/长桌布置",
+          "声学处理：墙面吸音 + 吊顶降噪，保证会议质量"
+        ]
+      },
+      "asset": {
+        "main_image": "images/interior/meeting_room.jpg"
+      }
+    },
+    {
+      "page": 21,
+      "type": "chapter-divider",
+      "chapter_num": "06",
+      "chapter_title": "结构加固",
+      "chapter_concept": "Structural Strengthening",
+      "chapter_subtitle": "抗震升级 · 安全保障",
+      "asset": {
+        "bg_image": "images/structure/reinforcement.jpg"
+      }
+    },
+    {
+      "page": 22,
+      "type": "image-text-split",
+      "title": "砖混结构加固策略",
+      "title_en": "Masonry Structure Strengthening",
+      "content": {
+        "callout": "鉴定先行 · 有的放矢",
+        "bullets": [
+          "依据最新鉴定报告：原教学楼不满足现行抗震设计要求",
+          "加固原则：安全可靠 + 经济合理 + 尽量少破坏原结构",
+          "改动位置补充：构造柱、边框、过梁、圈梁",
+          "屋顶加建：轻钢结构，自重小，对下部结构影响可控",
+          "施工配合：先加固后改造，保证施工期间安全"
+        ]
+      },
+      "asset": {
+        "main_image": "images/structure/detail_1.png"
+      }
+    },
+    {
+      "page": 23,
+      "type": "data-profile",
+      "asset": {
+        "bg_image": "images/site/masterplan_aerial.jpg"
+      },
+      "title": "经济技术指标",
+      "title_en": "Economic & Technical Indicators",
+      "data_sections": [
+        {
+          "section_label": "用地指标",
+          "items": [
+            {
+              "label": "总用地面积",
+              "value": "约 10,000㎡",
+              "unit": "（约15亩）"
+            },
+            {
+              "label": "建筑基底面积",
+              "value": "约 2,800㎡"
+            },
+            {
+              "label": "场地绿地率",
+              "value": "约 25%"
+            },
+            {
+              "label": "容积率",
+              "value": "约 0.85"
+            }
+          ]
+        },
+        {
+          "section_label": "建筑指标",
+          "items": [
+            {
+              "label": "总建筑面积",
+              "value": "约 8,500㎡"
+            },
+            {
+              "label": "保留建筑面积",
+              "value": "约 6,000㎡"
+            },
+            {
+              "label": "新增建筑面积",
+              "value": "约 2,500㎡"
+            },
+            {
+              "label": "建筑层数",
+              "value": "地上3层 + 加建层"
+            }
+          ]
+        },
+        {
+          "section_label": "功能配比",
+          "items": [
+            {
+              "label": "办公/指挥",
+              "value": "约 45%"
+            },
+            {
+              "label": "展示/会议",
+              "value": "约 20%"
+            },
+            {
+              "label": "宿舍/配套",
+              "value": "约 20%"
+            },
+            {
+              "label": "设备/车库",
+              "value": "约 15%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": 24,
+      "type": "chapter-divider",
+      "chapter_num": "08",
+      "chapter_title": "技术图纸",
+      "chapter_concept": "Technical Drawings",
+      "chapter_subtitle": "完整图纸详见附件",
+      "asset": {
+        "bg_image": "images/technical/blueprints.jpg"
+      }
+    },
+    {
+      "page": 25,
+      "type": "closing",
+      "thanks_title": "谢谢聆听",
+      "thanks_subtitle": "安岳县化工园区项目指挥部建筑设计",
+      "concept_recap": "",
+      "asset": {
+        "bg_image": "bg/closing.jpg"
+      }
+    }
+  ],
+  "version_notes": [
+    "v1.0 初版：",
+    "1. 概念主题：留·改·增 — 存量建筑再生策略",
+    "2. 8章结构：背景→策略→总规→建筑→空间→结构→指标→图纸",
+    "3. 技术图纸单独成章，做标准分隔页（仅1页）",
+    "4. 结尾简化，不做总结",
+    "5. 专家会汇报定位，侧重方案性内容"
+  ]
+}

@@ -1,0 +1,76 @@
+<!--
+@template: scheme-compare
+@source: COZE 8版式之一
+@slot: ch7 or ch8
+@description: 方案对比页 - 两列对比布局,每列方案标题+核心指标列表,关键差异点强调
+@required_fields: tag, title, subtitle, schemes (2 items: {name, name_en, featured, metrics[{key, val, highlight}]})
+@coze_inherit: true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.compare .compare-layout { gap: 32px; }
+  .slide.compare .compare-col { padding: 32px; }
+  .slide.compare .compare-col.featured {
+    border-color: var(--brand-accent);
+    border-width: 2px;
+  }
+  .slide.compare .compare-col.featured::before {
+    content: 'RECOMMEND';
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--brand-accent);
+    color: var(--c-white);
+    font-family: var(--font-en);
+    font-size: 11px;
+    font-weight: var(--fw-en);
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    border-radius: var(--radius);
+  }
+  .slide.compare .compare-item.highlight .compare-item-val {
+    color: var(--brand-accent);
+    font-weight: var(--fw-title);
+  }
+</style>
+</head>
+<body>
+<div class="slide compare">
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="compare-layout">
+      {{#schemes}}
+      <div class="compare-col {{#featured}}featured{{/featured}}">
+        <div class="compare-title">{{ name }}</div>
+        <div class="compare-subtitle">{{ name_en }}</div>
+        <ul class="compare-items">
+          {{#metrics}}
+          <li class="compare-item {{#highlight}}highlight{{/highlight}}">
+            <span class="compare-item-key">{{ key }}</span>
+            <span class="compare-item-val">{{ val }}</span>
+          </li>
+          {{/metrics}}
+        </ul>
+      </div>
+      {{/schemes}}
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "name": "denim-stitch",
+    "label": "牛仔缝线 (T002 鞋服产业)",
+    "description": "牛仔蓝 + 缝线橙：鞋服产业联想，浅灰底保持规划文本的清爽。项目级主题隔离，仅作用于 T002。",
+    "version": "1.0"
+  },
+
+  "colors": {
+    "brand": {
+      "primary": "#1E2A38",
+      "secondary": "#2B4C7E",
+      "accent": "#E87D2B",
+      "accent_bright": "#F0975A",
+      "accent_light": "#F5B586",
+      "accent_lighter": "#FAD3B5",
+      "accent_lightest": "#FDEAE0",
+      "accent_warm": "#E87D2B",
+      "accent_warm_light": "#F5B586"
+    },
+    "neutral": {
+      "black": "#1A1A1A",
+      "text_secondary": "#76808C",
+      "divider": "#D5D8D2",
+      "card_border": "#E3E6E0",
+      "bg_card": "#FFFFFF",
+      "bg_page": "#F4F5F3",
+      "bg_page_deep": "#EDEFEA",
+      "white": "#FFFFFF"
+    },
+    "semantic": {
+      "success": "#2D5F5D",
+      "warning": "#E87D2B"
+    }
+  },
+
+  "chapter_colors": {
+    "_comment": "分章强调色：牛仔蓝系为主，缝线橙突出概念主旨章（ch3），首尾回扣牛仔蓝",
+    "ch1": "#2B4C7E",
+    "ch2": "#1E4E6E",
+    "ch3": "#E87D2B",
+    "ch4": "#8A5A2B",
+    "ch5": "#2D5F5D",
+    "ch6": "#46526B",
+    "ch7": "#3A3A40",
+    "ch8": "#2B4C7E"
+  },
+
+  "typography": {
+    "font_cn": "Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif",
+    "font_en": "Arial, Helvetica, Inter, sans-serif",
+    "font_num": "Arial, Helvetica, Inter, sans-serif",
+    "scale": {
+      "mega_title": "84px",
+      "hero_title": "56px",
+      "page_title": "34px",
+      "card_title": "22px",
+      "body": "17px",
+      "caption": "13px",
+      "en_label": "13px"
+    },
+    "weight": {
+      "cn_title": 700,
+      "cn_body": 400,
+      "en_label": 600,
+      "number": 600
+    },
+    "letter_spacing_en": "2px"
+  },
+
+  "layout": {
+    "canvas_w": "1920px",
+    "canvas_h": "1080px",
+    "safe_margin": "80px",
+    "brand_mark_pos": { "top": "50px", "left": "60px" }
+  },
+
+  "components": {
+    "card": {
+      "radius": "6px",
+      "padding": "24px",
+      "border": "1px solid #E3E6E0",
+      "accent_bar": { "top": "3px", "color": "#E87D2B" }
+    },
+    "divider": {
+      "color": "#D5D8D2",
+      "thickness": "1px",
+      "decorative_short": "36px"
+    }
+  },
+
+  "principles": [
+    "克制用色：牛仔蓝系为主，缝线橙每页强调色≤2处",
+    "大留白：边距 80-100px，元素不拥挤",
+    "中英双标题：所有中文标题配英文小字副标题",
+    "数据放大：关键数据用大字号突出，不跟正文混",
+    "装饰极简：只用方块+横线的品牌标识",
+    "左对齐为主：标题、正文一律左对齐，数字卡片可居中",
+    "图文分栏明确：有图时图占主视觉区（>50%宽度）",
+    "信息层级清晰：每页不超过3级标题层级"
+  ]
+}

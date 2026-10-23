@@ -1,0 +1,31 @@
+{
+  "version": "7.2.0",
+  "resident": [
+    "integration/PROJECT_RULES.md",
+    "current state summary",
+    "current run index"
+  ],
+  "budgets": {
+    "resident_summary_chars": 4000,
+    "index_entries_per_read": 20,
+    "source_chunk_chars": 8000,
+    "max_chunks_per_agent_turn": 3
+  },
+  "index_fields": [
+    "asset_id",
+    "kind",
+    "tags",
+    "summary",
+    "path",
+    "sha256",
+    "version",
+    "status",
+    "supersedes"
+  ],
+  "retrieval": "先按标签和页码选索引，再读取具体段落/页；不要把全部目录递归加入上下文。",
+  "summary_is_evidence": false,
+  "refresh": "文件哈希变化即重建该资产索引；不复用旧摘要作为新事实。",
+  "handoff": "每阶段写handoff.md和state；上下文拥挤时由用户/宿主新建会话，仅载入恢复摘要与当前阶段。",
+  "caveat": "读取过的内容可能继续占用当前会话；落盘不能主动释放已有token。",
+  "cross_run": "只检索明确批准复用的案例；不得把前一客户材料混入当前任务。"
+}

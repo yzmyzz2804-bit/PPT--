@@ -1,0 +1,121 @@
+<!--
+@template: data-dashboard
+@version: 1.0 分章色体系
+@slot: ch_*
+@description: 数据仪表盘 - 3列x2行关键指标卡(大数字+单位+标签+注记),适合经济技术指标/规模数据总览
+@required_fields: title, metrics (array of {value, unit, label, note})
+@optional_fields: tag, subtitle, summary
+@image_rule: 无图纯排版
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-dash .dash-grid {
+    position: absolute;
+    top: 290px;
+    left: 80px;
+    right: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .slide-dash .m-card {
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 38px 36px 32px;
+    position: relative;
+    overflow: hidden;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slide-dash .m-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 5px;
+    background: var(--ch-accent, var(--brand-primary));
+  }
+  .slide-dash .m-value-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .slide-dash .m-value {
+    font-family: var(--font-num);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--brand-primary);
+    letter-spacing: -1px;
+  }
+  .slide-dash .m-unit {
+    font-family: var(--font-en);
+    font-size: 20px;
+    font-weight: var(--fw-num);
+    color: var(--ch-accent, var(--brand-primary));
+  }
+  .slide-dash .m-label {
+    font-size: 19px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 8px;
+  }
+  .slide-dash .m-note {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--c-text-secondary);
+  }
+  .slide-dash .dash-summary {
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    bottom: 80px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--c-text-secondary);
+    padding-top: 22px;
+    border-top: 1px solid var(--c-divider);
+  }
+  .slide-dash .dash-summary b {
+    color: var(--ch-accent, var(--brand-primary));
+    font-weight: var(--fw-title);
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-dash">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="dash-grid">
+    {{#metrics}}
+    <div class="m-card">
+      <div class="m-value-row">
+        <span class="m-value">{{ value }}</span>
+        {{#unit}}<span class="m-unit">{{ unit }}</span>{{/unit}}
+      </div>
+      <div class="m-label">{{ label }}</div>
+      {{#note}}<div class="m-note">{{ note }}</div>{{/note}}
+    </div>
+    {{/metrics}}
+  </div>
+  {{#summary}}<div class="dash-summary">{{ summary }}</div>{{/summary}}
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "local",
+              "web"
+            ]
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retrieved_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "applicable_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version_status": {
+            "type": "string",
+            "enum": [
+              "current_verified",
+              "historical",
+              "unknown",
+              "not_applicable"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "authority_status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "candidate",
+              "unknown"
+            ]
+          },
+          "snapshot_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "source_id",
+          "kind",
+          "locator",
+          "publisher",
+          "retrieved_at",
+          "applicable_version",
+          "version_status",
+          "sha256",
+          "authority_status",
+          "snapshot_path"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "run_id",
+    "sources"
+  ],
+  "additionalProperties": false
+}

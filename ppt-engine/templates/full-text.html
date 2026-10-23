@@ -1,0 +1,120 @@
+<!--
+@template: full-text
+@version: 1.0 分章色体系
+@slot: ch_*
+@description: 全文论述页 - 大字号主题句(formula)+ 右/下方成段论述(label+text),适合概念落盘/核心主张
+@required_fields: title
+@optional_fields: tag, subtitle, formula, paragraphs (array of {label, text})
+@image_rule: 无图,纯排版
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.fulltext { position: relative; }
+  .slide.fulltext::before {
+    content: '';
+    position: absolute;
+    width: 820px; height: 820px;
+    bottom: -360px; left: -300px;
+    background: radial-gradient(circle, var(--ch-accent, var(--brand-primary)) 0%, transparent 68%);
+    opacity: 0.06;
+    pointer-events: none;
+  }
+  .slide.fulltext .ft-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+  }
+  /* 主题句 / 公式条 */
+  .slide.fulltext .ft-formula {
+    font-family: var(--font-cn);
+    font-size: 46px;
+    font-weight: var(--fw-title);
+    line-height: 1.4;
+    color: var(--brand-primary);
+    letter-spacing: 2px;
+    padding-left: 32px;
+    border-left: 6px solid var(--ch-accent, var(--brand-primary));
+  }
+  .slide.fulltext .ft-formula .ft-hl {
+    color: var(--ch-accent, var(--brand-primary));
+    font-weight: var(--fw-title);
+  }
+  /* 论述段落 */
+  .slide.fulltext .ft-paras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 28px;
+  }
+  .slide.fulltext .ft-para {
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 32px 36px;
+    box-shadow: var(--shadow-card);
+  }
+  .slide.fulltext .ft-label {
+    font-family: var(--font-cn);
+    font-size: 21px;
+    font-weight: var(--fw-title);
+    color: var(--ch-accent, var(--brand-primary));
+    margin-bottom: 14px;
+  }
+  .slide.fulltext .ft-text {
+    font-size: 19px;
+    line-height: 1.9;
+    color: var(--brand-primary);
+    opacity: 0.86;
+  }
+  /* 无 label 段落: 单栏居中大字弱卡 */
+  .slide.fulltext .ft-para.plain {
+    background: transparent;
+    border: none;
+    border-left: 3px solid var(--c-divider);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 8px 0 8px 28px;
+    text-align: left;
+  }
+  .slide.fulltext .ft-para.plain .ft-text {
+    font-size: 20px;
+    line-height: 1.9;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+<div class="slide fulltext">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="ft-wrap">
+      {{#formula}}<div class="ft-formula">{{ formula }}</div>{{/formula}}
+      <div class="ft-paras">
+        {{#paragraphs}}
+        <div class="ft-para {{^label}}plain{{/label}}">
+          {{#label}}<div class="ft-label">{{ label }}</div>{{/label}}
+          <div class="ft-text">{{ text }}</div>
+        </div>
+        {{/paragraphs}}
+      </div>
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

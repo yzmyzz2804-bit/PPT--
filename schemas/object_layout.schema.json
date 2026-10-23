@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "run_id",
+    "deck_sha256",
+    "source_page_count",
+    "output_page_count",
+    "objects"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "deck_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_page_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "output_page_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "objects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "object_id",
+          "source_page",
+          "source_sha256",
+          "kind",
+          "source_bbox",
+          "output_pages",
+          "status",
+          "visual_status",
+          "evidence_refs"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "kind": {
+            "enum": [
+              "paragraph",
+              "table",
+              "drawing",
+              "image"
+            ]
+          },
+          "source_bbox": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number"
+            }
+          },
+          "output_pages": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "status": {
+            "enum": [
+              "reflowed",
+              "reference",
+              "unresolved"
+            ]
+          },
+          "visual_status": {
+            "enum": [
+              "pass",
+              "fail",
+              "not_checked"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "measured_min_font_pt": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "source_text": {
+            "type": "string"
+          },
+          "output_text": {
+            "type": "string"
+          },
+          "whole_lines": {
+            "type": "boolean"
+          },
+          "source_cells": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "row",
+                "col",
+                "text"
+              ],
+              "properties": {
+                "row": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "col": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "table_fragments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "header_repeated",
+                "key_repeated",
+                "cells"
+              ],
+              "properties": {
+                "header_repeated": {
+                  "type": "boolean"
+                },
+                "key_repeated": {
+                  "type": "boolean"
+                },
+                "cells": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "row",
+                      "col",
+                      "text"
+                    ],
+                    "properties": {
+                      "row": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "col": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "text": {
+                        "type": "string"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "whole_object_preserved": {
+            "type": "boolean"
+          },
+          "geometric_split": {
+            "type": "boolean"
+          },
+          "embedded_text_readability": {
+            "enum": [
+              "pass",
+              "fail",
+              "not_checked",
+              "not_applicable"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

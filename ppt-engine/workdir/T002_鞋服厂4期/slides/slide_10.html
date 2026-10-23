@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>独立成园 · 共享配套</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #1E2A38;
+    --brand-secondary: #2B4C7E;
+    --brand-accent: #E87D2B;
+    --brand-accent_bright: #F0975A;
+    --brand-accent_light: #F5B586;
+    --brand-accent_lighter: #FAD3B5;
+    --brand-accent_lightest: #FDEAE0;
+    --brand-accent_warm: #E87D2B;
+    --brand-accent_warm_light: #F5B586;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #76808C;
+    --c-divider: #D5D8D2;
+    --c-card_border: #E3E6E0;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F4F5F3;
+    --c-bg_page_deep: #EDEFEA;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #2D5F5D;
+    --c-semantic_warning: #E87D2B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #E87D2B;
+}
+
+  .slide.multi-card { position: relative; }
+  .slide.multi-card .page-bg {
+    position: absolute; inset: 0; background-size: cover;
+    background-position: center; z-index: 0;
+  }
+  .slide.multi-card .page-bg-overlay {
+    position: absolute; inset: 0; background: rgba(14, 27, 59, 0.65);
+    z-index: 1;
+  }
+  .slide.multi-card .brand-mark,
+  .slide.multi-card .page-header,
+  .slide.multi-card .slide-content,
+  .slide.multi-card .page-number { z-index: 3; }
+  .slide.multi-card .slide-content {
+    display: flex; flex-direction: column; gap: 24px;
+    /* slide-content 由 base.css 的 top+bottom 确定高度(1080-260-80=740px)。
+       flex + min-height:0 让子元素在这个固定框内排布,多出来的被 line-clamp / overflow:hidden 接管。*/
+    min-height: 0; overflow: hidden;
+  }
+  .slide.multi-card .row-data,
+  .slide.multi-card .row-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    /* 两行各占一半左右 (含 gap 余量),避免内容堆到 slide-content 外 */
+    flex: 1; min-height: 0; overflow: hidden;
+  }
+  .slide.multi-card .row-photos:empty,
+  .slide.multi-card .row-data:empty { display: none; }
+  /* 纯文字/大词卡: 内容垂直居中,避免长卡片底部空洞 */
+  .slide.multi-card .data-number:empty,
+  .slide.multi-card .data-unit:empty { display: none; }
+  .slide.multi-card .data-card {
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .slide.multi-card .photo-card {
+    display: flex; flex-direction: column;
+  }
+  .slide.multi-card .photo-card img {
+    width: 100%; flex: 1; min-height: 240px;
+    object-fit: cover;
+  }
+  .slide.multi-card .photo-card .ph-frame {
+    flex: 1; min-height: 240px; border: none;
+  }
+  /* 可选脚注条: 承接结论 / 底部主张 */
+  .slide.multi-card .footnote {
+    flex-shrink: 0;
+    margin-top: 4px;
+    padding: 16px 26px;
+    background: var(--c-bg-card);
+    border-left: 5px solid var(--ch-accent, var(--brand-accent));
+    box-shadow: var(--shadow-card);
+    font-size: 19px;
+    font-weight: var(--fw-title);
+    line-height: 1.6;
+    color: var(--brand-primary);
+  }
+</style>
+</head>
+<body>
+<div class="slide multi-card">
+  
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">Anyue Footwear & Apparel Industrial Park Phase IV</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">03 · CONCEPT · 概念主旨</div>
+    <div class="page-title">独立成园 · 共享配套</div>
+    <div class="page-subtitle">Independent Parks · Shared Amenities</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="row-data">
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">独立成园</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key">形 · 定园</span>
+            <span class="data-item-val">为每家鞋企划出独立园区：独立入口与昭示界面、独立产权与管理；厂房按验厂标准排布，验收达线</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">共享配套</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key">场 · 定场</span>
+            <span class="data-item-val">场地中央留出公共进入空间，南北脊线串联各园入口；大园区统一配套宿舍、生活服务与水电管理</span>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="card data-card card-accent-top">
+        <div class="data-number"></div>
+        <div class="data-unit"></div>
+        <div class="data-label">梯度生长</div>
+        <div class="data-items">
+          
+          <div class="data-item">
+            <span class="data-item-key">向 · 定向</span>
+            <span class="data-item-val">厂房单元可分可合、3F→4F 弹性加建；企业分期入园、滚动招商，与园区共同长大</span>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="row-photos">
+      
+    </div>
+    <div class="footnote">独立成园定形 · 共享配套定场 · 梯度生长定向</div>
+  </div>
+  <div class="page-number"><span class="current">10</span>/23</div>
+</div>
+</body>
+</html>

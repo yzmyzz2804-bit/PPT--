@@ -1,0 +1,53 @@
+{
+  "retrieved_at": "2026-10-23",
+  "sources": [
+    {
+      "id": "S-TRAE-SKILLS",
+      "url": "https://docs.trae.ai/ide/skills",
+      "purpose": "integration",
+      "authority": "TRAE官方",
+      "verified_at": "2026-10-23",
+      "supports": "项目技能目录.trae/skills与SKILL.md；按需加载；技能不等于工具"
+    },
+    {
+      "id": "S-TRAE-RULES",
+      "url": "https://www.trae.ai/blog/trae_tutorial_0825",
+      "purpose": "integration",
+      "authority": "TRAE官方博客",
+      "verified_at": "2026-10-23",
+      "supports": "短规则、项目相对路径、Agent提示词与规则分开；该文较早，界面按实际版本确认"
+    },
+    {
+      "id": "S-MS-PRESENT",
+      "url": "https://support.microsoft.com/en-us/powerpoint/tips-for-creating-and-delivering-an-effective-presentation",
+      "purpose": "presentation_design",
+      "authority": "Microsoft官方",
+      "verified_at": "2026-10-23",
+      "supports": "演示避免小于18pt，依观看距离增大；清晰对比与简洁文字"
+    },
+    {
+      "id": "S-ONS-TEXT",
+      "url": "https://service-manual.ons.gov.uk/brand-guidelines/typography/accessible-text-formatting",
+      "purpose": "print_design",
+      "authority": "英国国家统计局设计手册",
+      "verified_at": "2026-10-23",
+      "supports": "一般A4 Arial最小12pt、演示18pt以上、字号依场景；层级和替代文本；不能机械外推所有中文字体"
+    },
+    {
+      "id": "S-ONS-CHART",
+      "url": "https://service-manual.ons.gov.uk/data-visualisation/guidance",
+      "purpose": "chart_design",
+      "authority": "英国国家统计局设计手册",
+      "verified_at": "2026-10-23",
+      "supports": "图表文字、注释、坐标、排序的专题入口；具体规则使用前读子页"
+    }
+  ],
+  "failed": [
+    {
+      "url": "https://docs.trae.ai/ide/rules",
+      "status": "timeout",
+      "used_as_evidence": false
+    }
+  ],
+  "layout_note": "32/24/20/18和22/12/12/12是项目建议值，不是引用原文的完整规格。"
+}

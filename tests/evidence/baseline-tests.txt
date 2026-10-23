@@ -1,0 +1,44 @@
+test_a3_landscape (test_a3.A3Tests.test_a3_landscape) ... ok
+test_a3_portrait (test_a3.A3Tests.test_a3_portrait) ... ok
+test_a4_rejected (test_a3.A3Tests.test_a4_rejected) ... ok
+test_auto_rotation_rejected (test_a3.A3Tests.test_auto_rotation_rejected) ... ok
+test_crop_mismatch_rejected (test_a3.A3Tests.test_crop_mismatch_rejected) ... ok
+test_mixed_paper_rejected (test_a3.A3Tests.test_mixed_paper_rejected) ... ok
+test_profile_configuration (test_a3.A3Tests.test_profile_configuration) ... ok
+test_task_legacy_profile_rejected (test_a3.A3Tests.test_task_legacy_profile_rejected) ... ok
+test_baseline (test_layout_table.LayoutTableTests.test_baseline) ... ok
+test_config_value_drift (test_layout_table.LayoutTableTests.test_config_value_drift) ... ok
+test_header_drift (test_layout_table.LayoutTableTests.test_header_drift) ... ok
+test_missing_mapping_row (test_layout_table.LayoutTableTests.test_missing_mapping_row) ... ok
+test_suggestion_not_silently_enabled (test_layout_table.LayoutTableTests.test_suggestion_not_silently_enabled) ... ok
+test_title_value_drift (test_layout_table.LayoutTableTests.test_title_value_drift) ... ok
+test_approval_evidence_changed (test_workbench.WorkbenchTests.test_approval_evidence_changed) ... ok
+test_approval_target_changed (test_workbench.WorkbenchTests.test_approval_target_changed) ... ok
+test_cannot_skip_stage (test_workbench.WorkbenchTests.test_cannot_skip_stage) ... ok
+test_config_lock_changed (test_workbench.WorkbenchTests.test_config_lock_changed) ... ok
+test_critical_unverified (test_workbench.WorkbenchTests.test_critical_unverified) ... ok
+test_cross_variant_missing (test_workbench.WorkbenchTests.test_cross_variant_missing) ... ok
+test_deck_binding_stale (test_workbench.WorkbenchTests.test_deck_binding_stale) ... ok
+test_duplicate_init (test_workbench.WorkbenchTests.test_duplicate_init) ... ok
+test_full_state_chain (test_workbench.WorkbenchTests.test_full_state_chain) ... ok
+test_input_changed (test_workbench.WorkbenchTests.test_input_changed) ... ok
+test_missing_approval (test_workbench.WorkbenchTests.test_missing_approval) ... ok
+test_missing_capability (test_workbench.WorkbenchTests.test_missing_capability) ... ok
+test_partial_extract (test_workbench.WorkbenchTests.test_partial_extract) ... ok
+test_path_escape (test_workbench.WorkbenchTests.test_path_escape) ... ok
+test_protected_change_needs_approval (test_workbench.WorkbenchTests.test_protected_change_needs_approval) ... ok
+test_publish_copy_changed (test_workbench.WorkbenchTests.test_publish_copy_changed) ... ok
+test_qa_not_checked (test_workbench.WorkbenchTests.test_qa_not_checked) ... ok
+test_release_manifest_changed (test_workbench.WorkbenchTests.test_release_manifest_changed) ... ok
+test_render_file_changed (test_workbench.WorkbenchTests.test_render_file_changed) ... ok
+test_revoked (test_workbench.WorkbenchTests.test_revoked) ... ok
+test_schema_validation (test_workbench.WorkbenchTests.test_schema_validation) ... ok
+test_symlink_escape (test_workbench.WorkbenchTests.test_symlink_escape) ... ok
+test_unknown_claim (test_workbench.WorkbenchTests.test_unknown_claim) ... ok
+test_web_snapshot_required (test_workbench.WorkbenchTests.test_web_snapshot_required) ... ok
+test_wrong_scope (test_workbench.WorkbenchTests.test_wrong_scope) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 3.091s
+
+OK

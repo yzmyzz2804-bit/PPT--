@@ -1,0 +1,32 @@
+{
+  "version": "7.2.0",
+  "encoding": "UTF-8",
+  "max_heading_level": 3,
+  "heading_no_skip": true,
+  "required_metadata": [
+    "run_id",
+    "version",
+    "status",
+    "source_refs",
+    "updated_at"
+  ],
+  "required_sections": [
+    "结论摘要",
+    "依据与范围",
+    "正文",
+    "待核问题",
+    "变更与审批",
+    "下一步"
+  ],
+  "tables": "列名明确；建议不超过7列；长文本拆段，不用空表冒充完成。",
+  "facts_labels": [
+    "已核事实",
+    "待核事实",
+    "推断",
+    "建议"
+  ],
+  "numbers": "保留原值与单位；派生指标写公式、基期、分母、舍入和来源。",
+  "links": "真实可访问URL或项目相对路径；不得伪造引用。",
+  "placeholders": "待填字段明确写[待填]，JSON使用null或unknown；不得混进发布成品。",
+  "style_scope": "Markdown控制语义层级，不保证各查看器的字体/页边距；打印版式由渲染配置控制。"
+}

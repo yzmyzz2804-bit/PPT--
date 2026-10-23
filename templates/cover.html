@@ -1,0 +1,99 @@
+<!--
+@template: cover
+@version: 2.0 对齐参考版 0917
+@slot: opening
+@description: 封面 - 满版实景图 + 半透明白色标题横带(右侧) + 底部居中项目名/日期
+@required_fields: title, subtitle, project_name, date, bg_image
+@image_rule: bg_image 满版 100%(1920x1080 裁切),横带内文字海军蓝
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide-cover { background: #C8C4BC; }
+  .slide-cover .bg-layer {
+    position: absolute;
+    inset: 0;
+    background-image: url('{{ bg_image }}');
+    background-size: auto 113%;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  /* 半透明标题横带:右侧起,垂直居中偏下 */
+  .slide-cover .title-band {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    width: 58%;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(6px);
+    padding: 36px 80px 36px 48px;
+    z-index: 3;
+    text-align: left;
+  }
+  .slide-cover .cover-main {
+    font-family: var(--font-cn);
+    font-size: 48px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    line-height: 1.25;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    white-space: normal;
+  }
+  .slide-cover .cover-sub {
+    font-family: var(--font-en);
+    font-size: 18px;
+    color: var(--brand-primary);
+    opacity: 0.85;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(14,42,91,0.25);
+    padding-top: 14px;
+  }
+  /* 底部居中项目信息 */
+  .slide-cover .footer-block {
+    position: absolute;
+    bottom: 36px;
+    left: 0; right: 0;
+    text-align: center;
+    z-index: 3;
+    color: var(--c-white);
+    text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+  }
+  .slide-cover .footer-project {
+    font-family: var(--font-cn);
+    font-size: 20px;
+    letter-spacing: 6px;
+    margin-bottom: 6px;
+  }
+  .slide-cover .footer-date {
+    font-family: var(--font-en);
+    font-size: 13px;
+    opacity: 0.85;
+    letter-spacing: 2px;
+  }
+  /* 无封面图(占位阶段)时,底部白字在浅灰底上不可读 → 改深色 */
+  .slide-cover:not(:has(.bg-layer)) .footer-block {
+    color: var(--c-text-secondary);
+    text-shadow: none;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-cover">
+  {{#bg_image}}<div class="bg-layer"></div>{{/bg_image}}
+  <div class="title-band">
+    <h1 class="cover-main">{{ title }}</h1>
+    <div class="cover-sub">{{ subtitle }}</div>
+  </div>
+  <div class="footer-block">
+    <div class="footer-project">{{ project_name }}</div>
+    <div class="footer-date">{{ date }}</div>
+  </div>
+</div>
+</body>
+</html>

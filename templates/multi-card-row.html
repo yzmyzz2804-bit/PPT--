@@ -1,0 +1,129 @@
+<!--
+@template: multi-card-row
+@source: COZE 8版式之一
+@slot: ch_*
+@description: 多卡片横排页 - 上排3张数据卡(大数字+键值对)+下排3张照片卡
+@required_fields: tag, title, subtitle, data_cards (3 items: {number, unit, label, items}), photo_cards (3 items: {image, title, tag})
+@coze_inherit: true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.multi-card { position: relative; }
+  .slide.multi-card .page-bg {
+    position: absolute; inset: 0; background-size: cover;
+    background-position: center; z-index: 0;
+  }
+  .slide.multi-card .page-bg-overlay {
+    position: absolute; inset: 0; background: rgba(14, 27, 59, 0.65);
+    z-index: 1;
+  }
+  .slide.multi-card .brand-mark,
+  .slide.multi-card .page-header,
+  .slide.multi-card .slide-content,
+  .slide.multi-card .page-number { z-index: 3; }
+  .slide.multi-card .slide-content {
+    display: flex; flex-direction: column; gap: 24px;
+  }
+  .slide.multi-card .row-data,
+  .slide.multi-card .row-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; flex: 1;
+  }
+  .slide.multi-card .row-photos:empty,
+  .slide.multi-card .row-data:empty { display: none; }
+  /* 纯文字/大词卡: 内容垂直居中,避免长卡片底部空洞 */
+  .slide.multi-card .data-number:empty,
+  .slide.multi-card .data-unit:empty { display: none; }
+  .slide.multi-card .data-card {
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .slide.multi-card .photo-card {
+    display: flex; flex-direction: column;
+  }
+  .slide.multi-card .photo-card img {
+    width: 100%; flex: 1; min-height: 240px;
+    object-fit: cover;
+  }
+  .slide.multi-card .photo-card .ph-frame {
+    flex: 1; min-height: 240px; border: none;
+  }
+  /* 可选脚注条: 承接结论 / 底部主张 */
+  .slide.multi-card .footnote {
+    flex-shrink: 0;
+    margin-top: 4px;
+    padding: 16px 26px;
+    background: var(--c-bg-card);
+    border-left: 5px solid var(--ch-accent, var(--brand-accent));
+    box-shadow: var(--shadow-card);
+    font-size: 19px;
+    font-weight: var(--fw-title);
+    line-height: 1.6;
+    color: var(--brand-primary);
+  }
+</style>
+</head>
+<body>
+<div class="slide multi-card">
+  {{#bg_image}}<div class="page-bg" style="background-image: url('{{ bg_image }}')"></div>
+  <div class="page-bg-overlay"></div>{{/bg_image}}
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="row-data">
+      {{#data_cards}}
+      <div class="card data-card card-accent-top">
+        <div class="data-number">{{ number }}</div>
+        <div class="data-unit">{{ unit }}</div>
+        <div class="data-label">{{ label }}</div>
+        <div class="data-items">
+          {{#items}}
+          <div class="data-item">
+            <span class="data-item-key">{{ key }}</span>
+            <span class="data-item-val">{{ val }}</span>
+          </div>
+          {{/items}}
+        </div>
+      </div>
+      {{/data_cards}}
+    </div>
+    <div class="row-photos">
+      {{#photo_cards}}
+      <div class="photo-card">
+        {{#image}}<img src="{{ image }}" alt="{{ title }}">{{/image}}
+        {{^image}}<div class="ph-frame">
+          <svg class="ph-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="6" y="12" width="52" height="40" rx="3"/>
+            <circle cx="22" cy="26" r="4"/>
+            <path d="M6 44l16-14 12 10 8-7 16 13"/>
+          </svg>
+          <div class="ph-title">配图位</div>
+          <div class="ph-hint">在 deck.yaml 本页 photo_cards 填写 image 路径</div>
+        </div>{{/image}}
+        <div class="photo-caption">
+          <div class="photo-title">{{ title }}</div>
+          <div class="photo-tag">{{ tag }}</div>
+        </div>
+      </div>
+      {{/photo_cards}}
+    </div>
+    {{#footnote}}<div class="footnote">{{ footnote }}</div>{{/footnote}}
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

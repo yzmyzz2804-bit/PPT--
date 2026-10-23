@@ -1,0 +1,92 @@
+<!--
+@template: intent-data-emphasis
+@source: 新增口号页
+@slot: ch7 (方案呈现) / ch8 (经济技术对比)
+@description: 数据强调页 - 一个核心超大数字+简短说明,适合核心指标凸显
+@required_fields: big_number, big_unit, big_label, big_desc, project_name_en
+@coze_inherit: false
+@trigger: project_type=real_estate 自动触发, 或 force_intent=true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ big_label }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.intent-data {
+    background: var(--brand-primary);
+    color: var(--c-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide.intent-data .data-block {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .slide.intent-data .big-label {
+    font-family: var(--font-en);
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: var(--c-white);
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .slide.intent-data .big-num {
+    font-family: var(--font-num);
+    font-size: 240px;
+    font-weight: var(--fw-title);
+    color: var(--c-white);
+    line-height: 1;
+    letter-spacing: -4px;
+    margin-bottom: 8px;
+    text-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+  .slide.intent-data .big-unit {
+    font-family: var(--font-en);
+    font-size: 24px;
+    color: var(--c-white);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+  }
+  .slide.intent-data .big-deco {
+    width: 60px;
+    height: 2px;
+    background: var(--c-white);
+    opacity: 0.4;
+    margin: 0 auto 24px;
+  }
+  .slide.intent-data .big-desc {
+    font-family: var(--font-cn);
+    font-size: 18px;
+    color: var(--c-white);
+    opacity: 0.85;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .slide.intent-data .brand-mark .square,
+  .slide.intent-data .brand-mark .line { background: rgba(255,255,255,0.5); }
+  .slide.intent-data .brand-mark .text { color: rgba(255,255,255,0.7); }
+</style>
+</head>
+<body>
+<div class="slide intent-data">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="data-block">
+    <div class="big-label">{{ big_label }}</div>
+    <div class="big-num">{{ big_number }}</div>
+    <div class="big-unit">{{ big_unit }}</div>
+    <div class="big-deco"></div>
+    <div class="big-desc">{{ big_desc }}</div>
+  </div>
+</div>
+</body>
+</html>

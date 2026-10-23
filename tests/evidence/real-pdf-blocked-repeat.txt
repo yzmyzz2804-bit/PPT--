@@ -1,0 +1,12 @@
+{
+  "status": "blocked",
+  "advanced": [],
+  "state": {
+    "run_id": "REAL-PDF-CONTROL-SMOKE",
+    "state": "BLOCKED",
+    "resume_state": "RECEIVED",
+    "sequence": 1,
+    "updated_at": "2026-10-23T06:28:40.648773+00:00",
+    "package_version": "6.3.0"
+  }
+}

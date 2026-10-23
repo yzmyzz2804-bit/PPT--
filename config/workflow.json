@@ -1,0 +1,143 @@
+{
+  "version": "7.2.0",
+  "states": [
+    "RECEIVED",
+    "IDENTIFIED",
+    "TAGGED",
+    "CONSTRAINTS_DRAFTED",
+    "CONTRACT_APPROVED",
+    "VERIFIED",
+    "OPTIONS_READY",
+    "OPTION_APPROVED",
+    "CONTENT_READY",
+    "CONTENT_APPROVED",
+    "RENDERED",
+    "QA_PASSED",
+    "RELEASE_APPROVED",
+    "RELEASED",
+    "RETROSPECTED",
+    "BLOCKED"
+  ],
+  "transitions": [
+    {
+      "from": "RECEIVED",
+      "to": "IDENTIFIED",
+      "required_artifacts": [
+        "01_memory/intake.json"
+      ]
+    },
+    {
+      "from": "IDENTIFIED",
+      "to": "TAGGED",
+      "required_artifacts": [
+        "01_memory/index.json"
+      ]
+    },
+    {
+      "from": "TAGGED",
+      "to": "CONSTRAINTS_DRAFTED",
+      "required_artifacts": [
+        "01_memory/constraints.json"
+      ]
+    },
+    {
+      "from": "CONSTRAINTS_DRAFTED",
+      "to": "CONTRACT_APPROVED",
+      "required_artifacts": [],
+      "approval_gate": "contract",
+      "approval_target": "01_memory/constraints.json"
+    },
+    {
+      "from": "CONTRACT_APPROVED",
+      "to": "VERIFIED",
+      "required_artifacts": [
+        "02_evidence/claims.json"
+      ]
+    },
+    {
+      "from": "VERIFIED",
+      "to": "OPTIONS_READY",
+      "required_artifacts": [
+        "03_content/options.json"
+      ]
+    },
+    {
+      "from": "OPTIONS_READY",
+      "to": "OPTION_APPROVED",
+      "required_artifacts": [
+        "03_content/selection.json"
+      ],
+      "approval_gate": "option",
+      "approval_target": "03_content/selection.json"
+    },
+    {
+      "from": "OPTION_APPROVED",
+      "to": "CONTENT_READY",
+      "required_artifacts": [
+        "03_content/deck.json"
+      ]
+    },
+    {
+      "from": "CONTENT_READY",
+      "to": "CONTENT_APPROVED",
+      "required_artifacts": [],
+      "approval_gate": "content",
+      "approval_target": "03_content/deck.json"
+    },
+    {
+      "from": "CONTENT_APPROVED",
+      "to": "RENDERED",
+      "required_artifacts": [
+        "04_render/artifacts.json"
+      ]
+    },
+    {
+      "from": "RENDERED",
+      "to": "QA_PASSED",
+      "required_artifacts": [
+        "05_qa/report.json",
+        "05_qa/release_manifest.json"
+      ]
+    },
+    {
+      "from": "QA_PASSED",
+      "to": "RELEASE_APPROVED",
+      "required_artifacts": [],
+      "approval_gate": "release",
+      "approval_target": "05_qa/release_manifest.json"
+    },
+    {
+      "from": "RELEASE_APPROVED",
+      "to": "RELEASED",
+      "required_artifacts": [
+        "06_release/manifest.json"
+      ]
+    },
+    {
+      "from": "RELEASED",
+      "to": "RETROSPECTED",
+      "required_artifacts": [
+        "07_feedback/feedback.json"
+      ]
+    }
+  ],
+  "retry": {
+    "max_failed_attempts": 3,
+    "max_unchanged_attempts": 2,
+    "wall_clock_minutes_if_available": 10
+  },
+  "rollback": {
+    "evidence_error": "CONSTRAINTS_DRAFTED",
+    "content_error": "OPTION_APPROVED",
+    "layout_error": "CONTENT_APPROVED",
+    "release_error": "RENDERED"
+  },
+  "rollback_policy": "rollback命令保守快照全部阶段产物并归档移除全部审批，保留业务文件不改写；回到指定较早状态后逐层重验，不能继承旧批准。",
+  "protection_gate": "protected_change",
+  "auto_steps": [
+    "IDENTIFIED",
+    "TAGGED",
+    "CONSTRAINTS_DRAFTED"
+  ],
+  "unknown_capability": "BLOCKED"
+}

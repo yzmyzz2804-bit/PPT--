@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "preserve_optimize",
+        "authorized_redesign"
+      ]
+    },
+    "protected_assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "asset_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "text_structure",
+              "image",
+              "analysis",
+              "data",
+              "layout"
+            ]
+          },
+          "baseline_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "allowed_operations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "id",
+          "asset_id",
+          "locator",
+          "kind",
+          "baseline_sha256",
+          "allowed_operations"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "allowed_changes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "required_profiles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "reporting",
+          "print_a3",
+          "print_same_slides"
+        ]
+      }
+    },
+    "pending_decisions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "ready_for_approval",
+        "approved"
+      ]
+    },
+    "config_lock_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "run_id",
+    "version",
+    "mode",
+    "protected_assets",
+    "allowed_changes",
+    "forbidden_actions",
+    "required_profiles",
+    "pending_decisions",
+    "status",
+    "config_lock_sha256"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,113 @@
+<!--
+@template: analysis-data-chart
+@source: 新增分析页
+@slot: ch8 (经济技术对比) / ch3 (案例借鉴)
+@description: 数据图表页 - 占位区+图例说明,支持柱/折线/饼/雷达(实际渲染走 Chart.js 或预生成 SVG)
+@required_fields: tag, title, subtitle, chart_type, chart_data (object), insight (string)
+@coze_inherit: false
+@note: chart_data 格式依 chart_type 而定;骨架阶段先用占位 div,后续 render_slide.py 注入 Chart.js
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.data-chart .chart-body {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+  }
+  .slide.data-chart .chart-area {
+    flex: 2;
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide.data-chart .chart-placeholder {
+    color: var(--c-text-secondary);
+    font-size: 14px;
+    text-align: center;
+  }
+  .slide.data-chart .chart-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .slide.data-chart .chart-type-tag {
+    font-family: var(--font-en);
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--brand-accent);
+    font-weight: var(--fw-en);
+  }
+  .slide.data-chart .insight-block {
+    background: var(--c-bg-card);
+    border-left: 3px solid var(--brand-accent);
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--brand-primary);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+  .slide.data-chart .legend-list {
+    list-style: none;
+    margin-top: 8px;
+  }
+  .slide.data-chart .legend-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    font-size: 13px;
+    color: var(--brand-primary);
+  }
+  .slide.data-chart .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="slide data-chart">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="chart-body">
+      <div class="chart-area">
+        <div class="chart-placeholder">
+          [图表占位] 类型: {{ chart_type }}<br>
+          render_slide.py 在此注入 Chart.js canvas 或预生成 SVG
+        </div>
+      </div>
+      <div class="chart-side">
+        <div class="chart-type-tag">{{ chart_type }}</div>
+        <div class="insight-block">{{ insight }}</div>
+        <ul class="legend-list">
+          {{#legend}}<li class="legend-item">
+            <span class="legend-dot" style="background:{{ color }}"></span>{{ label }}
+          </li>{{/legend}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

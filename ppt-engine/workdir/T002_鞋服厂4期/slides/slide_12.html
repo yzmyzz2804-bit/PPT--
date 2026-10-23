@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>参考案例</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #1E2A38;
+    --brand-secondary: #2B4C7E;
+    --brand-accent: #E87D2B;
+    --brand-accent_bright: #F0975A;
+    --brand-accent_light: #F5B586;
+    --brand-accent_lighter: #FAD3B5;
+    --brand-accent_lightest: #FDEAE0;
+    --brand-accent_warm: #E87D2B;
+    --brand-accent_warm_light: #F5B586;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #76808C;
+    --c-divider: #D5D8D2;
+    --c-card_border: #E3E6E0;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F4F5F3;
+    --c-bg_page_deep: #EDEFEA;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #2D5F5D;
+    --c-semantic_warning: #E87D2B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #8A5A2B;
+}
+
+  .slide.cmp-table .cmp-table-el {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    background: var(--c-white);
+    box-shadow: var(--shadow-card);
+  }
+  .slide.cmp-table .cmp-table-el th {
+    background: var(--brand-secondary);
+    color: var(--c-white);
+    font-weight: var(--fw-title);
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 15px;
+  }
+  .slide.cmp-table .cmp-table-el th.col-hot {
+    background: var(--brand-accent);
+  }
+  .slide.cmp-table .cmp-table-el td {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--c-card-border);
+    color: var(--brand-primary);
+  }
+  .slide.cmp-table .cmp-table-el tr:nth-child(even) td {
+    background: #F7F5F1;
+  }
+  .slide.cmp-table .cmp-table-el td.ind { color: var(--c-text-secondary); }
+  .slide.cmp-table .cmp-table-el td.hot { font-weight: var(--fw-num); }
+  .slide.cmp-table .cmp-table-el td.hot .better { color: var(--brand-accent); }
+  .slide.cmp-table .summary-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .slide.cmp-table .sum-card {
+    background: var(--c-white);
+    border-top: 3px solid var(--brand-primary);
+    box-shadow: var(--shadow-card);
+    padding: 20px 24px;
+  }
+  .slide.cmp-table .sum-card.hot { border-top-color: var(--brand-accent); }
+  .slide.cmp-table .sum-name {
+    font-size: 18px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 12px;
+  }
+  .slide.cmp-table .sum-item {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding: 4px 0;
+    color: var(--brand-primary);
+  }
+  .slide.cmp-table .sum-k {
+    color: var(--c-text-secondary);
+    flex-shrink: 0;
+  }
+  /* 可选案例实景图条 */
+  .slide.cmp-table .case-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .slide.cmp-table .case-images:empty { display: none; }
+  .slide.cmp-table .case-images figure {
+    position: relative;
+    height: 180px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--c-card-border);
+    background: var(--c-bg-card);
+  }
+  .slide.cmp-table .case-images img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .slide.cmp-table .case-images .cap {
+    position: absolute;
+    left: 0; bottom: 0;
+    padding: 8px 16px;
+    background: rgba(26, 26, 46, 0.74);
+    color: var(--c-white);
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="slide cmp-table">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">Anyue Footwear & Apparel Industrial Park Phase IV</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">04 · CASE · 案例佐证</div>
+    <div class="page-title">参考案例</div>
+    <div class="page-subtitle">Reference Projects</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="case-images">
+      
+      <figure>
+        <img src="../assets/images/cases/case_a2.jpg" alt="南京天印智造谷 · gooood">
+        <div class="ph-frame" style="height:100%;min-height:0;border:none"></div>
+        <figcaption class="cap">南京天印智造谷 · gooood</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="../assets/images/cases/case_b2.jpg" alt="东莞迪桑娜皮具工业园 · gooood">
+        <div class="ph-frame" style="height:100%;min-height:0;border:none"></div>
+        <figcaption class="cap">东莞迪桑娜皮具工业园 · gooood</figcaption>
+      </figure>
+      
+    </div>
+    <table class="cmp-table-el">
+      <tr>
+        <th style="width:26%">维度</th>
+        <th class="col-hot" style="width:36%">厦门 JH Factory</th>
+        <th style="width:38%">南宁李宁中心二期</th>
+      </tr>
+      
+      <tr>
+        <td class="ind">来源</td>
+        <td class="hot">ArchDaily · XU Kai · 2010</td>
+        <td>中建三局 · 2025 竣工</td>
+      </tr>
+      
+      <tr>
+        <td class="ind">规模</td>
+        <td class="hot">9,500㎡</td>
+        <td>23.1 万㎡</td>
+      </tr>
+      
+      <tr>
+        <td class="ind">定位</td>
+        <td class="hot">工业+市政混合功能</td>
+        <td>鞋厂+服装厂+化学品仓+研发+宿舍</td>
+      </tr>
+      
+      <tr>
+        <td class="ind">核心启示</td>
+        <td class="hot">砖+钢混合立面 · 模块化厂房可扩展</td>
+        <td>一体化大园区 · 产住研配套齐备</td>
+      </tr>
+      
+    </table>
+    <div class="summary-row">
+      
+      <div class="sum-card hot">
+        <div class="sum-name">落点</div>
+        
+        <div class="sum-item"><span class="sum-k"></span><span>模块化厂房与产住配套均有成熟先例——案例仅作参考，两方案退距与指标已从 CAD 直接核算合规。</span></div>
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="page-number"><span class="current">12</span>/23</div>
+</div>
+</body>
+</html>

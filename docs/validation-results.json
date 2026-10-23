@@ -1,0 +1,24 @@
+{
+  "version": "7.2.0",
+  "results": [
+    {
+      "command": "scripts/compile_prompts.py",
+      "exit_code": 0,
+      "stdout": "{\"compiled_prompts\": 8, \"output\": \"config/prompt_bundle.json\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": "scripts/validate_package.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"pass\",\n  \"counts\": {\n    \"json_files\": 42,\n    \"schemas\": 20,\n    \"templates_and_examples\": 6,\n    \"role_prompts\": 8,\n    \"skills\": 3,\n    \"layout_specification_rows\": 32,\n    \"layout_configuration_bindings\": 49,\n    \"object_layout_gates\": 9\n  },\n  \"scope\": \"结构及契约，不代表TRAE端实际集成或PPT视觉验收\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "-m unittest discover -s tests -v",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "t_workbench.WorkbenchTests.test_full_state_chain) ... ok\ntest_input_changed (test_workbench.WorkbenchTests.test_input_changed) ... ok\ntest_missing_approval (test_workbench.WorkbenchTests.test_missing_approval) ... ok\ntest_missing_capability (test_workbench.WorkbenchTests.test_missing_capability) ... ok\ntest_partial_extract (test_workbench.WorkbenchTests.test_partial_extract) ... ok\ntest_path_escape (test_workbench.WorkbenchTests.test_path_escape) ... ok\ntest_protected_change_needs_approval (test_workbench.WorkbenchTests.test_protected_change_needs_approval) ... ok\ntest_publish_copy_changed (test_workbench.WorkbenchTests.test_publish_copy_changed) ... ok\ntest_qa_not_checked (test_workbench.WorkbenchTests.test_qa_not_checked) ... ok\ntest_release_manifest_changed (test_workbench.WorkbenchTests.test_release_manifest_changed) ... ok\ntest_render_file_changed (test_workbench.WorkbenchTests.test_render_file_changed) ... ok\ntest_revoked (test_workbench.WorkbenchTests.test_revoked) ... ok\ntest_schema_validation (test_workbench.WorkbenchTests.test_schema_validation) ... ok\ntest_symlink_escape (test_workbench.WorkbenchTests.test_symlink_escape) ... ok\ntest_unknown_claim (test_workbench.WorkbenchTests.test_unknown_claim) ... ok\ntest_web_snapshot_required (test_workbench.WorkbenchTests.test_web_snapshot_required) ... ok\ntest_wrong_scope (test_workbench.WorkbenchTests.test_wrong_scope) ... ok\n\n----------------------------------------------------------------------\nRan 73 tests in 4.758s\n\nOK\n"
+    }
+  ],
+  "scope": "结构/契约/单元回归；非真实TRAE或PPT视觉验收"
+}

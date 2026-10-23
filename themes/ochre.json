@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "name": "ochre",
+    "label": "赭石暖调",
+    "description": "赭石主色 + 暖白底，适合文化/历史/城市更新类建筑规划项目，传递厚重与温度。",
+    "version": "1.0"
+  },
+
+  "colors": {
+    "brand": {
+      "primary": "#7A3A1A",
+      "secondary": "#9C4E2A",
+      "accent": "#C77B3F",
+      "accent_bright": "#D99966",
+      "accent_light": "#E6B891",
+      "accent_lighter": "#F0D4B5",
+      "accent_lightest": "#F8E8D5"
+    },
+    "neutral": {
+      "black": "#1A1208",
+      "text_secondary": "#7A6E5E",
+      "divider": "#D5CCBE",
+      "card_border": "#E5DDD0",
+      "bg_card": "#F5F0E8",
+      "bg_page": "#FAF7F2",
+      "white": "#FFFFFF"
+    },
+    "semantic": {
+      "success": "#5A7A3F",
+      "warning": "#9C2A1A"
+    }
+  },
+
+  "typography": {
+    "font_cn": "Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif",
+    "font_en": "Arial, Helvetica, Inter, sans-serif",
+    "font_num": "Arial, Helvetica, Inter, sans-serif",
+    "scale": {
+      "mega_title": "84px",
+      "hero_title": "56px",
+      "page_title": "34px",
+      "card_title": "22px",
+      "body": "17px",
+      "caption": "13px",
+      "en_label": "13px"
+    },
+    "weight": { "cn_title": 700, "cn_body": 400, "en_label": 600, "number": 600 },
+    "letter_spacing_en": "2px"
+  },
+
+  "layout": {
+    "canvas_w": "1920px",
+    "canvas_h": "1080px",
+    "safe_margin": "80px",
+    "brand_mark_pos": { "top": "50px", "left": "60px" }
+  },
+
+  "components": {
+    "card": {
+      "radius": "6px",
+      "padding": "24px",
+      "border": "1px solid #E5DDD0",
+      "accent_bar": { "top": "3px", "color": "#C77B3F" }
+    },
+    "divider": {
+      "color": "#D5CCBE",
+      "thickness": "1px",
+      "decorative_short": "36px"
+    }
+  },
+
+  "principles": [
+    "克制用色：主色只用赭石暖系，每页强调色≤2处",
+    "大留白：边距 80-100px",
+    "中英双标题",
+    "数据放大：关键数据用大字号突出",
+    "装饰极简：只用方块+横线的品牌标识",
+    "左对齐为主，数字卡片可居中",
+    "图文分栏明确：图占主视觉区（>50%宽度）",
+    "信息层级清晰：每页不超过3级标题层级"
+  ]
+}

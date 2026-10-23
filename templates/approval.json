@@ -1,0 +1,15 @@
+{
+  "approval_id": "APPROVAL-TEMPLATE",
+  "run_id": "RUN-001",
+  "gate": "contract",
+  "target_path": "01_memory/constraints.json",
+  "target_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "scope": "gate:contract",
+  "decision": "rejected",
+  "actor": "[待填：真实人工身份]",
+  "recorded_by": "[待填：宿主/人工]",
+  "evidence_path": "approvals/[待填：人工确认凭据].md",
+  "evidence_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "confirmed_at": "[待填：时间]",
+  "revoked": false
+}

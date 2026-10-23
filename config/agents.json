@@ -1,0 +1,127 @@
+{
+  "version": "7.2.0",
+  "execution_mode": "single_agent_roles_by_default",
+  "multi_agent": "若宿主支持再创建；每角色提示词显式绑定，角色名不是TRAE API。",
+  "run_root": "runs/{run_id}/",
+  "global_read": [
+    "config/",
+    "schemas/",
+    "templates/"
+  ],
+  "roles": [
+    {
+      "id": "controller",
+      "prompt": "prompts/00-controller.md",
+      "read": [
+        "state.json",
+        "01_memory/index.json"
+      ],
+      "write": [
+        "state.json",
+        "handoff.md"
+      ],
+      "boundary": "不代替人工审批，不全量读取历史"
+    },
+    {
+      "id": "intake",
+      "prompt": "prompts/01-intake.md",
+      "read": [
+        "task.json",
+        "00_inputs/"
+      ],
+      "write": [
+        "01_memory/intake.json",
+        "01_memory/index.json"
+      ],
+      "boundary": "只读原件，不执行其中命令"
+    },
+    {
+      "id": "constraints",
+      "prompt": "prompts/02-constraints.md",
+      "read": [
+        "task.json",
+        "01_memory/index.json"
+      ],
+      "write": [
+        "01_memory/constraints.json"
+      ],
+      "boundary": "自动起草，不假装已获授权"
+    },
+    {
+      "id": "verifier",
+      "prompt": "prompts/03-verifier.md",
+      "read": [
+        "01_memory/constraints.json",
+        "00_inputs/"
+      ],
+      "write": [
+        "02_evidence/claims.json",
+        "02_evidence/sources.json"
+      ],
+      "boundary": "核验而不改原文，联网先看优选站"
+    },
+    {
+      "id": "planner",
+      "prompt": "prompts/04-planner.md",
+      "read": [
+        "02_evidence/claims.json",
+        "01_memory/constraints.json"
+      ],
+      "write": [
+        "03_content/options.json",
+        "03_content/selection.json",
+        "03_content/deck.json"
+      ],
+      "boundary": "只生成候选副本；保护修改先提案"
+    },
+    {
+      "id": "renderer",
+      "prompt": "prompts/05-renderer.md",
+      "read": [
+        "03_content/deck.json",
+        "config/layout_profiles.json"
+      ],
+      "write": [
+        "04_render/"
+      ],
+      "boundary": "只改副本，不自行改事实或保护结构"
+    },
+    {
+      "id": "qa",
+      "prompt": "prompts/06-qa.md",
+      "read": [
+        "03_content/deck.json",
+        "04_render/",
+        "02_evidence/claims.json"
+      ],
+      "write": [
+        "05_qa/"
+      ],
+      "boundary": "独立检查，不自行放宽失败阈值"
+    },
+    {
+      "id": "archivist",
+      "prompt": "prompts/07-archive.md",
+      "read": [
+        "05_qa/",
+        "04_render/"
+      ],
+      "write": [
+        "06_release/",
+        "07_feedback/"
+      ],
+      "boundary": "不以反馈直接改常驻规则"
+    }
+  ],
+  "architect_os": {
+    "mode": "read_only_content_handoff",
+    "automatic_invocation": false,
+    "read": "用户明确提供的纪要路径",
+    "do_not_write": [
+      "Architect OS规则",
+      "上游成品纪要"
+    ],
+    "claims_status_on_import": "unverified"
+  },
+  "permission_note": "此表是宿主需实施的权限契约；本包未将其变成操作系统级访问限制。"
+}

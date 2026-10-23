@@ -1,0 +1,97 @@
+<!--
+@template: intent-bigtext
+@source: 新增口号页
+@slot: after_ch3 (案例后) / ch4 (IP引擎内设计愿景)
+@description: 大字报 - 全图背景+居中超大字口号,适合开篇愿景/章节间升华
+@required_fields: slogan, slogan_en, bg_image, project_name_en
+@coze_inherit: false
+@trigger: project_type=real_estate 自动触发, 或 force_intent=true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ slogan }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.intent-bigtext {
+    background: var(--brand-primary);
+    color: var(--c-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .slide.intent-bigtext .bg-layer {
+    position: absolute;
+    inset: 0;
+    background-image: url('{{ bg_image }}');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25;
+    z-index: 1;
+  }
+  .slide.intent-bigtext .bg-layer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(14,42,91,0.6), rgba(14,42,91,0.85));
+  }
+  .slide.intent-bigtext .slogan-block {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 80%;
+  }
+  .slide.intent-bigtext .slogan-en {
+    font-family: var(--font-en);
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: var(--c-white);
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .slide.intent-bigtext .slogan-main {
+    font-family: var(--font-cn);
+    font-size: 96px;
+    font-weight: var(--fw-title);
+    line-height: 1.1;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  }
+  .slide.intent-bigtext .slogan-deco {
+    width: 60px;
+    height: 2px;
+    background: var(--c-white);
+    opacity: 0.6;
+    margin: 0 auto 24px;
+  }
+  .slide.intent-bigtext .slogan-sub {
+    font-family: var(--font-cn);
+    font-size: 18px;
+    opacity: 0.7;
+    line-height: 1.6;
+  }
+  .slide.intent-bigtext .brand-mark .square,
+  .slide.intent-bigtext .brand-mark .line { background: rgba(255,255,255,0.5); }
+  .slide.intent-bigtext .brand-mark .text { color: rgba(255,255,255,0.7); }
+</style>
+</head>
+<body>
+<div class="slide intent-bigtext">
+  <div class="bg-layer"></div>
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="slogan-block">
+    <div class="slogan-en">{{ slogan_en }}</div>
+    <h1 class="slogan-main">{{ slogan }}</h1>
+    <div class="slogan-deco"></div>
+    <div class="slogan-sub">{{ slogan_sub }}</div>
+  </div>
+</div>
+</body>
+</html>

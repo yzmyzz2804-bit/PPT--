@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "name": "light-health",
+    "label": "浅色健康 (安岳运动中心 v6)",
+    "description": "浅蓝灰底 + 柠黄强调 + 健康绿，呼应「健康主线」。项目级主题，仅本项目生效。",
+    "version": "1.0"
+  },
+
+  "colors": {
+    "brand": {
+      "primary": "#1A1A2E",
+      "secondary": "#1A1A2E",
+      "accent": "#3E8F7D",
+      "accent_bright": "#4EA893",
+      "accent_light": "#7FC3B3",
+      "accent_lighter": "#A8D8CC",
+      "accent_lightest": "#D2EBE4",
+      "accent_warm": "#F5C842",
+      "accent_warm_light": "#F8DA7A"
+    },
+    "neutral": {
+      "black": "#1A1A2E",
+      "text_secondary": "#6B7280",
+      "divider": "#D5DEE8",
+      "card_border": "#E1E8F0",
+      "bg_card": "#FFFFFF",
+      "bg_page": "#F0F4F8",
+      "bg_page_deep": "#E8EEF4",
+      "white": "#FFFFFF"
+    },
+    "semantic": {
+      "success": "#3E8F7D",
+      "warning": "#F5C842"
+    }
+  },
+
+  "chapter_colors": {
+    "_comment": "6 章无分隔页，分章色仅体现在页眉标题短线",
+    "ch1": "#1A1A2E",
+    "ch2": "#3E8F7D",
+    "ch3": "#2E7D6E",
+    "ch4": "#E0A800",
+    "ch5": "#4A6FA5",
+    "ch6": "#1A1A2E"
+  },
+
+  "typography": {
+    "font_cn": "Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif",
+    "font_en": "Arial, Helvetica, Inter, sans-serif",
+    "font_num": "Arial, Helvetica, Inter, sans-serif",
+    "scale": {
+      "mega_title": "84px",
+      "hero_title": "56px",
+      "page_title": "34px",
+      "card_title": "22px",
+      "body": "17px",
+      "caption": "13px",
+      "en_label": "13px"
+    }
+  },
+
+  "layout": {
+    "canvas_w": "1920px",
+    "canvas_h": "1080px",
+    "safe_margin": "80px"
+  }
+}

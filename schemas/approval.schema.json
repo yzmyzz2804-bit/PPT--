@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "approval_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gate": {
+      "type": "string",
+      "enum": [
+        "contract",
+        "option",
+        "content",
+        "protected_change",
+        "release"
+      ]
+    },
+    "target_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "approved",
+        "rejected"
+      ]
+    },
+    "actor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recorded_by": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "confirmed_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revoked": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "approval_id",
+    "run_id",
+    "gate",
+    "target_path",
+    "target_sha256",
+    "scope",
+    "decision",
+    "actor",
+    "recorded_by",
+    "evidence_path",
+    "evidence_sha256",
+    "confirmed_at",
+    "revoked"
+  ],
+  "additionalProperties": false
+}

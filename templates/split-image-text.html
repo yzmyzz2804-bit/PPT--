@@ -1,0 +1,75 @@
+<!--
+@template: split-image-text
+@source: COZE 8版式之一
+@slot: ch_*
+@description: 图文分栏页 - 左图(60%)+右侧2-3张信息卡片竖向排列
+@required_fields: tag, title, subtitle, image, cards (array of {title, text})
+@coze_inherit: true
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.split .slide-content { padding: 0; }
+  .slide.split .split-layout { gap: 48px; }
+  .slide.split .split-left {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .slide.split .split-left .split-main { flex: 3; min-height: 0; display: flex; }
+  .slide.split .split-left .split-main img,
+  .slide.split .split-left .split-main .ph-frame { width: 100%; height: 100%; }
+  .slide.split .split-left .split-second { flex: 2; min-height: 0; display: flex; }
+  .slide.split .split-left .split-second img {
+    width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);
+  }
+  .slide.split .split-left .split-second .ph-frame { width: 100%; height: 100%; min-height: 0; }
+  .slide.split .split-left .ph-frame { min-height: 100%; }
+</style>
+</head>
+<body>
+<div class="slide split">
+  <div class="brand-mark">
+    <span class="square"></span>
+    <span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="split-layout {{#reverse}}reverse{{/reverse}}">
+      <div class="split-left">
+        <div class="split-main">
+        {{#image}}<img src="{{ image }}" alt="{{ title }}">{{/image}}
+        {{^image}}<div class="ph-frame">
+          <svg class="ph-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="6" y="12" width="52" height="40" rx="3"/>
+            <circle cx="22" cy="26" r="4"/>
+            <path d="M6 44l16-14 12 10 8-7 16 13"/>
+          </svg>
+          <div class="ph-title">配图位</div>
+          <div class="ph-hint">图片放入 assets/images/ 后,在 deck.yaml 本页 data 填写 image 路径</div>
+        </div>{{/image}}
+        </div>
+        {{#image_second}}<div class="split-second"><img src="{{ image_second }}" alt=""></div>{{/image_second}}
+      </div>
+      <div class="split-right">
+        {{#cards}}
+        <div class="card card-accent-left">
+          <div class="card-title">{{ title }}</div>
+          <div class="card-text">{{ text }}</div>
+        </div>
+        {{/cards}}
+      </div>
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

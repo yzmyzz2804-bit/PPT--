@@ -1,0 +1,50 @@
+{
+  "version": "7.2.0",
+  "scope": "工程缺陷修复，不是业务执行或权限服务",
+  "auto_repair": {
+    "enabled": true,
+    "require_reproducible_bug": true,
+    "max_distinct_bugs": 5,
+    "allowed_roots": [
+      "scripts/",
+      "tests/",
+      "config/",
+      "prompts/",
+      "integration/"
+    ],
+    "human_required": [
+      "schema变更",
+      "权限变更",
+      "审批门降低",
+      "QA标准降低",
+      "业务保护对象修改"
+    ],
+    "never_write_business_roots": [
+      "runs/00_inputs",
+      "业务保护对象"
+    ],
+    "acceptance": [
+      "负向测试",
+      "回归测试",
+      "静态校验",
+      "完整tests"
+    ]
+  },
+  "reporting": {
+    "events": [
+      "stage",
+      "blocked",
+      "repair",
+      "final"
+    ],
+    "deduplicate_by": [
+      "run_id",
+      "phase",
+      "bug_id",
+      "status",
+      "evidence_sha256"
+    ],
+    "per_retry_reports": false
+  },
+  "enforcement": "工程代理工作约束；不授予文件系统权限，不自动执行补丁，不替代人工审批"
+}

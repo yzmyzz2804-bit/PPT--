@@ -1,0 +1,1294 @@
+project:
+  name: 安岳县柠檬冷链共享仓建设项目
+  name_en: ''
+  type: industrial_park
+  force_intent: false
+  date: ''
+  audience: 甲方/评委
+  tone: high_business
+  land_area: ''
+  far: ''
+  gfa: ''
+theme: blue-grey-coze
+concept:
+  theme_words:
+  - 鲜藏
+  - 共享
+  - 链通
+  core_logic: 鲜藏(能力) → 共享(模式) → 链通(目标)
+  chapters:
+  - word: 项目背景与场地研判
+    problem: ''
+    content: P04 - P10
+  - word: 市场背景与设计依据
+    problem: ''
+    content: P11 - P15
+  - word: 概念主旨
+    problem: ''
+    content: P16 - P18
+  - word: 方案呈现·效果图
+    problem: ''
+    content: P19 - P25
+  - word: 设计分析
+    problem: ''
+    content: P26 - P42
+  - word: 二期规划(远期)
+    problem: ''
+    content: P43 - P47
+  - word: 技术图纸
+    problem: ''
+    content: P48 - P53
+  - word: 设计说明
+    problem: ''
+    content: P54
+  narrative: ''
+narrative_chapters:
+- id: ch1
+  name: 项目背景与场地研判
+  name_en: PROJECT BACKGROUND & SITE ANALYSIS
+- id: ch2
+  name: 市场背景与设计依据
+  name_en: MARKET CONTEXT & DESIGN BASIS
+- id: ch3
+  name: 概念主旨
+  name_en: CONCEPT THEME
+- id: ch4
+  name: 方案呈现·效果图
+  name_en: SCHEME PRESENTATION
+- id: ch5
+  name: 设计分析
+  name_en: DESIGN ANALYSIS
+- id: ch6
+  name: 二期规划(远期)
+  name_en: FUTURE PHASE
+- id: ch7
+  name: 技术图纸
+  name_en: DESIGN DRAWINGS
+- id: ch8
+  name: 设计说明
+  name_en: DESIGN NOTES
+intent_page_slots:
+- after_chapter: ch3
+  type: intent_bigtext
+slides:
+- id: slide_01
+  chapter: ''
+  template: cover
+  title: 安岳县柠檬冷链共享仓建设项目
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:15
+  notes: 封面 | pdf_p1 img=3
+  data:
+    title: 安岳县柠檬冷链共享仓建设项目
+    tag: ''
+    subtitle: 鲜藏·共享·链通
+    project_name_en: ''
+    page_num: '1'
+    project_name: 安岳县柠檬冷链共享仓建设项目
+    bg_image: ../assets/images/renders/鸟瞰1.png
+  page_num: '1'
+- id: slide_02
+  chapter: ''
+  template: split-image-text
+  title: 设计/规划资质
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 封皮2·资质 | pdf_p2 img=2
+  data:
+    title: 设计/规划资质
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '2'
+    cards:
+    - title: 资质说明
+      text: 工程设计资质等级：________<br>城乡规划编制资质：________<br>证书编号 / 有效期：________
+    image: ../assets/images/ref/p02.png
+  page_num: '2'
+- id: slide_03
+  chapter: ''
+  template: toc
+  title: CONTENTS
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 目录 | pdf_p3 img=3
+  data:
+    title: CONTENTS
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '3'
+    chapters:
+    - num: '01'
+      name: 项目背景与场地研判
+      name_en: PROJECT BACKGROUND & SITE ANALYSIS
+      pages: P04 - P10
+    - num: '02'
+      name: 市场背景与设计依据
+      name_en: MARKET CONTEXT & DESIGN BASIS
+      pages: P11 - P15
+    - num: '03'
+      name: 概念主旨
+      name_en: CONCEPT THEME
+      pages: P16 - P18
+    - num: '04'
+      name: 方案呈现·效果图
+      name_en: SCHEME PRESENTATION
+      pages: P19 - P25
+    - num: '05'
+      name: 设计分析
+      name_en: DESIGN ANALYSIS
+      pages: P26 - P42
+    - num: '06'
+      name: 二期规划(远期)
+      name_en: FUTURE PHASE
+      pages: P43 - P47
+    - num: '07'
+      name: 技术图纸
+      name_en: DESIGN DRAWINGS
+      pages: P48 - P53
+    - num: 08
+      name: 设计说明
+      name_en: DESIGN NOTES
+      pages: P54
+  page_num: '3'
+- id: slide_04
+  chapter: ch1
+  template: chapter-divider
+  title: 01 项目背景与场地研判
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 章节过渡 | pdf_p4 img=4
+  data:
+    title: 01 项目背景与场地研判
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '4'
+    bg_image: ../assets/images/ref/p08.png
+    chapter_num: '01'
+    chapter_name: 项目背景与场地研判
+    chapter_desc: ''
+    chapter_name_en: PROJECT BACKGROUND & SITE ANALYSIS
+  page_num: '4'
+- id: slide_05
+  chapter: ch1
+  template: multi-card-row
+  title: 1.1 项目定位与区域背景
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文+数据卡 | pdf_p5 img=6
+  data:
+    title: 1.1 项目定位与区域背景
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '5'
+    data_cards: []
+    photo_cards:
+    - image: ''
+      title: 项目定位与区域背景
+      tag: LOCATION
+  page_num: '5'
+- id: slide_06
+  chapter: ch1
+  template: split-image-text
+  title: 1.1 上位规划分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p6 img=2
+  data:
+    title: 1.1 上位规划分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '6'
+    cards:
+    - title: 1.1 上位规划分析
+      text: 安岳县地处四川盆地中部，成渝地区双城经济圈腹心和成都、重庆的直线中点，<br>同时连接成都、重庆“双核”，是成渝地区双城经济圈的重要组成部分。<br>成资渝、渝蓉、内遂三条高速过境，交通条件非常便利<br>成都<br>重庆<br>安岳<br>资阳<br>内江<br>遂宁<br>一小时<br>经济圈<br>成资渝高速
+    image: ../assets/images/ref/p06.png
+  page_num: '6'
+- id: slide_07
+  chapter: ch1
+  template: split-image-text
+  title: 1.2 场地现状分析(区位)
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p7 img=4
+  data:
+    title: 1.2 场地现状分析(区位)
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '7'
+    cards:
+    - title: 1.2 场地现状分析(区位)
+      text: 01 项目背景与场地研判<br>1.2 场地现状分析<br>项目区位LOCATION<br>四川省资阳市安岳县石桥街道烽火村<br>柠都大道东段南侧，京东物流园西侧<br>交通条件TRAFFIC<br>▸紧邻柠都大道（城市主干道），对外交通便捷<br>▸西侧毗邻京东物流园，物流产业集聚效应明显<br>▸高速路网完善，路口300米既可上遂宜毕高速<br>卫星图·
+        场地区位<br>安岳县人民政府<br>项目用地<br>京东物流园
+    image: ../assets/images/ref/p07.png
+  page_num: '7'
+- id: slide_08
+  chapter: ch1
+  template: split-image-text
+  title: 1.2 场地现状分析(卫星)
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p8 img=5
+  data:
+    title: 1.2 场地现状分析(卫星)
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '8'
+    cards:
+    - title: 1.2 场地现状分析(卫星)
+      text: 01 项目背景与场地研判<br>1.2 场地现状分析<br>项目区位LOCATION<br>卫星图· 场地区位<br>京东物流园
+    image: ../assets/images/ref/p08.png
+  page_num: '8'
+- id: slide_09
+  chapter: ch1
+  template: split-image-text
+  title: 1.2 场地现状分析(分 phase)
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p9 img=4
+  data:
+    title: 1.2 场地现状分析(分 phase)
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '9'
+    cards:
+    - title: 1.2 场地现状分析(分 phase)
+      text: 01 项目背景与场地研判<br>1.2 场地现状分析<br>京东冷链物现状建筑及车行出入道路<br>柠都大道东段<br>项目用地<br>原始地形
+    image: ../assets/images/ref/p09.png
+  page_num: '9'
+- id: slide_10
+  chapter: ch1
+  template: split-image-text
+  title: 1.2 场地高差·现状条件
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p10 img=2
+  data:
+    title: 1.2 场地高差·现状条件
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '10'
+    cards:
+    - title: 1.2 场地高差·现状条件
+      text: 现状电缆<br>待拆迁民宅<br>01 项目背景与场地研判<br>1.2 场地现状分析场地高差· 现状条件<br>一期场地整体较平整，可直接建设；<br>二期用地待整理，有一定高差。<br>一期场地有一处电缆需迁移；<br>二期场地多为草地及宅基地，有6处民宅待拆迁。<br>现状分析<br>场地高差
+    image: ../assets/images/ref/p10.png
+  page_num: '10'
+- id: slide_11
+  chapter: ch2
+  template: chapter-divider
+  title: 02 市场背景与设计依据
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 章节过渡 | pdf_p11 img=4
+  data:
+    title: 02 市场背景与设计依据
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '11'
+    bg_image: ../assets/images/ref/p06.png
+    chapter_num: '02'
+    chapter_name: 市场背景与设计依据
+    chapter_desc: ''
+    chapter_name_en: MARKET CONTEXT & DESIGN BASIS
+  page_num: '11'
+- id: slide_12
+  chapter: ch2
+  template: split-image-text
+  title: 2.1 案例分析(蒲江/鑫柠乐)
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p12 img=4
+  data:
+    title: 2.1 案例分析(蒲江/鑫柠乐)
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '12'
+    cards:
+    - title: 2.1 案例分析(蒲江/鑫柠乐)
+      text: 02 市场背景与设计依据<br>2.1 案例分析「冻库+ 包装生产+ 物流」三位一体<br>蒲江益民水果进出口集散中心<br>案例一· 蒲江益民水果进出口集散中心<br>43.36
+        亩<br>用地<br>1.8 万㎡<br>总建面<br>9,700 万<br>投资<br>库存<br>5 万吨<br>年周转<br>智慧变温冷库-20°C~5°C
+        ｜25% 配备CA 气调<br>柑橘+ 猕猴桃智能分选线各1 条，日加工35 万斤<br>年交易额3-5 亿元<br>冻库+ 分选包装+ 物流集散<br>安岳雪王农业冷链仓储中心<br>案例二·
+        安岳雪王农业冷链仓储中心<br>37,000 ㎡<br>1# 楼建面<br>1 亿+<br>4 万吨<br>年加工<br>26 个<br>分仓<br>专注柠檬、橙子鲜果供应链<br>产品直达全国26
+        个分仓，支撑数万家门店
+    image: ''
+  page_num: '12'
+- id: slide_13
+  chapter: ch2
+  template: split-image-text
+  title: 2.1 案例分析(续)
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p13 img=4
+  data:
+    title: 2.1 案例分析(续)
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '13'
+    cards:
+    - title: 2.1 案例分析(续)
+      text: 02 市场背景与设计依据<br>2.1 案例分析「冻库+ 包装生产+ 物流」三位一体<br>四川省鑫柠乐果业有限公司<br>案例三· 四川省鑫柠乐果业有限公司<br>3
+        万吨<br>冷冻库存<br>5 万吨<br>年产能<br>5,500 万<br>投资<br>40+ 家<br>合作果园<br>原料车间+ 智能分选车间+
+        万吨冷藏库<br>"销售公司+ 包装工厂+ 合作社+ 农户" 模式<br>认证：GAP、ISO22000、HACCP<br>万吨冻库+ 智能分选+
+        合作社联动<br>四川兴靓源农业发展有限公司<br>案例四· 四川兴靓源农业发展有限公司<br>8,500 ㎡<br>厂房<br>1,600 ㎡<br>冷链仓储<br>4,000
+        亩<br>果园<br>10 吨/h<br>处理能力<br>江西绿萌全智能双通道商品化处理线<br>种植→收购→处理→加工→仓储→物流→包装→出口
+    image: ''
+  page_num: '13'
+- id: slide_14
+  chapter: ch2
+  template: quadrant-2x2
+  title: 2.2 功能配比数据分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 四象限/表格 | pdf_p14 img=4
+  data:
+    title: 2.2 功能配比数据分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '14'
+    intro: ''
+    quadrants:
+    - title: 要点 1
+      points:
+      - 02 市场背景与设计依据
+      - 行业冷链园区功能面积配比
+      - 功能区
+      - 行业占比
+      - 说明
+      - 冷冻/ 冷藏库
+      - 30-40%
+    - title: 要点 2
+      points:
+      - 核心存储区
+      - 分选加工区
+      - 5-10%
+      - 按需配置
+      - 月台+ 穿堂
+      - 10-15%
+      - 作业区
+    - title: 要点 3
+      points:
+      - 设备机房
+      - 5-8%
+      - 制冷机房+ 变配电
+      - 办公+ 配套
+      - 管理+ 员工
+      - ▲基于国内同类型冷链物流园区调研数据整理
+      - 安岳柠檬特产业总结
+    - title: 要点 4
+      points:
+      - 与通用冷链冷库主导模式不同
+      - 柠檬分拣包装占比高
+      - 存储+ 分选包装
+      - 双核心
+      - 冷藏存储保障鲜果品质，分选包装匹配柠檬产业链特性
+  page_num: '14'
+- id: slide_15
+  chapter: ch2
+  template: multi-card-row
+  title: 2.3 物流区尺度参数
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 多数据卡 | pdf_p15 img=3
+  data:
+    title: 2.3 物流区尺度参数
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '15'
+    data_cards: []
+    photo_cards:
+    - image: ../assets/images/ref/p15.png
+      title: 物流区尺度参数
+      tag: DIMENSION
+  page_num: '15'
+- id: slide_16
+  chapter: ch3
+  template: chapter-divider
+  title: 03 概念主旨
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 章节过渡 | pdf_p16 img=4
+  data:
+    title: 03 概念主旨
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '16'
+    bg_image: ../assets/images/renders/透视2.png
+    chapter_num: '03'
+    chapter_name: 概念主旨
+    chapter_desc: ''
+    chapter_name_en: CONCEPT THEME
+  page_num: '16'
+- id: slide_18
+  chapter: ch3
+  template: split-image-text
+  title: 概念推导·三词拆解
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p18 img=6
+  data:
+    title: 概念推导·三词拆解
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '17'
+    cards:
+    - title: 概念推导·三词拆解
+      text: 03 概念主旨<br>概念推导· 三词拆解<br>鲜藏<br>能力· 冷链保鲜是核心能力<br>▸1# 库：18,229.69 ㎡恒温冷藏空间<br>▸4-8°C
+        精准控温<br>▸采后第一时间锁鲜<br>锁住品质<br>共享<br>模式· 共享仓服务多主体<br>▸2# 库：弹性分割空间<br>▸中小企业/
+        合作社按需使用<br>▸降低单体冷链投入门槛<br>降低门槛<br>链通<br>目标· 打通产地到市场的链路<br>▸月台系统+ 物流动线+ 配送网络<br>▸枝头到终端全程冷链不断链<br>▸核心城市24h
+        达/ 最远48h 配送<br>延伸市场
+    image: ''
+  page_num: '17'
+- id: slide_19
+  chapter: ch4
+  template: chapter-divider
+  title: 04 方案呈现·效果图
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 章节过渡 | pdf_p19 img=4
+  data:
+    title: 04 方案呈现·效果图
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '18'
+    bg_image: ../assets/images/ref/p20.png
+    chapter_num: '04'
+    chapter_name: 方案呈现·效果图
+    chapter_desc: ''
+    chapter_name_en: SCHEME PRESENTATION
+  page_num: '18'
+- id: slide_20
+  chapter: ch4
+  template: scheme-present
+  title: 效果图·鸟瞰1
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p20 img=2
+  data:
+    title: 效果图·鸟瞰1
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '19'
+    scheme_num: ''
+    scheme_name: 效果图·鸟瞰1
+    scheme_name_en: ''
+    image: ../assets/images/renders/鸟瞰1.png
+    description: 园区沿柠都大道东段展开,主体冷库沿街布置;货运出入口与场地高差一次理顺,一期用地约 2.10 h㎡。
+    metrics: []
+  page_num: '19'
+- id: slide_21
+  chapter: ch4
+  template: scheme-present
+  title: 效果图·鸟瞰2
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p21 img=2
+  data:
+    title: 效果图·鸟瞰2
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '20'
+    scheme_num: ''
+    scheme_name: 效果图·鸟瞰2
+    scheme_name_en: ''
+    image: ../assets/images/renders/鸟瞰2.png
+    description: 南侧道路交叉口视角:办公及生活配套独立成区、入口分设,园区内部人车分流、客货分流。
+    metrics: []
+  page_num: '20'
+- id: slide_22
+  chapter: ch4
+  template: scheme-present
+  title: 效果图·透视1
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p22 img=2
+  data:
+    title: 效果图·透视1
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '21'
+    scheme_num: ''
+    scheme_name: 效果图·透视1
+    scheme_name_en: ''
+    image: ../assets/images/renders/透视1.png
+    description: 沿街立面以蓝灰金属屋面为主调,暖色实体墙面形成节奏;装卸泊位与叉车坡道一体化布置。
+    metrics: []
+  page_num: '21'
+- id: slide_23
+  chapter: ch4
+  template: scheme-present
+  title: 效果图·透视2
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p23 img=2
+  data:
+    title: 效果图·透视2
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '22'
+    scheme_num: ''
+    scheme_name: 效果图·透视2
+    scheme_name_en: ''
+    image: ../assets/images/renders/透视2.png
+    description: 主入口透视:玻璃门厅结合暖色门廊构成园区形象界面,货运流线绕行建筑后侧,互不交叉。
+    metrics: []
+  page_num: '22'
+- id: slide_24
+  chapter: ch4
+  template: split-image-text
+  title: 总图+经济技术指标
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p24 img=1
+  data:
+    title: 总图+经济技术指标
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '23'
+    cards:
+    - title: 总图+经济技术指标
+      text: 1#厂房1F/1D<br>H=13.65M<br>3#配套用房1F<br>H=5.5M<br>2#厂房1F<br>方案<br>总图+ 经济技术指标<br>市政道路<br>消防车出入口<br>主入口<br>车行出入口<br>冷链项目综合经济技术指标<br>项目<br>指标<br>备注<br>用地面积<br>使用已有批文土地<br>其中<br>有土地批文面积<br>暂无土地批文面积<br>总建筑面积<br>地上总建筑面积<br>地上计容建筑面积<br>1#厂房生产区<br>双倍计容<br>1#办公区<br>2#卫生间<br>地上不计容建筑面积
+    image: ../assets/images/ref/p24.png
+  page_num: '23'
+- id: slide_25
+  chapter: ch4
+  template: compare-table
+  title: 设计方案综合经济技术指标
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 对比表(仅设计方案) | pdf_p25 img=0 | excel_p25 | excel_p25 | excel_p25
+  data:
+    title: 设计方案综合经济技术指标
+    tag: DESIGN SCHEME
+    subtitle: 安岳县柠檬冷链共享仓建设项目 · 一期
+    project_name_en: ''
+    page_num: '24'
+    headers:
+    - 指标
+    - 设计方案
+    - 备注
+    rows:
+    - indicator: 用地面积
+      a: ''
+      b: 20996.28 ㎡
+      note: 使用已有批文土地
+    - indicator: 总建筑面积
+      a: ''
+      b: 12243.36 ㎡
+      note: ''
+    - indicator: 地上总建筑面积
+      a: ''
+      b: 11020.05 ㎡
+      note: ''
+    - indicator: 地上计容建筑面积
+      a: ''
+      b: 21497.32 ㎡
+      note: 1#厂房生产区双倍计容
+    - indicator: 地下建筑面积
+      a: ''
+      b: 1223.31 ㎡
+      note: 地下设备用房
+    - indicator: 容积率
+      a: ''
+      b: '1.02'
+      note: ''
+    - indicator: 建筑基底
+      a: ''
+      b: 10784.56 ㎡
+      note: ''
+    - indicator: 建筑密度
+      a: ''
+      b: 51.36%
+      note: ''
+    - indicator: 行政办公及生活服务区面积
+      a: ''
+      b: 470.98 ㎡
+      note: 占比 3.85%
+    - indicator: 车位
+      a: ''
+      b: 42 辆
+      note: ''
+    - indicator: 非机动停车区
+      a: ''
+      b: 98 ㎡
+      note: ''
+    summary_cards:
+    - name: 一期建设规模
+      hot: false
+      items:
+      - k: 用地面积
+        v: 20996.28 ㎡
+      - k: 总建筑面积
+        v: 12243.36 ㎡
+      - k: 容积率
+        v: '1.02'
+      - k: 建筑密度
+        v: 51.36%
+    - name: 方案结论
+      hot: true
+      items:
+      - k: 主体功能
+        v: 冷库储存 + 分选加工
+      - k: 计容特点
+        v: 1#厂房生产区双倍计容
+      - k: 办公配套
+        v: 470.98 ㎡（占比 3.85%）
+      - k: 停车配建
+        v: 机动车 42 辆
+    highlighted_scheme: 设计方案
+  page_num: '24'
+- id: slide_26
+  chapter: ch5
+  template: chapter-divider
+  title: 05 设计分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 章节过渡 | pdf_p26 img=4
+  data:
+    title: 05 设计分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '25'
+    bg_image: ../assets/images/ref/p27.png
+    chapter_num: '05'
+    chapter_name: 设计分析
+    chapter_desc: ''
+    chapter_name_en: DESIGN ANALYSIS
+  page_num: '25'
+- id: slide_27
+  chapter: ch5
+  template: split-image-text
+  title: 5.1 功能分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p27 img=2
+  data:
+    title: 5.1 功能分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '26'
+    cards:
+    - title: 5.1 功能分析
+      text: 原料拆袋存放区<br>包装区<br>分选加工区<br>冷库储藏区<br>成品出口<br>办公及配套<br>以"收— 存— 选— 储—<br>发"
+        为主线组织分区：东侧原<br>料入口承接来料，经拆袋存放、<br>分选加工后或成品直发、或入<br>冷库储存；办公配套独立于南<br>侧入口，人货分流，便于管理。<br>冷库储存区<br>临时卫生间<br>1#楼<br>2#楼
+    image: ../assets/images/ref/p27.png
+  page_num: '26'
+- id: slide_28
+  chapter: ch5
+  template: split-image-text
+  title: 5.2 原料进出流线分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p28 img=6
+  data:
+    title: 5.2 原料进出流线分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '27'
+    cards:
+    - title: 5.2 原料进出流线分析
+      text: 原料出入口<br>进场流线<br>驶离流线<br>经与建设方沟通，原料与物流<br>车辆共用场地入口。<br>原料货车自南侧入口进场，在<br>东侧原料区卸货后原路驶离，<br>单向循环，与成品出口流线、<br>办公流线分离。<br>过磅称重<br>过磅承重
+    image: ../assets/images/ref/p28.png
+  page_num: '27'
+- id: slide_29
+  chapter: ch5
+  template: split-image-text
+  title: 5.3 生产流线分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p29 img=2
+  data:
+    title: 5.3 生产流线分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '28'
+    cards:
+    - title: 5.3 生产流线分析
+      text: 原料拆袋存放区<br>冷库储存区<br>分选加工区<br>办公及配套<br>成品出口<br>包装区<br>原料自东侧原料入口进场，经<br>卸货拆袋后，暂存或进入分选<br>加工、半成品暂存、包装，最<br>后放入冷库储存区保藏，由成<br>品出口发运出厂。全程单向衔<br>接、流线清晰，实现仓储与加<br>工无缝流转。
+    image: ../assets/images/ref/p29.png
+    reverse: true
+  page_num: '28'
+- id: slide_30
+  chapter: ch5
+  template: split-image-text
+  title: 5.4 成品货车进场流线
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p30 img=5
+  data:
+    title: 5.4 成品货车进场流线
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '29'
+    cards:
+    - title: 5.4 成品货车进场流线
+      text: 成品货车进场流线分析<br>2 退<br>空车过磅<br>货车进场流线<br>成品装车<br>货车自场地出入口进场，前进<br>至空车过磅，再倒车至成品出<br>口进行装车。
+    image: ../assets/images/ref/p30.png
+  page_num: '29'
+- id: slide_31
+  chapter: ch5
+  template: split-image-text
+  title: 5.5 成品货车驶离流线
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p31 img=5
+  data:
+    title: 5.5 成品货车驶离流线
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '30'
+    cards:
+    - title: 5.5 成品货车驶离流线
+      text: 成品货车驶离流线分析<br>货车货物装车完毕后，前进至<br>过磅区称重，再经倒车、调整<br>向场地出入口驶离。<br>2 退<br>载重过磅<br>货车驶离流线
+    image: ../assets/images/ref/p31.png
+  page_num: '30'
+- id: slide_32
+  chapter: ch5
+  template: split-image-text
+  title: 5.6 规划间距分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p32 img=2
+  data:
+    title: 5.6 规划间距分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '31'
+    cards:
+    - title: 5.6 规划间距分析
+      text: 防火间距要求：单层厂房之间<br>间距须≥9 m；<br>规划退距要求：<br>建筑退道路红线须≥10m，退<br>用地红线须≥4m，本方案建筑<br>间距及退界距离满足安岳县规<br>划管理技术规定2025的相关条<br>款要求。<br>1#厂房1F/1D<br>H=13.65M<br>2#临时卫生间1F<br>H=3.5M
+    image: ../assets/images/ref/p32.png
+    reverse: true
+  page_num: '31'
+- id: slide_33
+  chapter: ch5
+  template: split-image-text
+  title: 5.7 消防车道分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p33 img=2
+  data:
+    title: 5.7 消防车道分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '32'
+    cards:
+    - title: 5.7 消防车道分析
+      text: 消防车道沿场地环形布置，东侧设1<br>个永久消防出入口，1个临时消防出<br>入口，环道连通场地，满足消防扑<br>救与疏散要求。<br>消防水池布置于1#楼建筑地下空间。<br>永久消防车出入口<br>永久消防车入口<br>临时消防车入口<br>消防车流线<br>二期在建<br>临时消防车出入口
+    image: ../assets/images/ref/p33.png
+  page_num: '32'
+- id: slide_34
+  chapter: ch5
+  template: split-image-text
+  title: 5.8 地面停车分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p34 img=3
+  data:
+    title: 5.8 地面停车分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '33'
+    cards:
+    - title: 5.8 地面停车分析
+      text: 机动车出入口<br>非机动停车区<br>机动停车区<br>地面停车沿北侧集中布置，机<br>动车与非机动车分区停放，且<br>尽量远离南侧装卸货区域，避<br>免干扰。<br>本项目设计停车位42辆<br>设计非机动停车区98㎡
+    image: ../assets/images/ref/p34.png
+  page_num: '33'
+- id: slide_35
+  chapter: ch5
+  template: split-image-text
+  title: 5.9 竖向分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p35 img=2
+  data:
+    title: 5.9 竖向分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '34'
+    cards:
+    - title: 5.9 竖向分析
+      text: ±0.000=275.20<br>场地出入口处与道路接平，建<br>筑零标高为275.20m，成平出<br>入口处高差为1.2m，方便货车<br>装卸货物。其余部位室内外高<br>差为0.3m。
+    image: ../assets/images/ref/p35.png
+    reverse: true
+  page_num: '34'
+- id: slide_36
+  chapter: ch5
+  template: split-image-text
+  title: 5.10 边坡设计分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p36 img=4
+  data:
+    title: 5.10 边坡设计分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '35'
+    cards:
+    - title: 5.10 边坡设计分析
+      text: 边坡挂三维网喷播植草护坡展视图<br>边坡挂三维网喷播植草护坡横断面图<br>1-1断面
+    image: ../assets/images/ref/p36.png
+  page_num: '35'
+- id: slide_37
+  chapter: ch5
+  template: split-image-text
+  title: 5.11 层高分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p37 img=9
+  data:
+    title: 5.11 层高分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '36'
+    cards:
+    - title: 5.11 层高分析
+      text: 1 铁框1.2×1.2×0.7｜8 层<br>冻库吊顶+7.000<br>吊顶以上设备层<br>3 分类包装车间· 直通屋面<br>2 办公夹层·
+        会议/ 参观<br>1 冻库· 堆高与吊顶净高<br>柠檬周转铁框1.2×1.2×0.7 m，最大堆码8 层：0.700×8＝5.600<br>；底部垫高0.500、顶部作业与风道净空0.900，故冻库吊顶净高按<br>7.000
+        控制。吊顶以上作设备层，净高1.400（檐口）～4.100（屋<br>脊）。<br>2 办公· 夹层利用<br>办公区充分利用厂房14.700 结构层高设置夹层：夹层楼面+5.000<br>，下层层高5.000、夹层净高约3.800，可增设会议室与参观通廊，<br>不增加占地即扩展功能空间。<br>3
+        分类包装车间· 通高<br>分类包装车间（图示分解车间）不设吊顶、直通屋面，净高9.000～<br>11.100 随屋面坡度递变，满足分选包装线、提升设备与检修空间要<br>求。
+    image: ../assets/images/ref/p37.png
+  page_num: '36'
+- id: slide_38
+  chapter: ch5
+  template: split-image-text
+  title: 5.12 管网分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p38 img=1
+  data:
+    title: 5.12 管网分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '37'
+    cards:
+    - title: 5.12 管网分析
+      text: 市政雨水接驳口<br>市政污水接驳口<br>雨水管网<br>污水管网<br>格栅池<br>市政强电接驳口<br>市政通讯接驳口<br>废水处理站<br>废水管网<br>污废水处理设施布置原则：<br>1、格栅池根据后期实际使用人数精确计算，本项目设置1座。<br>2、格栅池避开人行流线，便于清掏，最高日污水量=17.3m³/d，最大时污水量=1.87m³/h。<br>3、本工程设置工艺废水处理站一座，距离容量根据后期工艺需求确定。
+    image: ../assets/images/ref/p38.png
+    reverse: true
+  page_num: '37'
+- id: slide_39
+  chapter: ch5
+  template: split-image-text
+  title: 5.13 防火分区分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p39 img=3
+  data:
+    title: 5.13 防火分区分析
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '38'
+    cards:
+    - title: 5.13 防火分区分析
+      text: 每个冻库冻库小于3500平米<br>防火分区1（厂房）<br>6460.89平米<br>防火分区2（冻库）<br>1467.91平米<br>防火分区3（冻库）<br>2112.66平米<br>防火分区7（办公）<br>消防疏散口
+    image: ../assets/images/ref/p39.png
+  page_num: '38'
+- id: slide_40
+  chapter: ch5
+  template: split-image-text
+  title: 5.14 立面材质·设计方案
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏(原06对比方案-方案二改造) | pdf_p40 img=1
+  data:
+    title: 5.14 立面材质·设计方案
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '39'
+    cards:
+    - title: 5.14 立面材质·设计方案
+      text: 立面材质<br>方案二<br>中灰色轻钢屋面<br>中灰色涂料<br>砌体墙基<br>浅白色涂料<br>彩钢夹芯板外墙<br>橘色涂料<br>玻璃天窗
+    image: ../assets/images/ref/p40.png
+    reverse: true
+  page_num: '39'
+- id: slide_41
+  chapter: ch5
+  template: split-image-text
+  title: 5.15 双碳·低碳生态
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p41 img=3
+  data:
+    title: 5.15 双碳·低碳生态
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '40'
+    cards:
+    - title: 5.15 双碳·低碳生态
+      text: 打造低碳环保生态的产业园区<br>2022年11月，“成渝双碳创新共同体”正式成立，本园区结合多种节能环保措施助力绿色、环保、低碳的生活方式，与国家双碳战略目标<br>契合。<br>1、根据《建筑节能与可再生能源利用通用规范》GB55015-2021要求，拟在本园区内道路设置太阳能景观路灯<br>2、园区规划设计采用多种被动式、主动式节能的设计手法，综合打造低碳园区：最大化保持原有植被，减少场地开挖；<br>利用通风天井等被动式节能的手法控制建筑耗能；利用太阳能、雨水收集、用等主动式节能的方式最大化利用资源。<br>3、从城市整体环境设计出发，合理组织人流，做到“创新、协调、绿色、开放、共享”并重。局部设集中绿化，整个园区每栋建筑周边，绿地以灌木、<br>草坪为主要的环境构成要素。主入口绿化、政商服务中心面临城市主干道与之形成统一的形象广场位置更醒目，提升园区及企业形象。<br>太阳能路灯<br>园区海绵城市<br>双碳<br>绿色建筑与节能措施
+    image: ''
+  page_num: '40'
+- id: slide_42
+  chapter: ch5
+  template: quadrant-2x2
+  title: 5.16 技术措施
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 四象限/卡片 | pdf_p42 img=0
+  data:
+    title: 5.16 技术措施
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '41'
+    intro: ''
+    quadrants:
+    - title: 要点 1
+      points:
+      - 本项目在结合以往工业建筑应用措施的基础上总结归纳，结合当地气候条件和自然资源选出适宜的绿色建筑技术措施。
+      - 提高围护结构热工性能
+      - 可再生能源利用
+      - 人车分流且照明充足
+    - title: 要点 2
+      points:
+      - 提高结构耐久性
+      - 应用绿色建材
+      - 保证室内热湿环境良好
+      - 海绵城市专项设计
+    - title: 要点 3
+      points:
+      - 采用节水灌溉技术
+      - 充分利用天然采光
+      - 营造场地舒适风环境
+      - 合理开发地下空间
+    - title: 要点 4
+      points:
+      - 改善自然通风效果
+      - 绿色建筑与节能措施
+  page_num: '41'
+- id: slide_43
+  chapter: ch6
+  template: chapter-divider
+  title: 06 二期规划(远期)
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 章节过渡 | pdf_p43 img=4
+  data:
+    title: 06 二期规划(远期)
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '42'
+    bg_image: ../assets/images/ref/p46.png
+    chapter_num: '06'
+    chapter_name: 二期规划(远期)
+    chapter_desc: ''
+    chapter_name_en: FUTURE PHASE
+  page_num: '42'
+- id: slide_44
+  chapter: ch6
+  template: split-image-text
+  title: 6.1 远期(二期)规划分析
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p44 img=2 | excel_p44 | excel_p44 | excel_p44
+  data:
+    title: 6.1 远期(二期)规划分析
+    tag: FUTURE PHASE
+    subtitle: 远期土地供应后的拓展倡议
+    project_name_en: ''
+    page_num: '43'
+    cards:
+    - title: 二期规划核心指标
+      text: 二期规划为远期土地供应后的拓展倡议。本期仅作规划可行性分析，不与设计方案做经济指标对比。
+    - title: 远期拓展要点
+      text: 远期土地供应后的拓展倡议分析；二期生产区以厂房 18,229.69 ㎡为主体，辅以厂房办公 398.95 ㎡、污水设备房 115.2 ㎡、卫生间
+        60.8 ㎡、配套用房 57.62 ㎡、冷库柴发 159.82 ㎡；地下设备用房 601.62 ㎡。本期作为远期规划建议，不与设计方案做对比。
+    image: ../assets/images/ref/p44.png
+  page_num: '43'
+- id: slide_45
+  chapter: ch6
+  template: split-image-text
+  title: 6.2 远期基础设施组织
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 图文分栏 | pdf_p45 img=2 | excel_p45 | excel_p45 | excel_p45
+  data:
+    title: 6.2 远期基础设施组织
+    tag: FUTURE PHASE
+    subtitle: 先地下后地上 · 先主干后分支
+    project_name_en: ''
+    page_num: '44'
+    cards:
+    - title: 道路与消防组织
+      text: 场地环路一次成形/分段闭合，保证当期货运与人行可达、客货互不交叉。消防车道环通、消防水源与扑救面随首期同步投运。
+    - title: 二期指标数据
+      text: 二期规划为远期土地供应后的拓展倡议。本期仅作规划可行性分析，不与设计方案做经济指标对比。
+    image: ../assets/images/ref/p45.png
+    reverse: true
+  page_num: '44'
+- id: slide_46
+  chapter: ch6
+  template: scheme-present
+  title: 效果图A·二期鸟瞰
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p46 img=3
+  data:
+    title: 效果图A·二期鸟瞰
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '45'
+    scheme_num: ''
+    scheme_name: 效果图A·二期鸟瞰
+    scheme_name_en: ''
+    image: ../assets/images/renders/鸟瞰1.png
+    description: 二期厂房沿远期用地红线展开,与一期共享月台与堆场,分期建设、一期运营不停产。
+    metrics: []
+  page_num: '45'
+- id: slide_47
+  chapter: ch6
+  template: scheme-present
+  title: 效果图A·二期透视
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p47 img=2
+  data:
+    title: 效果图A·二期透视
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '46'
+    scheme_num: ''
+    scheme_name: 效果图A·二期透视
+    scheme_name_en: ''
+    image: ../assets/images/renders/透视1.png
+    description: 二期沿街形象延续一期立面语言,屋面预留设备平台,管网与制冷机房接口一次规划到位。
+    metrics: []
+  page_num: '46'
+- id: slide_48
+  chapter: ch7
+  template: chapter-divider
+  title: 07 技术图纸
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 章节过渡 | pdf_p48 img=4
+  data:
+    title: 07 技术图纸
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '47'
+    bg_image: ../assets/images/ref/p49.png
+    chapter_num: '07'
+    chapter_name: 技术图纸
+    chapter_desc: ''
+    chapter_name_en: DESIGN DRAWINGS
+  page_num: '47'
+- id: slide_49
+  chapter: ch7
+  template: scheme-present
+  title: 图纸·总平面图
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p49 img=1
+  data:
+    title: 图纸·总平面图
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '48'
+    scheme_num: ''
+    scheme_name: 图纸·总平面图
+    scheme_name_en: ''
+    image: ../assets/images/ref/p49.png
+    description: ''
+    metrics: []
+  page_num: '48'
+- id: slide_50
+  chapter: ch7
+  template: scheme-present
+  title: 图纸·一层平面图
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p50 img=1
+  data:
+    title: 图纸·一层平面图
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '49'
+    scheme_num: ''
+    scheme_name: 图纸·一层平面图
+    scheme_name_en: ''
+    image: ../assets/images/ref/p50.png
+    description: 一层平面图
+    metrics: []
+  page_num: '49'
+- id: slide_51
+  chapter: ch7
+  template: scheme-present
+  title: 图纸·夹层平面图
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p51 img=1
+  data:
+    title: 图纸·夹层平面图
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '50'
+    scheme_num: ''
+    scheme_name: 图纸·夹层平面图
+    scheme_name_en: ''
+    image: ../assets/images/ref/p51.png
+    description: 夹层平面图
+    metrics: []
+  page_num: '50'
+- id: slide_52
+  chapter: ch7
+  template: scheme-present
+  title: 图纸·二层平面图
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p52 img=1
+  data:
+    title: 图纸·二层平面图
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '51'
+    scheme_num: ''
+    scheme_name: 图纸·二层平面图
+    scheme_name_en: ''
+    image: ../assets/images/ref/p52.png
+    description: ''
+    metrics: []
+  page_num: '51'
+- id: slide_53
+  chapter: ch7
+  template: scheme-present
+  title: 图纸·1-1剖面图
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 方案呈现 | pdf_p53 img=1
+  data:
+    title: 图纸·1-1剖面图
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '52'
+    scheme_num: ''
+    scheme_name: 图纸·1-1剖面图
+    scheme_name_en: ''
+    image: ../assets/images/ref/p53.png
+    description: 技术图纸<br>1-1剖面图<br>方案一
+    metrics: []
+  page_num: '52'
+- id: slide_54
+  chapter: ch8
+  template: closing
+  title: 感谢聆听
+  status: rendered
+  assets: []
+  last_modified: 2026-09-22 13:10
+  notes: 结尾页 | pdf_p54 img=3
+  data:
+    title: 感谢聆听
+    tag: ''
+    subtitle: ''
+    project_name_en: ''
+    page_num: '53'
+    closing_text: 鲜藏·共享·链通
+    closing_sub: THANKS
+    project_name: 安岳县柠檬冷链共享仓建设项目
+    bg_image: ../assets/images/renders/鸟瞰1.png
+  page_num: '53'
+build:
+  engine: playwright
+  output_dir: build/
+  last_build: 2026-09-22 13:18
+  last_build_pdf: E:\TRAE\PPT概念规划设计\build\安岳县柠檬冷链共享仓建设项目.pdf
+  last_build_pptx: ''
+_total_pages: 53
+_source: parse_v2_pdf.py @ 2026-09-20 16:37 | source=20260920合--安岳县柠檬冷链共享仓建设项目v2.pdf

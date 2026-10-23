@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>核心规划</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+:root {
+    /* —— theme.json 自动注入 (勿手动改) —— */
+    --brand-primary: #0E2A5B;
+    --brand-secondary: #1D3A8A;
+    --brand-accent: #2562EB;
+    --brand-accent_bright: #3B81F5;
+    --brand-accent_light: #60A5FA;
+    --brand-accent_lighter: #93C4FD;
+    --brand-accent_lightest: #BEDAFE;
+    --brand-accent_warm: #D9822B;
+    --brand-accent_warm_light: #F0A860;
+    --c-black: #1A1A1A;
+    --c-text_secondary: #8A8F98;
+    --c-divider: #D8D4CC;
+    --c-card_border: #E8E4DC;
+    --c-bg_card: #FFFFFF;
+    --c-bg_page: #F3F1ED;
+    --c-bg_page_deep: #EEECE9;
+    --c-white: #FFFFFF;
+    --c-semantic_success: #049569;
+    --c-semantic_warning: #D9822B;
+    --font-cn: Microsoft YaHei, PingFang SC, Noto Sans SC, sans-serif;
+    --font-en: Arial, Helvetica, Inter, sans-serif;
+    --font-num: Arial, Helvetica, Inter, sans-serif;
+    --fs-mega_title: 84px;
+    --fs-hero_title: 56px;
+    --fs-title: 34px;
+    --fs-card_title: 22px;
+    --fs-body: 17px;
+    --fs-caption: 13px;
+    --fs-en_label: 13px;
+    --slide-w: 1920px;
+    --slide-h: 1080px;
+    --safe-margin: 80px;
+    --ch-accent: #8A4B26;
+}
+
+  .slide-chapter { background: var(--c-bg-page); display: flex; }
+  .slide-chapter .photo-left {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-chapter .photo-left .bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/images/scheme/scheme_hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .slide-chapter .photo-left .wash {
+    position: absolute;
+    inset: 0;
+    /* 灰调渐变滤掉 CAD 彩色地块(粉/红/绿) */
+    background: linear-gradient(90deg,
+      rgba(190, 190, 195, 0.55) 0%,
+      rgba(200, 200, 205, 0.72) 55%,
+      rgba(215, 215, 218, 0.92) 100%);
+  }
+  .slide-chapter .photo-left .brand-mark { z-index: 5; }
+  .slide-chapter .num-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px 0 80px;
+    position: relative;
+  }
+  .slide-chapter .ch-bar {
+    width: 64px;
+    height: 6px;
+    background: var(--ch-accent, var(--brand-primary));
+    margin-bottom: 40px;
+  }
+  .slide-chapter .big-num {
+    font-family: var(--font-en);
+    font-size: 180px;
+    font-weight: 700;
+    color: var(--ch-accent, var(--brand-primary));
+    line-height: 1;
+    margin-bottom: 18px;
+    margin-left: -8px;
+  }
+  .slide-chapter .ch-name {
+    font-family: var(--font-cn);
+    font-size: 44px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 24px;
+  }
+  .slide-chapter .ch-desc {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--c-text-secondary);
+    max-width: 520px;
+    margin-bottom: 28px;
+  }
+  .slide-chapter .ch-en {
+    font-family: var(--font-en);
+    font-size: 15px;
+    font-weight: var(--fw-en);
+    letter-spacing: 4px;
+    color: var(--ch-accent, var(--brand-primary));
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+<div class="slide slide-chapter">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">Sichuan Nursing Vocational College (Deyang Campus) Planning Adjustment</span>
+  </div>
+  
+  <div class="photo-left">
+    <div class="bg"></div>
+    <div class="wash"></div>
+  </div>
+  
+  <div class="num-right">
+    <div class="ch-bar"></div>
+    <div class="big-num">04</div>
+    <div class="ch-name">核心规划</div>
+    <div class="ch-desc">功能提质 · 能级跃升</div>
+    <div class="ch-en">Core Planning</div>
+  </div>
+</div>
+</body>
+</html>

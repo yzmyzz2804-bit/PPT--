@@ -1,0 +1,109 @@
+<!--
+@template: analysis-architecture
+@source: 新增分析页
+@slot: ch4 (IP引擎) / ch5 (技术策略)
+@description: 架构示意图 - 中心节点+外围模块,用SVG连线表达关系
+@required_fields: tag, title, subtitle, center_node, modules (array of {name, name_en, role})
+@coze_inherit: false
+@note: 复杂架构建议直接放 SVG/图片到 assets/, 此模板做简单四象限围绕
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  .slide.arch .arch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    gap: 16px;
+    position: relative;
+  }
+  .slide.arch .arch-center {
+    grid-column: 2;
+    grid-row: 2;
+    background: var(--brand-primary);
+    color: var(--c-white);
+    border-radius: var(--radius-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+  }
+  .slide.arch .arch-center .c-name {
+    font-size: 24px;
+    font-weight: var(--fw-title);
+    margin-bottom: 8px;
+  }
+  .slide.arch .arch-center .c-en {
+    font-family: var(--font-en);
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.7;
+  }
+  .slide.arch .arch-module {
+    background: var(--c-bg-card);
+    border: 1px solid var(--c-card-border);
+    border-radius: var(--radius);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slide.arch .m-name {
+    font-size: 16px;
+    font-weight: var(--fw-title);
+    color: var(--brand-primary);
+    margin-bottom: 4px;
+  }
+  .slide.arch .m-en {
+    font-family: var(--font-en);
+    font-size: 11px;
+    color: var(--c-text-secondary);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .slide.arch .m-role {
+    font-size: 12px;
+    color: var(--c-text-secondary);
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+<div class="slide arch">
+  <div class="brand-mark">
+    <span class="square"></span><span class="line"></span>
+    <span class="text">{{ project_name_en }}</span>
+  </div>
+  <div class="page-header">
+    <div class="page-tag">{{ tag }}</div>
+    <div class="page-title">{{ title }}</div>
+    <div class="page-subtitle">{{ subtitle }}</div>
+    <div class="title-line"></div>
+  </div>
+  <div class="slide-content">
+    <div class="arch-grid">
+      <div class="arch-module">{{ module_0 }}</div>
+      <div class="arch-module">{{ module_1 }}</div>
+      <div class="arch-module">{{ module_2 }}</div>
+      <div class="arch-module">{{ module_3 }}</div>
+      <div class="arch-center">
+        <div class="c-name">{{ center_node.name }}</div>
+        <div class="c-en">{{ center_node.name_en }}</div>
+      </div>
+      <div class="arch-module">{{ module_4 }}</div>
+      <div class="arch-module">{{ module_5 }}</div>
+      <div class="arch-module">{{ module_6 }}</div>
+      <div class="arch-module">{{ module_7 }}</div>
+    </div>
+  </div>
+  <div class="page-number"><span class="current">{{ page_num }}</span>/{{ total_pages }}</div>
+</div>
+</body>
+</html>

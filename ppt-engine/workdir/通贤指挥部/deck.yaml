@@ -1,0 +1,573 @@
+theme: blue-grey-coze
+project:
+  name: 安岳县化工园区项目指挥部建筑设计
+  name_en: Anyue Chemical Park Command Center Architectural Design
+  type: building_renovation
+  date: '2026.10'
+pages: 25
+slides:
+- id: slide_01
+  chapter: ''
+  template: cover
+  data:
+    page_number: 01 / 25
+    title: 安岳县化工园区项目指挥部
+    subtitle: 建筑设计方案 · 专家评审版
+    meta:
+    - '2026.10'
+    bg_image: ../assets/bg/cover.jpg
+  page_num: '1'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_02
+  chapter: ch1
+  template: chapter-divider-a
+  data:
+    page_number: 02 / 25
+    chapter_num: '01'
+    chapter_title: 项目背景与现状
+    chapter_desc: 存量建筑 · 改造新生
+    chapter_concept: Project Background
+    bg_image: ../assets/images/site/site_aerial.jpg
+  page_num: '2'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_03
+  chapter: ch1
+  template: split-image-text
+  data:
+    page_number: 03 / 25
+    title: 项目概况
+    subtitle: Project Overview
+    image: ../assets/images/site/masterplan_aerial.jpg
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 项目位于安岳县通贤镇，G247 国道旁<br>利用原小学、医学集中隔离点等既有建筑改造<br>定位：化工园区项目指挥部 + 应急环保监测中心<br>功能涵盖园区展示、会议会商、指挥调度、办公住宿<br>10号召开专家评审会，聚焦方案性内容
+    key_metrics:
+    - number: 约 15 亩
+      unit: ''
+      label: 总用地面积
+    - number: 3 类
+      unit: ''
+      label: 既有建筑
+    - number: 10.10 下午
+      unit: ''
+      label: 专家会时间
+    callout:
+      text: 化工园区指挥中枢
+      label: ''
+  page_num: '3'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_04
+  chapter: ch1
+  template: multi-card-row
+  data:
+    page_number: 04 / 25
+    title: 三类遗留建筑现状
+    subtitle: Three Types of Existing Buildings
+    tag: ''
+    bg_image: ''
+    data_cards:
+    - number: ''
+      unit: ''
+      label: 早期教学楼
+      items:
+      - key: ''
+        val: 砖混结构，现状完整，但抗震不满足现行规范，需加固改造
+    - number: ''
+      unit: ''
+      label: 疫情隔离点办公楼
+      items:
+      - key: ''
+        val: 建筑现状完整，可保留使用，结合功能局部加建
+    - number: ''
+      unit: ''
+      label: 半拉子养老院
+      items:
+      - key: ''
+        val: 仅修了一层且只有土建部分，建议拆除，释放场地空间
+    photo_cards: []
+  page_num: '4'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_05
+  chapter: ch1
+  template: split-image-text
+  data:
+    page_number: 05 / 25
+    title: 场地现状问题
+    subtitle: Site Issues
+    image: ../assets/images/site/problem_analysis.png
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 入口坡度较大，展示性弱，到达体验不佳<br>场地西北侧有现状荒草地，未利用且不占永农指标<br>建筑风格不统一，既有建筑年代不同、形象各异<br>各建筑之间联系弱，缺乏整体规划与景观串联<br>场地高差未充分利用，台地空间潜力待挖掘
+    key_metrics: []
+    callout:
+      text: 四大现状问题
+      label: ''
+  page_num: '5'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_06
+  chapter: ch2
+  template: chapter-divider-a
+  data:
+    page_number: 06 / 25
+    chapter_num: '02'
+    chapter_title: 改造策略
+    chapter_desc: 留 · 改 · 增
+    chapter_concept: Renovation Strategy
+    bg_image: ../assets/images/concept/strategy_hero.jpg
+  page_num: '6'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_07
+  chapter: ch2
+  template: multi-card-row
+  data:
+    page_number: 07 / 25
+    title: 留 · 改 · 增 — 三大策略
+    subtitle: Preserve · Renovate · Add
+    tag: ''
+    bg_image: ../assets/images/concept/renovation_strategy.jpg
+    data_cards:
+    - number: ''
+      unit: ''
+      label: 留—保留利用
+      items:
+      - key: ''
+        val: 保留教学楼、隔离点等结构完好建筑，节约投资，延续记忆
+    - number: ''
+      unit: ''
+      label: 改—加固升级
+      items:
+      - key: ''
+        val: 砖混结构加固改造，抗震升级，立面更新，功能置换
+    - number: ''
+      unit: ''
+      label: 增—加建补齐
+      items:
+      - key: ''
+        val: 屋顶加建活动室，新建门卫，利用台地做设备用房与车库
+    photo_cards: []
+  page_num: '7'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_08
+  chapter: ch2
+  template: split-image-text
+  data:
+    page_number: 08 / 25
+    title: 拆改总图
+    subtitle: Demolition & Renovation Plan
+    image: ../assets/images/site/demolition_plan.png
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 保留：教学楼 + 隔离点办公楼 + 消防水池 + 门卫<br>拆除：半拉子养老院 + 部分围墙 + 局部水泥地面<br>新增：屋顶加建层 +
+        新建门卫房 + 台地设备用房<br>连接：草地设踏步，串联保留建筑，形成整体
+    key_metrics: []
+    callout:
+      text: 一张图看清：保留 / 拆除 / 新建
+      label: ''
+  page_num: '8'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_09
+  chapter: ch3
+  template: chapter-divider-a
+  data:
+    page_number: 09 / 25
+    chapter_num: '03'
+    chapter_title: 总体规划
+    chapter_desc: 一核 · 两区 · 多节点
+    chapter_concept: Master Planning
+    bg_image: ../assets/images/site/masterplan_aerial.jpg
+  page_num: '9'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_10
+  chapter: ch3
+  template: split-image-text
+  data:
+    page_number: 10 / 25
+    title: 总平面布局
+    subtitle: Site Masterplan
+    image: ../assets/images/site/masterplan.png
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 一核：指挥中心核心区（主教学楼改造）<br>两区：园区企业办公区 + 生活配套区<br>多节点：展示广场、梯步景观、应急中心、停车区<br>利用台地高差：半地下应急中心
+        + 工作车辆车库
+    key_metrics: []
+    callout:
+      text: 一核 · 两区 · 多节点
+      label: ''
+  page_num: '10'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_11
+  chapter: ch3
+  template: compare-table
+  data:
+    page_number: 11 / 25
+    title: 功能分区 · 交通组织
+    subtitle: Zoning & Circulation
+    tag: ''
+    headers:
+    - 分区
+    - 主要功能
+    - 建筑载体
+    rows:
+    - indicator: 指挥核心区
+      b: 展示厅 / 会议室 / 指挥中心 / 视频会商
+      b_better: true
+      note: 主教学楼（改造）
+    - indicator: 企业办公区
+      b: 园区企业办公 / 管理用房
+      b_better: true
+      note: 隔离点办公楼（保留）
+    - indicator: 生活配套区
+      b: 宿舍 / 食堂 / 活动室
+      b_better: true
+      note: 保留建筑 + 屋顶加建
+    - indicator: 应急功能区
+      b: 应急环保监测 / 消洗区 / 设备用房
+      b_better: true
+      note: 台地半地下空间
+    - indicator: 入口展示区
+      b: 门卫 / 展示广场 / 园区停车
+      b_better: true
+      note: 新建 + 景观改造
+    summary_cards:
+    - name: 交通策略
+      hot: true
+      items:
+      - k: ''
+        v: 人车分流 · 主入口形象提升 · 消防环道 · 台地垂直交通
+  page_num: '11'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_12
+  chapter: ch4
+  template: chapter-divider-a
+  data:
+    page_number: 12 / 25
+    chapter_num: '04'
+    chapter_title: 建筑方案
+    chapter_desc: 现代简约 · 工业气质
+    chapter_concept: Architectural Design
+    bg_image: ../assets/images/architecture/floor_plan_bg.jpg
+  page_num: '12'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_13
+  chapter: ch4
+  template: split-image-text
+  data:
+    page_number: 13 / 25
+    title: 建筑立面意向
+    subtitle: Architectural Elevation
+    image: ../assets/images/architecture/command_center.jpg
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 立面风格：现代简约，干净利落，体现化工园区的理性气质<br>色彩体系：白 + 深灰 + 工业蓝点缀，既有建筑统一翻新<br>材料策略：涂料为主
+        + 局部铝板/玻璃，经济高效<br>屋顶加建：开放式活动室，通透轻盈，不压抑原有建筑<br>入口处理：主入口雨篷挑出，强化仪式感与到达性
+    key_metrics: []
+    callout:
+      text: 现代简约 · 工业气质
+      label: ''
+  page_num: '13'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_14
+  chapter: ch4
+  template: split-image-text
+  data:
+    page_number: 14 / 25
+    title: 方案一 · 平面布局
+    subtitle: Scheme 1 · Floor Plan
+    image: ../assets/images/architecture/plan_s1_1f.png
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 一层：展示厅 + 会客 + 指挥中心 + 消控室<br>二层：视频会商室 + 会议室 + 办公<br>三层：应急环保监测 + 指挥调度 +
+        休息<br>垂直交通：两部楼梯，一部电梯（改造加装）<br>特点：公共功能靠下，办公在上，流线清晰
+    key_metrics: []
+    callout:
+      text: 功能集中 · 流线清晰
+      label: ''
+  page_num: '14'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_15
+  chapter: ch4
+  template: split-image-text
+  data:
+    page_number: 15 / 25
+    title: 方案二 · 平面布局
+    subtitle: Scheme 2 · Floor Plan
+    image: ../assets/images/architecture/plan_s2_1f.png
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 一层：入口大堂 + 展厅 + 多功能厅（可分隔）<br>二层：开敞办公 + 会议室群 + 茶歇区<br>三层：指挥中心 + 环保监测 + 值班住宿<br>结构利用：原有承重墙保留，新增轻质隔墙<br>特点：灵活性强，适应未来功能调整
+    key_metrics: []
+    callout:
+      text: 灵活分隔 · 多功能性
+      label: ''
+  page_num: '15'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_16
+  chapter: ch4
+  template: compare-table
+  data:
+    page_number: 16 / 25
+    title: 方案对比
+    subtitle: Scheme Comparison
+    tag: ''
+    headers:
+    - 维度
+    - 方案一
+    - 方案二
+    rows:
+    - indicator: 布局特点
+      b: 功能集中，竖向分区明确
+      b_better: true
+      note: 灵活分隔，适应性强
+    - indicator: 流线组织
+      b: 清晰直接，效率高
+      b_better: true
+      note: 开敞流动，空间感好
+    - indicator: 改造难度
+      b: 墙体改动少，造价较低
+      b_better: true
+      note: 轻质隔墙多，改造量稍大
+    - indicator: 使用灵活性
+      b: 功能固定，适合定位明确
+      b_better: true
+      note: 可分可合，适应未来变化
+    - indicator: 推荐场景
+      b: 功能稳定的指挥办公
+      b_better: true
+      note: 多功能复合的展示交流
+    summary_cards:
+    - name: 推荐倾向
+      hot: true
+      items:
+      - k: ''
+        v: 推荐方案一：功能明确、改造量小、造价经济，符合指挥部定位
+  page_num: '16'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_17
+  chapter: ch5
+  template: chapter-divider-a
+  data:
+    page_number: 17 / 25
+    chapter_num: '05'
+    chapter_title: 重点空间
+    chapter_desc: 形象展示 · 高效调度
+    chapter_concept: Key Spaces
+    bg_image: ../assets/images/interior/command_center.jpg
+  page_num: '17'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_18
+  chapter: ch5
+  template: split-image-text
+  data:
+    page_number: 18 / 25
+    title: 园区展示厅
+    subtitle: Exhibition Hall
+    image: ../assets/images/interior/exhibition_hall.jpg
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 位置：一层主入口右侧，第一触点<br>功能：园区规划展示 + 产业布局 + 项目成就<br>设计：简洁现代，大面积展墙 + 数字屏<br>空间：通高两层，气势开阔<br>材料：木色
+        + 白色 + 深灰，简洁克制
+    key_metrics: []
+    callout:
+      text: 园区窗口 · 第一印象
+      label: ''
+  page_num: '18'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_19
+  chapter: ch5
+  template: split-image-text
+  data:
+    page_number: 19 / 25
+    title: 应急环保监测指挥中心
+    subtitle: Emergency Command Center
+    image: ../assets/images/interior/command_center.jpg
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 位置：三层，视野开阔，便于指挥调度<br>核心配置：大屏拼接墙 + 操作台 + 值班工位<br>功能：环境监测 + 应急指挥 + 视频调度<br>配套：独立空调系统
+        + UPS 供电 + 消防保障<br>空间氛围：沉稳专业，深蓝灰调，24小时运行
+    key_metrics: []
+    callout:
+      text: 调度中枢 · 实时响应
+      label: ''
+  page_num: '19'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_20
+  chapter: ch5
+  template: split-image-text
+  data:
+    page_number: 20 / 25
+    title: 视频会商室
+    subtitle: Video Conference Room
+    image: ../assets/images/interior/meeting_room.jpg
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 位置：二层，安静且交通便利<br>功能：视频会议 + 方案评审 + 远程会商<br>配置：4K 摄像头 + 全向麦 + 共享屏幕系统<br>座位：约
+        20 人圆桌/长桌布置<br>声学处理：墙面吸音 + 吊顶降噪，保证会议质量
+    key_metrics: []
+    callout:
+      text: 高效协同 · 远程决策
+      label: ''
+  page_num: '20'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_21
+  chapter: ch6
+  template: chapter-divider-a
+  data:
+    page_number: 21 / 25
+    chapter_num: '06'
+    chapter_title: 结构加固
+    chapter_desc: 抗震升级 · 安全保障
+    chapter_concept: Structural Strengthening
+    bg_image: ../assets/images/structure/reinforcement.jpg
+  page_num: '21'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_22
+  chapter: ch6
+  template: split-image-text
+  data:
+    page_number: 22 / 25
+    title: 砖混结构加固策略
+    subtitle: Masonry Structure Strengthening
+    image: ../assets/images/structure/detail_1.png
+    image_caption: ''
+    bullets:
+    - icon: ''
+      title: ''
+      text: 依据最新鉴定报告：原教学楼不满足现行抗震设计要求<br>加固原则：安全可靠 + 经济合理 + 尽量少破坏原结构<br>改动位置补充：构造柱、边框、过梁、圈梁<br>屋顶加建：轻钢结构，自重小，对下部结构影响可控<br>施工配合：先加固后改造，保证施工期间安全
+    key_metrics: []
+    callout:
+      text: 鉴定先行 · 有的放矢
+      label: ''
+  page_num: '22'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_23
+  chapter: ch7
+  template: multi-card-row
+  data:
+    page_number: 23 / 25
+    title: 经济技术指标
+    subtitle: Economic & Technical Indicators
+    tag: ''
+    bg_image: ../assets/images/site/masterplan_aerial.jpg
+    data_cards:
+    - number: 约 10,000㎡
+      unit: （约15亩）
+      label: 总用地面积
+      items: []
+    - number: 约 2,800㎡
+      unit: ''
+      label: 建筑基底面积
+      items: []
+    - number: 约 25%
+      unit: ''
+      label: 场地绿地率
+      items: []
+    - number: 约 0.85
+      unit: ''
+      label: 容积率
+      items: []
+    - number: 约 8,500㎡
+      unit: ''
+      label: 总建筑面积
+      items: []
+    - number: 约 6,000㎡
+      unit: ''
+      label: 保留建筑面积
+      items: []
+    - number: 约 2,500㎡
+      unit: ''
+      label: 新增建筑面积
+      items: []
+    - number: 地上3层 + 加建层
+      unit: ''
+      label: 建筑层数
+      items: []
+    - number: 约 45%
+      unit: ''
+      label: 办公/指挥
+      items: []
+    - number: 约 20%
+      unit: ''
+      label: 展示/会议
+      items: []
+    - number: 约 20%
+      unit: ''
+      label: 宿舍/配套
+      items: []
+    - number: 约 15%
+      unit: ''
+      label: 设备/车库
+      items: []
+    photo_cards: []
+  page_num: '23'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_24
+  chapter: ch8
+  template: chapter-divider-a
+  data:
+    page_number: 24 / 25
+    chapter_num: 08
+    chapter_title: 技术图纸
+    chapter_desc: 完整图纸详见附件
+    chapter_concept: Technical Drawings
+    bg_image: ../assets/images/technical/blueprints.jpg
+  page_num: '24'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+- id: slide_25
+  chapter: ''
+  template: closing
+  data:
+    page_number: 25 / 25
+    closing_text: 谢谢聆听
+    closing_sub: 安岳县化工园区项目指挥部建筑设计
+    bg_image: ../assets/bg/closing.jpg
+  page_num: '25'
+  status: rendered
+  last_modified: 2026-10-09 09:49
+_total_pages: 25
+build:
+  last_build: 2026-10-09 09:49
+  last_build_pdf: e:\TRAE\PPT概念规划设计\ppt-engine\workdir\通贤指挥部\build\通贤指挥部建筑设计方案.pdf
